@@ -1,0 +1,57 @@
+[GameObjectClass]
+classLabel = "geyser"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Geyser"
+heatSignature = 5.5
+imageSignature = 0.01
+radarSignature = 0.01
+
+[BuildingClass]
+soundAmbient = "gflas00.wav"
+
+[GeyserClass]
+effectName = "eggeizr1.render"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "eggeizr1.steam1"
+renderName2 = "eggeizr1.steam2"
+
+[Steam1]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga" //"smoke.tga"
+startColor = "255 100 50 100"
+finishColor = "200 40 80 1"
+startRadius = 1.5
+finishRadius = 0.3
+animateTime = 0.7
+rotationRate = 2.5
+emitDelay = 0.01
+emitDelayVar = 0.01
+emitVelocity = "0.0 34.0 0.0"
+emitVariance = "3.0 9.5 3.0"
+emitLife = 0.5
+maxRadii = 75
+
+[Steam2]
+renderBase = "draw_twirl_trail"
+textureName = "flamealpha.tga"
+startColor = "50 50 50 60"
+finishColor = "0 0 0 0"
+startRadius = 0.2
+finishRadius = 10.0
+animateTime = 5.0
+rotationRate = 1.5
+emitDelay = 0.03
+emitDelayVar = 0.02
+emitVelocity = "0.0 15.0 0.0"
+emitVariance = "3.5 3.0 3.5"
+emitLife = 5.0
+maxRadii = 75
+
+
+
