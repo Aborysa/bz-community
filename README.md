@@ -1,2 +1,2 @@
-# bz-halloween
-Halloween project for battlezone
+# bz-community
+Smaller community\HB projects for battlezone
