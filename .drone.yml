@@ -1,7 +1,6 @@
 workspace:
-  base: /bz-community/projects
-  path: src/${DRONE_REPO_SLUG}
-
+  base: /community
+  path: /${DRONE_REPO_SLUG}/
 pipeline:
   pre-process:
     image: docker.faavne.no/bzone/bztools:latest
@@ -20,14 +19,14 @@ pipeline:
       - curl -O https://media.faavne.no/bzmoon/bzmoon_latest.zip
       - unzip bzmoon_latest.zip
       - mv ./bzutils.lua /tmp/lua
-      - find /projects/halloween-pack -type f \( -name "*.lua" -o -name "*.squish" \) -exec cp {} /tmp/lua \;
-      - find /projects/shared -type f -exec cp {} /tmp/lua \;
+      - find /community/projects/halloween-pack -type f \( -name "*.lua" -o -name "*.squish" \) -exec cp {} /tmp/lua \;
+      - find /community/projects/shared -type f -exec cp {} /tmp/lua \;
       - python3 /bztools/luaSquish.py /tmp/lua -r
-      - find /projects/halloween-pack -not -ipath '*/\.*' -not -name '*.lua' -not -name '*.bin' -type f -exec cp {} /tmp/files \;
+      - find /community/projects/halloween-pack -not -ipath '*/\.*' -not -name '*.lua' -not -name '*.bin' -type f -exec cp {} /tmp/files \;
       - find /tmp/lua -name '*.lua' -type f -exec mv {} /tmp/files \;
       - python3 /bztools/crlf_fixer.py /tmp/files
-      - mkdir -p /projects/build-output
-      - zip -j -r /projects/build-ouput/halloween-bundle.zip /tmp/files
+      - mkdir -p /community/projects/build-output
+      - zip -j -r /community/projects/build-output/halloween-bundle.zip /tmp/files
 
   release:
     group: deploy
@@ -36,6 +35,6 @@ pipeline:
       event:
         - tag
     commands:
-      - \cp -f /projects/build-ouput/halloween-bundle.zip /drone/deploy/bz-halloween/bz-halloween_${DRONE_TAG}.zip || true
+      - \cp -f /community/projects/build-output/halloween-bundle.zip /drone/deploy/bz-halloween/bz-halloween_${DRONE_TAG}.zip || true
     volumes:
       - /root/studynator/nginx-fs/public/bz-community:/drone/deploy
