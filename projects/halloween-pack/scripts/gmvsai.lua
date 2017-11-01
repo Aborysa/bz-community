@@ -187,7 +187,8 @@ local GameManager = createClass("game.vsai", {
       grace = 20,
       allSpawned = false
     })
-    self.waveController = WaveController( furyFaction, locations, 1/20, 0.05, furyWaves, math.exp(s.currentWave) )
+    local waveCount = math.floor(math.exp(s.currentWave))
+    self.waveController = WaveController( furyFaction, locations, (waveCount)/(30*(s.currentWave+1)), 0.05, furyWaves, waveCount )
     self.waveController:onWaveSpawn():subscribe(function(handles, leader)
   
       local state = self.store:getState()
