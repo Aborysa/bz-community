@@ -2,8 +2,10 @@ workspace:
   base: /community
   path: /${DRONE_REPO_SLUG}/
 pipeline:
-  pre-process:
+  build-halloween:
     image: docker.faavne.no/bzone/bztools:latest
+    
+    group: build
     pull: true
     when:
       event:
@@ -13,6 +15,7 @@ pipeline:
       - mkdir /tmp/files
       - mkdir /tmp/lua
       - mkdir /tmp/bzmoon
+      - mkdir /tmp/731940591
       - cd /tmp/lua
       - curl -O https://raw.githubusercontent.com/bjornbytes/RxLua/master/rx.lua
       - cd /tmp/bzmoon
@@ -26,7 +29,8 @@ pipeline:
       - find /tmp/lua -name '*.lua' -type f -exec mv {} /tmp/files \;
       - python3 /bztools/crlf_fixer.py /tmp/files
       - mkdir -p /community/projects/build-output
-      - zip -j -r /community/projects/build-output/halloween-bundle.zip /tmp/files
+      - mv /tmp/files /tmp/731940591
+      - zip -r /community/projects/build-output/halloween-bundle.zip /tmp/731940591
 
   release:
     group: deploy
