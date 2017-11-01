@@ -15,7 +15,6 @@ pipeline:
       - mkdir /tmp/files
       - mkdir /tmp/lua
       - mkdir /tmp/bzmoon
-      - mkdir /tmp/731940591
       - cd /tmp/lua
       - curl -O https://raw.githubusercontent.com/bjornbytes/RxLua/master/rx.lua
       - cd /tmp/bzmoon
@@ -30,7 +29,8 @@ pipeline:
       - python3 /bztools/crlf_fixer.py /tmp/files
       - mkdir -p /community/projects/build-output
       - mv /tmp/files /tmp/731940591
-      - zip -r /community/projects/build-output/halloween-bundle.zip /tmp/731940591
+      - cd /tmp
+      - zip -r /community/projects/build-output/halloween-bundle.zip ./731940591
 
   release:
     group: deploy
