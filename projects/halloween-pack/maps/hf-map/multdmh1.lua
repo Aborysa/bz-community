@@ -1,10 +1,4 @@
 local gmvsai = require("gmvsai")
 
 
-local spawns = {}
-for i=1, 8 do
-  table.insert(spawns, ("spawn_%d"):format(i))
-end
-
-
-local game = gmvsai(spawns, "points_of_interest")
+local game = gmvsai({"spawn_1", "spawn_3", "spawn_5", "spawn_7"}, "points_of_interest")

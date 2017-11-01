@@ -8,11 +8,27 @@ Height=0
 [World]
 MusicTrack=5
 
+
+[Sun_Ambient]
+Red=0.9f
+Green=0.4f
+Blue=0.4f
+
+[Sun_Diffuse]
+Red=0.9f
+Green=0.3f
+Blue=0.3f
+
+[Sun_Specular]
+Red=0.9f
+Green=0.3f
+Blue=0.3f
+
 [Sky]
 SunTexture= sun.0
 SkyType= 0
 SkyHeight = 110
-SkyTexture= achilles.map
+SkyTexture= mars.map
 
 BackdropTexture =
 BackdropDistance= 400
@@ -24,26 +40,30 @@ MaterialName	= ac_detail_atlas
 
 [Clouds]
 Count    = 8
-Type     = 0
+Type     = 1
 TileSize = 1000
 
 Texture0 = acloud2.map
 Size0    = 500
-Height0  = 100
+Height0  = 130
 
 Texture1 = acloud.map
 Size1    = 500
-Height1  = 90
+Height1  = 120
 
 Texture2 = acloud2.map
 Size2    = 500
-Height2  = 80
+Height2  = 100
 
 [Color]
-Palette=ACHILLES.ACT
+Palette=MARS.ACT
 Luma=ACHILLES.LUM
 Translucency=ACHILLES.TBL
 Alpha=ACHILLES.ALB
+
+FogColor = "219 104 70"
+SkyColor = "219 104 70"
+
 
 [TextureType0] // grass
 FlatColor= 128

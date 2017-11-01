@@ -1,0 +1,35 @@
+[OrdnanceClass]
+classLabel = "rocket"
+
+shotGeometry = "gspst00.geo"
+shotSound = "Ordin_b.wav"
+
+xplGround = "xmslgnd"
+xplVehicle = "xmslcar"
+xplBuilding = "xmslbld"
+
+renderName = "rocket3b.Light"
+
+ammoCost = 12
+lifeSpan = 1.5
+shotSpeed = 130.0
+damageBallistic = 180
+damageConcussion = 50
+damageFlame = 0
+damageImpact = 0
+
+[RocketClass]
+flameLength = 0.3
+smokeRadius = 0.5
+smokeDelay = 0.015
+smokePause = 0.005
+smokeTexture = "bpuff.0"
+smokeFrames = 16
+
+
+[Light]
+renderBase = "draw_light"
+startColor = "150 50 255 255"
+finishColor = "150 50 255 255"
+startRadius = 30.0
+finishRadius = 30.0

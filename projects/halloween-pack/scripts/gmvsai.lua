@@ -57,15 +57,22 @@ helper.createTask("ScoutTask", ScoutTask)
 
 
 local furyFaction = {
-  "hvsat", "hvsav", "avtank", "avfigh", "avwalk"
+  "hvsat", "hvsav", "zvtank", "zvfigh", "zvwalk", "zvhraz"
 }
 
 local furyWaves = {
-  {item = {" 3 ", "4 4"}, chance = 10},
-  {item = {"444"}, chance = 10},
-  {item = {" 5 "}, chance = 10},
-  {item = {" 2 ","4 4"}, chance = 6},
-  {item = {"3 3"}, chance = 8}
+  {item = {"1"}, chance = 10},
+  {item = {"2"}, chance = 9},
+  {item = {"3"}, chance = 11},
+  {item = {"4"}, chance = 12},
+  {item = {"5"}, chance = 8},
+  {item = {"6"}, chance = 10},
+  {item = {"1", "1"}, chance = 6},
+  {item = {" 3 ", "4 4"}, chance = 7},
+  {item = {"444"}, chance = 8},
+  {item = {" 5 ", "3 4"}, chance = 5},
+  {item = {" 1 ", "4 3"}, chance = 4},
+  {item = {"6 4"}, chance = 5}
 }
 
 
@@ -103,9 +110,10 @@ local GameManager = createClass("game.vsai", {
       currentWave = 0,
       unitsLeft = 0,
       totalUnits = 0,
-      grace = 5,
+      grace = 15,
       allSpawned = false,
-      waveRunning = false
+      waveRunning = false,
+      score = 0
     })
   end,
   _rerender = function(self)
@@ -136,6 +144,7 @@ local GameManager = createClass("game.vsai", {
           DisplayMessage(("Wave %d ended!"):format(state.currentWave))
         end
         self.displayText = ("Current wave: %d\n"):format(state.currentWave)
+        self.displayText = self.displayText .. ("Total score: %d\n"):format(state.score)
         if not state.waveRunning then
           self.displayText = self.displayText .. ("Grace periode: %d\n"):format(state.grace)
         else
@@ -178,7 +187,7 @@ local GameManager = createClass("game.vsai", {
       grace = 20,
       allSpawned = false
     })
-    self.waveController = WaveController( furyFaction, locations, 1/20, 10, furyWaves, math.exp(s.currentWave) )
+    self.waveController = WaveController( furyFaction, locations, 1/20, 0.05, furyWaves, math.exp(s.currentWave) )
     self.waveController:onWaveSpawn():subscribe(function(handles, leader)
   
       local state = self.store:getState()
@@ -203,12 +212,12 @@ local GameManager = createClass("game.vsai", {
 
   end,
   _restartWave = function(self)
+    self:_endWave()
     for v in AllObjects() do
       if GetTeamNum(v) == 15 then
         RemoveObject(v)
       end
     end
-    self:_endWave()
     local s = self.store:getState()
     self.store:set("currentWave", s.currentWave - 1)
   end,
@@ -254,8 +263,11 @@ local GameManager = createClass("game.vsai", {
   deleteObject = function(self, handle)
     if IsHosting() then
       local s = self.store:getState()
-      if self.units[handle] then
-        self.store:set("unitsLeft", s.unitsLeft - 1)
+      if s.waveRunning and self.units[handle] then
+        self.store:assign({
+          unitsLeft = s.unitsLeft - 1,
+          score = s.score + math.floor(math.exp(s.currentWave - 1))
+        })
       end
     end
     self.units[handle] = nil
@@ -265,6 +277,7 @@ local GameManager = createClass("game.vsai", {
 bzutils.utils.namespace("vsai", GameManager)
 core:useModule(GameManager)
 
+local ambientTimer = math.random(5,20)
 
 
 function Start()
@@ -280,7 +293,12 @@ end
 
 function Update(dtime)
   xpcall(function()
+    ambientTimer = ambientTimer - dtime
+    if ambientTimer <= 0 then
+      ambientTimer = math.random()*35 + 7
+    end
     core:update(dtime)
+
   end, logTrace)
 end
 
