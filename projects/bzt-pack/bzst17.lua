@@ -106,7 +106,8 @@ local GameController = utils.createClass("GameController", {
     end)
   end,
   _rerender = function(self)
-    if self.showDisplay or (not self.ready) then
+    print("Re render", self.displayText)
+    if self.showInfo or (not self.ready) then
       UpdateObjective("stats.obj", "yellow", 0.2, self.displayText)
       self.showInfo = true
     end
