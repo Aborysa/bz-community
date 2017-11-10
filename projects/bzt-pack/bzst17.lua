@@ -64,6 +64,8 @@ local GameController = utils.createClass("GameController", {
     end)
     self.renderTimer:start()
     self.terminate = terminate
+    self.ph = GetPlayerHandle()
+    self.pp = GetPosition(self.ph)
     self.gameStore = Store({
       startTimer = 10,
       playerCount = 0,
@@ -106,7 +108,6 @@ local GameController = utils.createClass("GameController", {
     end)
   end,
   _rerender = function(self)
-    print("Re render", self.displayText)
     if self.showInfo or (not self.ready) then
       UpdateObjective("stats.obj", "yellow", 0.2, self.displayText)
       self.showInfo = true
@@ -283,9 +284,14 @@ local GameController = utils.createClass("GameController", {
     end
   end,
   update = function(self, dtime)
-    if not IsValid(GetPlayerHandle()) then
+    local ph = GetPlayerHandle()
+    local pp = GetPosition(ph)
+    local vel = Length(GetVelocity(ph))
+    if (not IsAlive(ph)) then --or (IsPerson(ph) and vel < 1 and self.ph ~= ph and Distance3D(self.pp, pp) > (vel*dtime+10) ) then
       self.spawned = false
     end
+    self.pp = pp
+    self.ph = ph
     local gameState = self.gameStore:getState()
     if not (gameState.gameStarted or self.spectating) then
       SetVelocity(GetPlayerHandle(), SetVector(0, 0, 0))
@@ -306,9 +312,9 @@ local GameController = utils.createClass("GameController", {
           end
         end
       end
-      if (not self.spawned) and (self.spawn_point ~= nil) and IsValid(GetPlayerHandle()) then
+      if IsAlive(ph) and (not self.spawned) and (self.spawn_point ~= nil) and IsValid(GetPlayerHandle()) then
         local spawn =  GetPathPoints(self.spectating and "spectator_spawns" or "p_spawns")[self.spawn_point]
-        SetPosition(GetPlayerHandle(),GetPositionNear(spawn, 50, 60))
+        SetPosition(ph,GetPositionNear(spawn, 50, 60))
         self.spawned = true
       end
       if gameState.gameStarted and not self.spectating then
