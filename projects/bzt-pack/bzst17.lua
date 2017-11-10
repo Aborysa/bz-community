@@ -36,7 +36,8 @@ function DisplayMessage(...)
 end
 
 
-Hide = Hide or function()
+
+SetCloaked = SetCloaked or function()
 end
 
 local function forceSpectatorCraft(handle)
@@ -280,7 +281,6 @@ local GameController = utils.createClass("GameController", {
       for i=1,15 do
         Ally(net:getLocalPlayer().team, i)
       end
-      Hide(GetPlayerHandle())
     end
   end,
   update = function(self, dtime)
@@ -332,6 +332,9 @@ local GameController = utils.createClass("GameController", {
           break
         end
       end
+    end
+    if self.spectating then
+      SetCloaked(ph)
     end
     self.renderTimer:update(dtime)
   end,

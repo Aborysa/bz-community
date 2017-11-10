@@ -1,5 +1,5 @@
 [GameObjectClass]
-baseName = "apcamr"
+baseName = "g"
 classLabel = "wingman"
 scrapValue = 0
 scrapCost = 0
@@ -21,6 +21,9 @@ radarSignature = 0.0
 rangeScan = 600.0f
 periodScan = 0.0
 velocJam = 0.0f
+
+cloakAllowed = True
+
 
 [HoverCraftClass]
 setAltitude = 1.0
