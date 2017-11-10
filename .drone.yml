@@ -73,4 +73,4 @@ pipeline:
       - \cp -f /community/projects/build-output/halloween-bundle.zip /drone/deploy/bz-halloween/bz-halloween_${DRONE_TAG}.zip || true
       - \cp -f /community/projects/build-output/bzt17-bundle.zip /drone/deploy/bzt-2017/bzt17_${DRONE_TAG}.zip || true
     volumes:
-      - /root/studynator/nginx-fs/public/bz-community:/drone/deploy
+      - /mnt/nginx-fs/files/public/bz-community:/drone/deploy
