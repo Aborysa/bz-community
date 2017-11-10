@@ -1,0 +1,99 @@
+[NormalView]
+Time=900
+FogStart=100
+FogEnd=250
+FogBreak=60
+VisibilityRange=250
+Intensity=40
+Ambient=0
+FlatRange=250
+ShadowLuma=0
+
+[Atlases]
+MaterialName	= ma_detail_atlas
+
+
+[World]
+MusicTrack=5
+
+[Sky]
+SunTexture=sun.0
+SkyHeight = 250
+SkyTexture= mars.map
+
+BackdropTexture =
+BackdropDistance= 400
+BackdropWidth   = 800
+BackdropHeight  = 100
+
+[Clouds]
+Count    = 8
+Type     = 1
+TileSize = 1000
+
+Texture0 = acloud2.map
+Size0    = 500
+Height0  = 200
+
+Texture1 = acloud2.map
+Size1    = 500
+Height1  = 175
+
+Texture2 = acloud2.map
+Size2    = 500
+Height2  = 160
+
+[Color]
+Palette=MARS.ACT
+Luma=MARS.LUM
+Translucency=MARS.TBL
+Alpha=MARS.ALB
+
+[Size]
+MinX=0
+MinZ=97280
+Width=5120
+Depth=5120
+Height=0
+
+[TextureType1] // Lava
+SolidA0        = ma11sA0.map
+SolidA1        = ma11sA1.map
+SolidA2        = ma11sA2.map
+SolidA3        = ma11sA3.map
+SolidB0        = ma11sA0.map
+SolidB1        = ma11sA1.map
+SolidB2        = ma11sA2.map
+SolidB3        = ma11sA3.map
+SolidC0        = ma11sB0.map
+SolidC1        = ma11sB1.map
+SolidC2        = ma11sB2.map
+SolidC3        = ma11sB3.map
+SolidD0        = ma11sC0.map
+SolidD1        = ma11sC1.map
+SolidD2        = ma11sC2.map
+SolidD3        = ma11sC3.map
+
+CapTo3_A0      = ma13cA0.map
+CapTo3_A1      = ma13cA1.map
+CapTo3_A2      = ma13cA2.map
+CapTo3_A3      = ma13cA3.map
+
+DiagonalTo3_A0 = ma13dA0.map
+DiagonalTo3_A1 = ma13dA1.map
+DiagonalTo3_A2 = ma13dA2.map
+DiagonalTo3_A3 = ma13dA3.map
+
+[TextureType2] // 
+SolidA0        = ma22sA0.map
+SolidA1        = ma22sA1.map
+SolidA2        = ma22sA2.map
+SolidA3        = ma22sA3.map
+
+[TextureType3] // Rock
+SolidA0        = ma33sA0.map
+SolidA1        = ma33sA1.map
+SolidA2        = ma33sA2.map
+SolidA3        = ma33sA3.map
+
+

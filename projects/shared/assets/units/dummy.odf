@@ -1,0 +1,13 @@
+[GameObjectClass]
+baseName=""
+classLabel = "camerapod"
+scrapCost = 1
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Dummy"
+
+[CameraPodClass]
+omegaSpin = 0.0
+rangeScan = 0.0
+periodScan = 0.0
