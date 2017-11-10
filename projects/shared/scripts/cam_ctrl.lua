@@ -46,17 +46,17 @@ CameraController = bzutils.utils.createClass("CameraController", {
   update = function(self, dtime)
     local offset = self.offset
     local cc = CameraCancelled()
-    offset = global2Local(offset, GetTransform(self.dummy))
-    local actualOffset = offset + GetPosition(self.dummy)
+    offset = global2Local(offset, GetTransform(self.base))
+    local actualOffset = offset + GetPosition(self.base)
     local h, normal = GetFloorHeightAndNormal(actualOffset + SetVector(0,10,0))
     offset.y = offset.y + math.max(h - actualOffset.y, 0)
-    offset = global2Local(offset, GetTransform(self.dummy))
+    offset = global2Local(offset, GetTransform(self.base))
     if (not IsValid(self.base)) or CameraObject(
-      self.dummy, 
+      self.base, 
       offset.z * 100,
       offset.y * 100,
       offset.x * 100,
-      self.dummy) or cc then
+      self.base) or cc then
         self.terminate(cc)
     else
       local pos = GetPosition(self.dummy)
