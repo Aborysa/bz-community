@@ -287,7 +287,7 @@ local GameController = utils.createClass("GameController", {
     local ph = GetPlayerHandle()
     local pp = GetPosition(ph)
     local vel = Length(GetVelocity(ph))
-    if (not IsAlive(ph)) then --or (IsPerson(ph) and vel < 1 and self.ph ~= ph and Distance3D(self.pp, pp) > (vel*dtime+10) ) then
+    if (not IsValid(ph)) or (IsPerson(ph) and vel < 1 and self.ph ~= ph and Distance3D(self.pp, pp) > (vel*dtime+10) ) then
       self.spawned = false
     end
     self.pp = pp
