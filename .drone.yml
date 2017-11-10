@@ -29,7 +29,7 @@ pipeline:
       - find /tmp/lua -name '*.lua' -type f -exec mv {} /tmp/files \;
       - python3 /bztools/crlf_fixer.py /tmp/files
       - mkdir -p /community/projects/build-output
-      - mv /tmp/files /tmp/bzt-pack
+      - mv /tmp/files /tmp/1196613614
       - cd /tmp
       - zip -r /community/projects/build-output/bzt17-bundle.zip ./1196613614
 
