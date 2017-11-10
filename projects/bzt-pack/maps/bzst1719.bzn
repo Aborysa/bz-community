@@ -2,12 +2,12 @@ version [1] =
 2016
 binarySave [1] =
 false
-msn_filename = bzst1619.bzn
+msn_filename = bzst1719.bzn
 seq_count [1] =
 432
 missionSave [1] =
 true
-TerrainName = bzst1619
+TerrainName = bzst1719
 size [1] =
 427
 [GameObject]
