@@ -34,10 +34,10 @@ pitchThrust = 0.1
 rollStrafe = 0.1
 rollSteer = 0.1
 
-velocForward = 100.0
-velocReverse = 100.0
-velocStrafe = 100.0
-accelThrust = 25.0
+velocForward = 150.0
+velocReverse = 150.0
+velocStrafe = 150.0
+accelThrust = 30.0
 accelBrake = 50.0
 omegaSpin = 3.5
 omegaTurn = 1.5
