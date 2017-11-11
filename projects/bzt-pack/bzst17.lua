@@ -238,7 +238,6 @@ local GameController = utils.createClass("GameController", {
       self.displayText = self.displayText .. ("  scrap: %d/%d\n"):format(v.state.scrap, v.state.mscrap)
       self.displayText = self.displayText .. ("  pilot: %d/%d\n\n"):format(v.state.pilot, v.state.mpilot)
     end
-    print(self.displayText)
   end,
   _onReceive = function(self, what, ...)
     if what == "JOIN_M" then
@@ -287,8 +286,8 @@ local GameController = utils.createClass("GameController", {
     local ph = GetPlayerHandle()
     local pp = GetPosition(ph)
     local vel = Length(GetVelocity(ph))
-    if (not IsValid(ph)) or (IsPerson(ph) and vel < 1 and self.ph ~= ph and Distance3D(self.pp, pp) > (vel*dtime+10) ) then
-      self.spawned = false
+    if self.spawned and IsPerson(ph) then
+      self.spawned = not ((not IsAlive(ph)) or vel < 1 and self.ph ~= ph and Distance3D(self.pp, pp) > (vel*dtime+10))
     end
     self.pp = pp
     self.ph = ph
