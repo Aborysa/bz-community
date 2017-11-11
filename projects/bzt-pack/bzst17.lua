@@ -333,7 +333,7 @@ local GameController = utils.createClass("GameController", {
       end
     end
     if self.spectating then
-      SetCloaked(ph)
+      --SetCloaked(ph)
     end
     self.renderTimer:update(dtime)
   end,
