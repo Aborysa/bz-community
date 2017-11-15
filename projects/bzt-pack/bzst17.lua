@@ -24,7 +24,7 @@ local SpectatorCraft = shared.SpectatorCraft
 bzutils.component.componentManager:useClass(SpectatorCraft)
 
 local removeOnDead = {}
-
+local removeOnNext = {}
 local assignObject = utils.assignObject
 
 local event = bzutils.event.bzApi
@@ -68,7 +68,7 @@ local GameController = utils.createClass("GameController", {
     self.ph = GetPlayerHandle()
     self.pp = GetPosition(self.ph)
     self.gameStore = Store({
-      startTimer = 10,
+      startTimer = 20,
       playerCount = 0,
       spectatorCount = 0,
       gameStarted = false,
@@ -87,6 +87,10 @@ local GameController = utils.createClass("GameController", {
     RemoveObject(GetRecyclerHandle())
     event:on("GAME_KEY"):subscribe(function(event)
       self:gameKey(event:getArgs())
+    end)
+
+    event:on("CREATE_OBJECT"):subscribe(function(event)
+      self:createObject(event:getArgs())
     end)
     self.maxPlayers = GetPathPointCount("p_spawns")
     self.gameStore:set("spawnOffset", math.random(1, self.maxPlayers))
@@ -257,7 +261,7 @@ local GameController = utils.createClass("GameController", {
   _onHostReceive = function(self, socket, what, ...)
     self:_onReceive(what, ...)
     if what == "JOIN" then
-      self.gameStore:set("startTimer", 10)
+      self.gameStore:set("startTimer", 20)
       local succ, spawn = self:_addPlayer(...)
       socket:send("JOIN_M", succ, spawn)
     elseif what == "SPECTATE" then
@@ -337,6 +341,14 @@ local GameController = utils.createClass("GameController", {
     end
     self.renderTimer:update(dtime)
   end,
+  createObject = function(self, handle)
+    if (not self.gameStore:getState().gameStarted or self.spectating) and not IsRemote(handle) then
+      if GetClassLabel(handle) == "camerapod" then
+        removeOnNext[handle] = true
+        --RemoveObject(handle)
+      end
+    end 
+  end,
   gameKey = function(self, key)
     local r = runtimeController:getRoutine(self.spectate_r)
     if key == "O" then
@@ -380,6 +392,10 @@ function Update(dtime)
       RemoveObject(i)
       removeOnDead[i] = nil
     end
+  end
+  for i, v in pairs(removeOnNext) do
+    RemoveObject(i)
+    removeOnDead[i] = nil
   end
 end
 
