@@ -39,17 +39,18 @@ CameraController = bzutils.utils.createClass("CameraController", {
     return self.destroySubject
   end,
   postInit = function(self)
-    self.dummy = BuildLocal("dummy", 0, GetPosition(self.base))
-    self.prev = GetPosition(self.dummy)
+    --self.dummy = BuildLocal("dummy", 0, GetPosition(self.base))
+    --self.prev = GetPosition(self.dummy)
     CameraReady()
   end,
   update = function(self, dtime)
     local offset = self.offset
     local cc = CameraCancelled()
-    offset = global2Local(offset, GetTransform(self.base))
+    offset = local2Global(offset, GetTransform(self.base))
     local actualOffset = offset + GetPosition(self.base)
-    local h, normal = GetFloorHeightAndNormal(actualOffset + SetVector(0,10,0))
-    offset.y = offset.y + math.max(h - actualOffset.y, 0)
+    local h, normal = GetFloorHeightAndNormal(actualOffset + SetVector(0,5,0))
+    actualOffset.y = math.max(actualOffset.y, h + 5)
+    offset = actualOffset - GetPosition(self.base) 
     offset = global2Local(offset, GetTransform(self.base))
     if (not IsValid(self.base)) or CameraObject(
       self.base, 
@@ -59,15 +60,15 @@ CameraController = bzutils.utils.createClass("CameraController", {
       self.base) or cc then
         self.terminate(cc)
     else
-      local pos = GetPosition(self.dummy)
-      SetTransform(self.dummy, GetTransform(self.base))
-      SetPosition(self.dummy, self.easingFunc(self.prev, GetPosition(self.base), dtime*4))
-      self.prev = self.easingFunc(self.prev, GetPosition(self.dummy), dtime*4)
+      --local pos = GetPosition(self.dummy)
+      --SetTransform(self.dummy, GetTransform(self.base))
+      --SetPosition(self.dummy, self.easingFunc(self.prev, GetPosition(self.base), dtime*4))
+      --self.prev = self.easingFunc(self.prev, GetPosition(self.dummy), dtime*4)
     end
   end,
   routineWasDestroyed = function(self, cc)
     CameraFinish()
-    RemoveObject(self.dummy)
+    --RemoveObject(self.dummy)
     self.destroySubject:onNext(not cc)
   end
 })
