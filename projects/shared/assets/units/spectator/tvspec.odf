@@ -1,0 +1,48 @@
+[GameObjectClass]
+baseName = "apcamr"
+classLabel = "wingman"
+scrapValue = 0
+scrapCost = 0
+buildTime = 0.0
+maxHealth = 10000000
+maxAmmo = 10000000
+weaponMask= 00001
+pilotCost = 0
+pilotName = ""
+unitName = "Spectator"
+componentName1="Spectator"
+aiName = "TankFriend"
+aiName2 = "TankEnemy"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+
+[CraftClass]
+rangeScan = 600.0f
+periodScan = 0.0
+velocJam = 0.0f
+cloakAllowed = True
+
+[HoverCraftClass]
+setAltitude = 1.0
+accelDragStop = 10.0
+accelDragFull = 5.0
+alphaTrack = 20.0
+alphaDamp = 5.0
+pitchPitch = 0.25
+pitchThrust = 0.1
+rollStrafe = 0.1
+rollSteer = 0.1
+
+velocForward = 150.0
+velocReverse = 150.0
+velocStrafe = 150.0
+accelThrust = 30.0
+accelBrake = 50.0
+omegaSpin = 3.5
+omegaTurn = 1.5
+alphaSteer = 5.0
+accelJump = 200.0
+
+soundThrust = 
+soundTurbo = 

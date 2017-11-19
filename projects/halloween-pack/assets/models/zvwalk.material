@@ -1,0 +1,14 @@
+import * from "BZBase.material"
+
+material zvwalk00 : BZBase
+{
+	set_texture_alias DiffuseMap zvwalk_D.dds
+	set_texture_alias NormalMap svwalk_N.dds
+	set_texture_alias SpecularMap svwalk_S.dds
+	set_texture_alias EmissiveMap zvwalk_E.dds
+	
+	set $diffuse "1 1 1"
+	set $ambient "1 1 1"
+	set $specular ".7 .7 .7"
+	set $shininess "127"
+}

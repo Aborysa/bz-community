@@ -1,3 +1,5 @@
+dist
+
 # Compiled Lua sources
 luac.out
 
@@ -10,7 +12,6 @@ luac.out
 *.o
 *.os
 *.ko
-*.obj
 *.elf
 
 # Precompiled Headers

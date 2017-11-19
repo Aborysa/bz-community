@@ -1,0 +1,18 @@
+import * from "BZTerrainBase.material"
+
+material CE_DETAIL_ATLAS : BZTerrainBase
+{
+	set_texture_alias DiffuseMap CE_ATLAS_D.dds
+	set_texture_alias DetailMap ma_detail.dds
+	set_texture_alias NormalMap CE_ATLAS_N.dds
+	set_texture_alias SpecularMap black.dds
+	set_texture_alias EmissiveMap CE_ATLAS_E.dds
+	
+	set $diffuse "0.5 0.5 0.5"
+	set $ambient "0.5 0.5 0.5"
+	set $specular ".96 .86 .67"
+	set $shininess "127"
+	set $bias "-10"
+}
+
+

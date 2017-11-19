@@ -1,0 +1,25 @@
+material CHARON.MAP
+{
+	technique
+	{
+		pass
+		{
+			vertex_program_ref Sky_vertex
+			{
+			}
+			fragment_program_ref Sky_fragment
+			{
+			} 
+
+			lighting off
+			fog_override true none
+			scene_blend one one_minus_src_colour
+			depth_write off
+			emissive 1 1 1
+			texture_unit
+			{
+				texture Charon.png
+			}
+		}
+	}
+}

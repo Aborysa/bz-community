@@ -1,0 +1,150 @@
+version [1] =
+1045
+binarySave [1] =
+false
+msn_filename = test.trn
+seq_count [1] =
+2
+missionSave [1] =
+true
+TerrainName = test
+size [1] =
+1
+[GameObject]
+PrjID [1] =
+player
+seqno [1] =
+1
+pos [1] =
+  x [1] =
+2560
+  y [1] =
+162.6
+  z [1] =
+2560
+team [1] =
+1
+label = player0_wingman
+isUser [1] =
+1
+obj_addr = 00B01D68
+transform [1] =
+  right_x [1] =
+1
+  right_y [1] =
+-0
+  right_z [1] =
+0
+  up_x [1] =
+0
+  up_y [1] =
+0.998476
+  up_z [1] =
+-0.0553436
+  front_x [1] =
+0
+  front_y [1] =
+0.0553433
+  front_z [1] =
+0.998472
+  posit_x [1] =
+2560
+  posit_y [1] =
+162.6
+  posit_z [1] =
+2560
+abandoned [1] =
+0
+illumination [1] =
+1
+pos [1] =
+  x [1] =
+2560
+  y [1] =
+163.942
+  z [1] =
+2559.56
+euler =
+ mass [1] =
+1750
+ mass_inv [1] =
+0.000666667
+ v_mag [1] =
+1.75542e-007
+ v_mag_inv [1] =
+5.69664e+006
+ I [1] =
+1500
+ k_i [1] =
+1
+ v [1] =
+  x [1] =
+0
+  y [1] =
+1.75228e-007
+  z [1] =
+-1.05034e-008
+ omega [1] =
+  x [1] =
+-0.00600538
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+-8.55741e-007
+  z [1] =
+4.95165e-008
+seqNo [1] =
+1
+name = 
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+ffffffff
+seen [1] =
+0
+healthRatio [1] =
+1
+curHealth [1] =
+3000
+maxHealth [1] =
+3000
+ammoRatio [1] =
+1
+curAmmo [1] =
+1200
+maxAmmo [1] =
+1200
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+true
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+asuser
+perceivedTeam [1] =
+1
+name = Inst02Mission
+sObject = 0AF1F8A8
+[AiMission]
+[AOIs]
+size [1] =
+0
+[AiPaths]
+count [1] =
+0

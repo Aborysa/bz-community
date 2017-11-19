@@ -1,0 +1,311 @@
+[Size]
+MinX=0
+MinZ=99840
+Width=2560
+Depth=2560
+Height=0
+
+[NormalView]
+Time=1100
+FogStart=175
+FogEnd=250
+FogBreak=60
+FogDirection=0
+VisibilityRange=250
+Intensity=60
+Ambient=30
+FlatRange=250
+ShadowLuma=35
+TerrainShadowLuma=30
+CarAmbient=35
+
+[Sun_Ambient]
+Red=0.3f
+Green=0.3f
+Blue=0.3f
+
+[Sun_Diffuse]
+Red=0.6f
+Green=0.5f
+Blue=0.6f
+
+[Sun_Specular]
+Red=0.6f
+Green=0.5f
+Blue=0.6f
+
+[Color]
+FogColor = "20 15 25"
+SkyColor = "10 5 15"
+
+[Sky]
+SunTexture=sun.0
+SkyHeight=110
+SkyTexture=
+
+[Stars]
+Radius		= 1000
+
+Texture00   = Charon.map
+Alpha00     = 0
+Size00      = 200
+Azimuth00   = 150
+Elevation00 = 30
+Roll00      = 120
+
+Texture01   = milkyway.map
+Color01     = "255 255 255 64"
+Alpha01     = 0
+Width01     = 4000
+Height01    = 1000
+Azimuth01   = -50
+Elevation01 = 40
+Roll01      = 40
+
+[StarList]
+Solid=0
+LayerHeight=15
+Texture=stars.map
+Radius=1000
+
+Start0=0
+End0=360
+Size0=350
+Count0=13
+
+Start1=0
+End1=360
+Size1=350
+Count1=10
+
+Start2=0
+End2=360
+Size2=350
+Count2=11
+
+[Color]
+Palette=GANYMEDE.ACT
+Luma=GANYMEDE.LUM
+Translucency=GANYMEDE.TBL
+Alpha=GANYMEDE.ALB
+
+[TextureType0] // Nitrogen Ice
+
+FlatColor= 130
+
+SolidA0           =pl00sa0.MAP
+SolidA1           =pl00sa0.MAP
+SolidA2           =pl00sa0.MAP
+SolidA3           =pl00sa0.MAP
+SolidB0           =pl00sb0.MAP
+SolidB1           =pl00sb0.MAP
+SolidB2           =pl00sb0.MAP
+SolidB3           =pl00sb0.MAP
+
+CapTo1_A0         =pl01ca0.map
+CapTo1_A1         =pl01ca0.map
+CapTo1_A2         =pl01ca0.map
+CapTo1_A3         =pl01ca0.map
+
+CapTo2_A0         =pl02ca0.map
+CapTo2_A1         =pl02ca0.map
+CapTo2_A2         =pl02ca0.map
+CapTo2_A3         =pl02ca0.map
+
+CapTo4_A0         =pl04ca0.map
+CapTo4_A1         =pl04ca0.map
+CapTo4_A2         =pl04ca0.map
+CapTo4_A3         =pl04ca0.map
+
+DiagonalTo1_A0    =pl01dA0.map
+DiagonalTo1_A1    =pl01dA0.map
+DiagonalTo1_A2    =pl01dA0.map
+DiagonalTo1_A3    =pl01dA0.map
+
+DiagonalTo2_A0    =pl02dA0.map
+DiagonalTo2_A1    =pl02dA0.map
+DiagonalTo2_A2    =pl02dA0.map
+DiagonalTo2_A3    =pl02dA0.map
+
+DiagonalTo4_A0    =pl04dA0.map
+DiagonalTo4_A1    =pl04dA0.map
+DiagonalTo4_A2    =pl04dA0.map
+DiagonalTo4_A3    =pl04dA0.map
+
+
+[TextureType1] // Nitrogen Snow
+
+FlatColor= 124
+
+SolidA0           =pl11sa0.MAP
+SolidA1           =pl11sa0.MAP
+SolidA2           =pl11sa0.MAP
+SolidA3           =pl11sa0.MAP
+SolidB0           =pl11sb0.MAP
+SolidB1           =pl11sb0.MAP
+SolidB2           =pl11sb0.MAP
+SolidB3           =pl11sb0.MAP
+
+CapTo2_A0         =pl12ca0.map
+CapTo2_A1         =pl12ca0.map
+CapTo2_A2         =pl12ca0.map
+CapTo2_A3         =pl12ca0.map
+
+CapTo4_A0         =pl14ca0.map
+CapTo4_A1         =pl14ca0.map
+CapTo4_A2         =pl14ca0.map
+CapTo4_A3         =pl14ca0.map
+
+DiagonalTo2_A0    =pl12dA0.map
+DiagonalTo2_A1    =pl12dA0.map
+DiagonalTo2_A2    =pl12dA0.map
+DiagonalTo2_A3    =pl12dA0.map
+
+DiagonalTo4_A0    =pl14dA0.map
+DiagonalTo4_A1    =pl14dA0.map
+DiagonalTo4_A2    =pl14dA0.map
+DiagonalTo4_A3    =pl14dA0.map
+
+
+[TextureType2] // Water Ice
+
+FlatColor= 100
+
+SolidA0           =pl22sa0.MAP
+SolidA1           =pl22sa0.MAP
+SolidA2           =pl22sa0.MAP
+SolidA3           =pl22sa0.MAP
+SolidB0           =pl22sb0.MAP
+SolidB1           =pl22sb0.MAP
+SolidB2           =pl22sb0.MAP
+SolidB3           =pl22sb0.MAP
+
+CapTo4_A0         =pl24ca0.map
+CapTo4_A1         =pl24ca0.map
+CapTo4_A2         =pl24ca0.map
+CapTo4_A3         =pl24ca0.map
+
+CapTo5_A0         =pl25ca0.map
+CapTo5_A1         =pl25ca0.map
+CapTo5_A2         =pl25ca0.map
+CapTo5_A3         =pl25ca0.map
+
+DiagonalTo4_A0    =pl24dA0.map
+DiagonalTo4_A1    =pl24dA0.map
+DiagonalTo4_A2    =pl24dA0.map
+DiagonalTo4_A3    =pl24dA0.map
+
+DiagonalTo5_A0    =pl25dA0.map
+DiagonalTo5_A1    =pl25dA0.map
+DiagonalTo5_A2    =pl25dA0.map
+DiagonalTo5_A3    =pl25dA0.map
+
+
+[TextureType3] // Base
+
+FlatColor= 117
+
+SolidA0           =pl33sa0.MAP
+SolidA1           =pl33sa0.MAP
+SolidA2           =pl33sa0.MAP
+SolidA3           =pl33sa0.MAP
+SolidB0           =pl33sb0.MAP
+SolidB1           =pl33sb0.MAP
+SolidB2           =pl33sb0.MAP
+SolidB3           =pl33sb0.MAP
+SolidC0           =pl33sc0.MAP
+SolidC1           =pl33sc0.MAP
+SolidC2           =pl33sc0.MAP
+SolidC3           =pl33sc0.MAP
+SolidD0           =pl33sd0.MAP
+SolidD1           =pl33sd0.MAP
+SolidD2           =pl33sd0.MAP
+SolidD3           =pl33sd0.MAP
+
+CapTo0_A0         =pl33ca0.map
+CapTo0_A1         =pl33ca0.map
+CapTo0_A2         =pl33ca0.map
+CapTo0_A3         =pl33ca0.map
+CapTo0_B0         =pl33cb0.map
+CapTo0_B1         =pl33cb0.map
+CapTo0_B2         =pl33cb0.map
+CapTo0_B3         =pl33cb0.map
+CapTo0_C0         =pl33cc0.map
+CapTo0_C1         =pl33cc0.map
+CapTo0_C2         =pl33cc0.map
+CapTo0_C3         =pl33cc0.map
+CapTo0_D0         =pl33cd0.map
+CapTo0_D1         =pl33cd0.map
+CapTo0_D2         =pl33cd0.map
+CapTo0_D3         =pl33cd0.map
+
+DiagonalTo0_A0    =pl33dA0.map
+DiagonalTo0_A1    =pl33dA0.map
+DiagonalTo0_A2    =pl33dA0.map
+DiagonalTo0_A3    =pl33dA0.map
+DiagonalTo0_B0    =pl33dB0.map
+DiagonalTo0_B1    =pl33dB0.map
+DiagonalTo0_B2    =pl33dB0.map
+DiagonalTo0_B3    =pl33dB0.map
+DiagonalTo0_C0    =pl33dC0.map
+DiagonalTo0_C1    =pl33dC0.map
+DiagonalTo0_C2    =pl33dC0.map
+DiagonalTo0_C3    =pl33dC0.map
+DiagonalTo0_D0    =pl33dD0.map
+DiagonalTo0_D1    =pl33dD0.map
+DiagonalTo0_D2    =pl33dD0.map
+DiagonalTo0_D3    =pl33dD0.map
+
+
+[TextureType4] // Red Rock
+
+FlatColor= 184
+
+SolidA0           =pl44sa0.MAP
+SolidA1           =pl44sa0.MAP
+SolidA2           =pl44sa0.MAP
+SolidA3           =pl44sa0.MAP
+SolidB0           =pl44sb0.MAP
+SolidB1           =pl44sb0.MAP
+SolidB2           =pl44sb0.MAP
+SolidB3           =pl44sb0.MAP
+
+CapTo5_A0         =pl45ca0.map
+CapTo5_A1         =pl45ca0.map
+CapTo5_A2         =pl45ca0.map
+CapTo5_A3         =pl45ca0.map
+
+DiagonalTo5_A0    =pl45dA0.map
+DiagonalTo5_A1    =pl45dA0.map
+DiagonalTo5_A2    =pl45dA0.map
+DiagonalTo5_A3    =pl45dA0.map
+
+
+[TextureType5] // Rocky Snow
+
+FlatColor= 144
+
+SolidA0           =pl55sa0.MAP
+SolidA1           =pl55sa0.MAP
+SolidA2           =pl55sa0.MAP
+SolidA3           =pl55sa0.MAP
+SolidB0           =pl55sb0.MAP
+SolidB1           =pl55sb0.MAP
+SolidB2           =pl55sb0.MAP
+SolidB3           =pl55sb0.MAP
+
+
+[TextureType6] // Geyser
+
+FlatColor=144
+
+SolidA0           =pl66sa0.MAP
+SolidA1           =pl66sa0.MAP
+SolidA2           =pl66sa0.MAP
+SolidA3           =pl66sa0.MAP
+
+
+[Atlases]
+MaterialName = pl_detail_atlas
+
+

@@ -1,0 +1,17056 @@
+version [1] =
+2016
+binarySave [1] =
+false
+msn_filename = conduit1.bzn
+seq_count [1] =
+146
+missionSave [1] =
+true
+TerrainName = conduit1
+size [1] =
+132
+[GameObject]
+PrjID [1] =
+player
+seqno [1] =
+1
+pos [1] =
+  x [1] =
+1620.47
+  y [1] =
+1
+  z [1] =
+101680
+team [1] =
+1
+label = player0_wingman
+isUser [1] =
+1
+obj_addr = 00000001
+transform [1] =
+  right_x [1] =
+-0.711095
+  right_y [1] =
+-8.57613e-005
+  right_z [1] =
+0.703096
+  up_x [1] =
+0.00922757
+  up_y [1] =
+0.999913
+  up_z [1] =
+0.00945451
+  front_x [1] =
+-0.703036
+  front_y [1] =
+0.0132109
+  front_z [1] =
+-0.711032
+  posit_x [1] =
+1620.47
+  posit_y [1] =
+1
+  posit_z [1] =
+101680
+abandoned [1] =
+0
+cloakState = 00000000
+cloakTransBeginTime [1] =
+0
+cloakTransEndTime [1] =
+0
+illumination [1] =
+1
+pos [1] =
+  x [1] =
+1620.73
+  y [1] =
+2.35927
+  z [1] =
+101680
+euler =
+ mass [1] =
+1750
+ mass_inv [1] =
+0.000666667
+ v_mag [1] =
+2.66324e-007
+ v_mag_inv [1] =
+3.75482e+006
+ I [1] =
+1500
+ k_i [1] =
+1
+ v [1] =
+  x [1] =
+1.64494e-007
+  y [1] =
+1.34778e-007
+  z [1] =
+-1.60328e-007
+ omega [1] =
+  x [1] =
+-0.00665288
+  y [1] =
+0.0900775
+  z [1] =
+0.00465076
+ Accel [1] =
+  x [1] =
+-5.09156e-007
+  y [1] =
+-9.53674e-007
+  z [1] =
+5.18905e-007
+seqNo [1] =
+1
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+2
+seen [1] =
+2
+healthRatio [1] =
+0.999667
+curHealth [1] =
+2999
+maxHealth [1] =
+3000
+ammoRatio [1] =
+0.8275
+curAmmo [1] =
+993
+maxAmmo [1] =
+1200
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+true
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+asuser
+perceivedTeam [1] =
+1
+[GameObject]
+PrjID [1] =
+eggeizr1
+seqno [1] =
+2
+pos [1] =
+  x [1] =
+1252.27
+  y [1] =
+0
+  z [1] =
+101452
+team [1] =
+0
+label = eggeizr10_geyser
+isUser [1] =
+0
+obj_addr = 00000002
+transform [1] =
+  right_x [1] =
+-0.868101
+  right_y [1] =
+0
+  right_z [1] =
+0.496388
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.496388
+  front_y [1] =
+0
+  front_z [1] =
+-0.868101
+  posit_x [1] =
+1252.27
+  posit_y [1] =
+0
+  posit_z [1] =
+101452
+illumination [1] =
+1
+pos [1] =
+  x [1] =
+1252.27
+  y [1] =
+0
+  z [1] =
+101452
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+2
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+ffffffff
+seen [1] =
+0
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+eggeizr1
+seqno [1] =
+3
+pos [1] =
+  x [1] =
+1592.43
+  y [1] =
+0
+  z [1] =
+101693
+team [1] =
+0
+label = eggeizr11_geyser
+isUser [1] =
+0
+obj_addr = 00000003
+transform [1] =
+  right_x [1] =
+0.759858
+  right_y [1] =
+0
+  right_z [1] =
+-0.650089
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.650089
+  front_y [1] =
+-0
+  front_z [1] =
+0.759858
+  posit_x [1] =
+1592.43
+  posit_y [1] =
+0
+  posit_z [1] =
+101693
+illumination [1] =
+1
+pos [1] =
+  x [1] =
+1592.43
+  y [1] =
+0
+  z [1] =
+101693
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+3
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+ffffffff
+seen [1] =
+2
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+eggeizr1
+seqno [1] =
+4
+pos [1] =
+  x [1] =
+1632.4
+  y [1] =
+0
+  z [1] =
+101733
+team [1] =
+0
+label = eggeizr12_geyser
+isUser [1] =
+0
+obj_addr = 00000004
+transform [1] =
+  right_x [1] =
+0.552895
+  right_y [1] =
+0
+  right_z [1] =
+-0.833251
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.833251
+  front_y [1] =
+-0
+  front_z [1] =
+0.552895
+  posit_x [1] =
+1632.4
+  posit_y [1] =
+0
+  posit_z [1] =
+101733
+illumination [1] =
+1
+pos [1] =
+  x [1] =
+1632.4
+  y [1] =
+0
+  z [1] =
+101733
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+4
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+ffffffff
+seen [1] =
+2
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+eggeizr1
+seqno [1] =
+5
+pos [1] =
+  x [1] =
+1672.15
+  y [1] =
+0
+  z [1] =
+101692
+team [1] =
+0
+label = eggeizr13_geyser
+isUser [1] =
+0
+obj_addr = 00000005
+transform [1] =
+  right_x [1] =
+-0.999779
+  right_y [1] =
+0
+  right_z [1] =
+-0.0210228
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.0210228
+  front_y [1] =
+0
+  front_z [1] =
+-0.999779
+  posit_x [1] =
+1672.15
+  posit_y [1] =
+0
+  posit_z [1] =
+101692
+illumination [1] =
+1
+pos [1] =
+  x [1] =
+1672.15
+  y [1] =
+0
+  z [1] =
+101692
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+5
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+ffffffff
+seen [1] =
+2
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+eggeizr1
+seqno [1] =
+6
+pos [1] =
+  x [1] =
+1531.99
+  y [1] =
+0
+  z [1] =
+100633
+team [1] =
+0
+label = eggeizr14_geyser
+isUser [1] =
+0
+obj_addr = 00000006
+transform [1] =
+  right_x [1] =
+-0.961928
+  right_y [1] =
+0
+  right_z [1] =
+-0.273304
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.273304
+  front_y [1] =
+0
+  front_z [1] =
+-0.961928
+  posit_x [1] =
+1531.99
+  posit_y [1] =
+0
+  posit_z [1] =
+100633
+illumination [1] =
+1
+pos [1] =
+  x [1] =
+1531.99
+  y [1] =
+0
+  z [1] =
+100633
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+6
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+ffffffff
+seen [1] =
+2
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+eggeizr1
+seqno [1] =
+7
+pos [1] =
+  x [1] =
+1291.86
+  y [1] =
+0
+  z [1] =
+100452
+team [1] =
+0
+label = eggeizr15_geyser
+isUser [1] =
+0
+obj_addr = 00000007
+transform [1] =
+  right_x [1] =
+0.0668938
+  right_y [1] =
+-0
+  right_z [1] =
+0.99776
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.99776
+  front_y [1] =
+0
+  front_z [1] =
+0.0668938
+  posit_x [1] =
+1291.86
+  posit_y [1] =
+0
+  posit_z [1] =
+100452
+illumination [1] =
+1
+pos [1] =
+  x [1] =
+1291.86
+  y [1] =
+0
+  z [1] =
+100452
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+7
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+ffffffff
+seen [1] =
+2
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+eggeizr1
+seqno [1] =
+8
+pos [1] =
+  x [1] =
+1251.74
+  y [1] =
+0
+  z [1] =
+100393
+team [1] =
+0
+label = eggeizr16_geyser
+isUser [1] =
+0
+obj_addr = 00000008
+transform [1] =
+  right_x [1] =
+0.638909
+  right_y [1] =
+-0
+  right_z [1] =
+0.769282
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.769282
+  front_y [1] =
+0
+  front_z [1] =
+0.638909
+  posit_x [1] =
+1251.74
+  posit_y [1] =
+0
+  posit_z [1] =
+100393
+illumination [1] =
+1
+pos [1] =
+  x [1] =
+1251.74
+  y [1] =
+0
+  z [1] =
+100393
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+8
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+ffffffff
+seen [1] =
+2
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+eggeizr1
+seqno [1] =
+9
+pos [1] =
+  x [1] =
+1191.92
+  y [1] =
+0
+  z [1] =
+100433
+team [1] =
+0
+label = eggeizr17_geyser
+isUser [1] =
+0
+obj_addr = 00000009
+transform [1] =
+  right_x [1] =
+0.972325
+  right_y [1] =
+0
+  right_z [1] =
+-0.233634
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.233634
+  front_y [1] =
+-0
+  front_z [1] =
+0.972325
+  posit_x [1] =
+1191.92
+  posit_y [1] =
+0
+  posit_z [1] =
+100433
+illumination [1] =
+1
+pos [1] =
+  x [1] =
+1191.92
+  y [1] =
+0
+  z [1] =
+100433
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+9
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+ffffffff
+seen [1] =
+2
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+pspwn_1
+seqno [1] =
+10
+pos [1] =
+  x [1] =
+1231.74
+  y [1] =
+0
+  z [1] =
+100368
+team [1] =
+0
+label = pspwn_17_spawnpnt
+isUser [1] =
+0
+obj_addr = 0000000A
+transform [1] =
+  right_x [1] =
+0.999566
+  right_y [1] =
+0
+  right_z [1] =
+-0.0294688
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.0294688
+  front_y [1] =
+-0
+  front_z [1] =
+0.999566
+  posit_x [1] =
+1231.74
+  posit_y [1] =
+0
+  posit_z [1] =
+100368
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1231.74
+  y [1] =
+6.44176
+  z [1] =
+100368
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+10
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+sscr_1
+seqno [1] =
+12
+pos [1] =
+  x [1] =
+1231.39
+  y [1] =
+0
+  z [1] =
+100367
+team [1] =
+0
+label = sscr_18_scrap
+isUser [1] =
+0
+obj_addr = 0000000B
+transform [1] =
+  right_x [1] =
+0.998868
+  right_y [1] =
+0
+  right_z [1] =
+-0.047576
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.047576
+  front_y [1] =
+-0
+  front_z [1] =
+0.998868
+  posit_x [1] =
+1231.39
+  posit_y [1] =
+0
+  posit_z [1] =
+100367
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1231.15
+  y [1] =
+0.142622
+  z [1] =
+100367
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+12
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+25
+pos [1] =
+  x [1] =
+1592.3
+  y [1] =
+0
+  z [1] =
+101638
+team [1] =
+0
+label = npscr28_scrap
+isUser [1] =
+0
+obj_addr = 0000000C
+transform [1] =
+  right_x [1] =
+0.861663
+  right_y [1] =
+0
+  right_z [1] =
+-0.507482
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.507482
+  front_y [1] =
+-0
+  front_z [1] =
+0.861663
+  posit_x [1] =
+1592.3
+  posit_y [1] =
+0
+  posit_z [1] =
+101638
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1592.09
+  y [1] =
+0.506041
+  z [1] =
+101638
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+25
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+26
+pos [1] =
+  x [1] =
+1560.88
+  y [1] =
+0
+  z [1] =
+101631
+team [1] =
+0
+label = npscr18_scrap
+isUser [1] =
+0
+obj_addr = 0000000D
+transform [1] =
+  right_x [1] =
+0.834879
+  right_y [1] =
+0
+  right_z [1] =
+-0.550433
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.550433
+  front_y [1] =
+-0
+  front_z [1] =
+0.834879
+  posit_x [1] =
+1560.88
+  posit_y [1] =
+0
+  posit_z [1] =
+101631
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1560.68
+  y [1] =
+0.142622
+  z [1] =
+101631
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+26
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+27
+pos [1] =
+  x [1] =
+1572.53
+  y [1] =
+0
+  z [1] =
+101636
+team [1] =
+0
+label = npscr38_scrap
+isUser [1] =
+0
+obj_addr = 0000000E
+transform [1] =
+  right_x [1] =
+-0.243917
+  right_y [1] =
+0
+  right_z [1] =
+-0.969796
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.969796
+  front_y [1] =
+0
+  front_z [1] =
+-0.243917
+  posit_x [1] =
+1572.53
+  posit_y [1] =
+0
+  posit_z [1] =
+101636
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1573.27
+  y [1] =
+0.506041
+  z [1] =
+101636
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+27
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+28
+pos [1] =
+  x [1] =
+1574.37
+  y [1] =
+0
+  z [1] =
+101650
+team [1] =
+0
+label = npscr39_scrap
+isUser [1] =
+0
+obj_addr = 0000000F
+transform [1] =
+  right_x [1] =
+-0.875716
+  right_y [1] =
+0
+  right_z [1] =
+-0.482827
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.482827
+  front_y [1] =
+0
+  front_z [1] =
+-0.875716
+  posit_x [1] =
+1574.37
+  posit_y [1] =
+0
+  posit_z [1] =
+101650
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1575.14
+  y [1] =
+0.506041
+  z [1] =
+101650
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+28
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+29
+pos [1] =
+  x [1] =
+1592.5
+  y [1] =
+0
+  z [1] =
+101636
+team [1] =
+0
+label = npscr19_scrap
+isUser [1] =
+0
+obj_addr = 00000010
+transform [1] =
+  right_x [1] =
+0.90523
+  right_y [1] =
+0
+  right_z [1] =
+-0.424922
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.424922
+  front_y [1] =
+-0
+  front_z [1] =
+0.90523
+  posit_x [1] =
+1592.5
+  posit_y [1] =
+0
+  posit_z [1] =
+101636
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1592.28
+  y [1] =
+0.142622
+  z [1] =
+101636
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+29
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+30
+pos [1] =
+  x [1] =
+1572.68
+  y [1] =
+0
+  z [1] =
+101644
+team [1] =
+0
+label = npscr110_scrap
+isUser [1] =
+0
+obj_addr = 00000011
+transform [1] =
+  right_x [1] =
+0.698805
+  right_y [1] =
+0
+  right_z [1] =
+-0.715312
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.715312
+  front_y [1] =
+-0
+  front_z [1] =
+0.698805
+  posit_x [1] =
+1572.68
+  posit_y [1] =
+0
+  posit_z [1] =
+101644
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1572.51
+  y [1] =
+0.142622
+  z [1] =
+101644
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+30
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+31
+pos [1] =
+  x [1] =
+1571.65
+  y [1] =
+0
+  z [1] =
+101630
+team [1] =
+0
+label = npscr310_scrap
+isUser [1] =
+0
+obj_addr = 00000012
+transform [1] =
+  right_x [1] =
+0.825527
+  right_y [1] =
+-0
+  right_z [1] =
+0.564363
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.564363
+  front_y [1] =
+0
+  front_z [1] =
+0.825527
+  posit_x [1] =
+1571.65
+  posit_y [1] =
+0
+  posit_z [1] =
+101630
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1570.86
+  y [1] =
+0.506041
+  z [1] =
+101630
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+31
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+32
+pos [1] =
+  x [1] =
+1573.19
+  y [1] =
+0
+  z [1] =
+101643
+team [1] =
+0
+label = npscr111_scrap
+isUser [1] =
+0
+obj_addr = 00000013
+transform [1] =
+  right_x [1] =
+0.831753
+  right_y [1] =
+-0
+  right_z [1] =
+0.555146
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.555146
+  front_y [1] =
+0
+  front_z [1] =
+0.831753
+  posit_x [1] =
+1573.19
+  posit_y [1] =
+0
+  posit_z [1] =
+101643
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1572.99
+  y [1] =
+0.142622
+  z [1] =
+101643
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+32
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+33
+pos [1] =
+  x [1] =
+1585.24
+  y [1] =
+0
+  z [1] =
+101636
+team [1] =
+0
+label = npscr211_scrap
+isUser [1] =
+0
+obj_addr = 00000014
+transform [1] =
+  right_x [1] =
+-0.978976
+  right_y [1] =
+0
+  right_z [1] =
+0.203974
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.203974
+  front_y [1] =
+0
+  front_z [1] =
+-0.978976
+  posit_x [1] =
+1585.24
+  posit_y [1] =
+0
+  posit_z [1] =
+101636
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1585.48
+  y [1] =
+0.506041
+  z [1] =
+101636
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+33
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+34
+pos [1] =
+  x [1] =
+1572.69
+  y [1] =
+0
+  z [1] =
+101629
+team [1] =
+0
+label = npscr112_scrap
+isUser [1] =
+0
+obj_addr = 00000015
+transform [1] =
+  right_x [1] =
+0.985756
+  right_y [1] =
+-0
+  right_z [1] =
+0.16818
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.16818
+  front_y [1] =
+0
+  front_z [1] =
+0.985756
+  posit_x [1] =
+1572.69
+  posit_y [1] =
+0
+  posit_z [1] =
+101629
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1572.45
+  y [1] =
+0.142622
+  z [1] =
+101629
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+34
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+35
+pos [1] =
+  x [1] =
+1658.68
+  y [1] =
+0
+  z [1] =
+101640
+team [1] =
+0
+label = npscr212_scrap
+isUser [1] =
+0
+obj_addr = 00000016
+transform [1] =
+  right_x [1] =
+0.932903
+  right_y [1] =
+-0
+  right_z [1] =
+0.360129
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.360129
+  front_y [1] =
+0
+  front_z [1] =
+0.932903
+  posit_x [1] =
+1658.68
+  posit_y [1] =
+0
+  posit_z [1] =
+101640
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1658.46
+  y [1] =
+0.506041
+  z [1] =
+101640
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+35
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+36
+pos [1] =
+  x [1] =
+1677.06
+  y [1] =
+0
+  z [1] =
+101644
+team [1] =
+0
+label = npscr312_scrap
+isUser [1] =
+0
+obj_addr = 00000017
+transform [1] =
+  right_x [1] =
+-0.3415
+  right_y [1] =
+0
+  right_z [1] =
+0.939882
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.939882
+  front_y [1] =
+0
+  front_z [1] =
+-0.3415
+  posit_x [1] =
+1677.06
+  posit_y [1] =
+0
+  posit_z [1] =
+101644
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1676.65
+  y [1] =
+0.506041
+  z [1] =
+101643
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+36
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+37
+pos [1] =
+  x [1] =
+1677.69
+  y [1] =
+0
+  z [1] =
+101639
+team [1] =
+0
+label = npscr113_scrap
+isUser [1] =
+0
+obj_addr = 00000018
+transform [1] =
+  right_x [1] =
+0.234701
+  right_y [1] =
+-0
+  right_z [1] =
+0.972068
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.972068
+  front_y [1] =
+0
+  front_z [1] =
+0.234701
+  posit_x [1] =
+1677.69
+  posit_y [1] =
+0
+  posit_z [1] =
+101639
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1677.63
+  y [1] =
+0.142622
+  z [1] =
+101639
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+37
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+38
+pos [1] =
+  x [1] =
+1681.95
+  y [1] =
+0
+  z [1] =
+101627
+team [1] =
+0
+label = npscr114_scrap
+isUser [1] =
+0
+obj_addr = 00000019
+transform [1] =
+  right_x [1] =
+0.63352
+  right_y [1] =
+0
+  right_z [1] =
+-0.773727
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.773727
+  front_y [1] =
+-0
+  front_z [1] =
+0.63352
+  posit_x [1] =
+1681.95
+  posit_y [1] =
+0
+  posit_z [1] =
+101627
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1681.8
+  y [1] =
+0.142622
+  z [1] =
+101627
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+38
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+39
+pos [1] =
+  x [1] =
+1674.31
+  y [1] =
+0
+  z [1] =
+101643
+team [1] =
+0
+label = npscr314_scrap
+isUser [1] =
+0
+obj_addr = 0000001A
+transform [1] =
+  right_x [1] =
+0.806524
+  right_y [1] =
+0
+  right_z [1] =
+-0.591201
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.591201
+  front_y [1] =
+-0
+  front_z [1] =
+0.806524
+  posit_x [1] =
+1674.31
+  posit_y [1] =
+0
+  posit_z [1] =
+101643
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1674.25
+  y [1] =
+0.506041
+  z [1] =
+101644
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+39
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+40
+pos [1] =
+  x [1] =
+1670.8
+  y [1] =
+0
+  z [1] =
+101649
+team [1] =
+0
+label = npscr214_scrap
+isUser [1] =
+0
+obj_addr = 0000001B
+transform [1] =
+  right_x [1] =
+0.594482
+  right_y [1] =
+0
+  right_z [1] =
+-0.804109
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.804109
+  front_y [1] =
+-0
+  front_z [1] =
+0.594482
+  posit_x [1] =
+1670.8
+  posit_y [1] =
+0
+  posit_z [1] =
+101649
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1670.66
+  y [1] =
+0.506041
+  z [1] =
+101649
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+40
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+41
+pos [1] =
+  x [1] =
+1677.01
+  y [1] =
+0
+  z [1] =
+101640
+team [1] =
+0
+label = npscr215_scrap
+isUser [1] =
+0
+obj_addr = 0000001C
+transform [1] =
+  right_x [1] =
+-0.789365
+  right_y [1] =
+0
+  right_z [1] =
+0.613924
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.613924
+  front_y [1] =
+0
+  front_z [1] =
+-0.789365
+  posit_x [1] =
+1677.01
+  posit_y [1] =
+0
+  posit_z [1] =
+101640
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1677.2
+  y [1] =
+0.506041
+  z [1] =
+101640
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+41
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+42
+pos [1] =
+  x [1] =
+1670.28
+  y [1] =
+0
+  z [1] =
+101636
+team [1] =
+0
+label = npscr115_scrap
+isUser [1] =
+0
+obj_addr = 0000001D
+transform [1] =
+  right_x [1] =
+0.998957
+  right_y [1] =
+-0
+  right_z [1] =
+0.0456694
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.0456694
+  front_y [1] =
+0
+  front_z [1] =
+0.998957
+  posit_x [1] =
+1670.28
+  posit_y [1] =
+0
+  posit_z [1] =
+101636
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1670.04
+  y [1] =
+0.142622
+  z [1] =
+101636
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+42
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+43
+pos [1] =
+  x [1] =
+1663.26
+  y [1] =
+0
+  z [1] =
+101642
+team [1] =
+0
+label = npscr116_scrap
+isUser [1] =
+0
+obj_addr = 0000001E
+transform [1] =
+  right_x [1] =
+-0.996091
+  right_y [1] =
+0
+  right_z [1] =
+0.0883308
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.0883308
+  front_y [1] =
+0
+  front_z [1] =
+-0.996091
+  posit_x [1] =
+1663.26
+  posit_y [1] =
+0
+  posit_z [1] =
+101642
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1663.5
+  y [1] =
+0.142622
+  z [1] =
+101642
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+43
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+44
+pos [1] =
+  x [1] =
+1676.48
+  y [1] =
+0
+  z [1] =
+101649
+team [1] =
+0
+label = npscr316_scrap
+isUser [1] =
+0
+obj_addr = 0000001F
+transform [1] =
+  right_x [1] =
+-0.0492606
+  right_y [1] =
+0
+  right_z [1] =
+-0.998786
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.998786
+  front_y [1] =
+0
+  front_z [1] =
+-0.0492606
+  posit_x [1] =
+1676.48
+  posit_y [1] =
+0
+  posit_z [1] =
+101649
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1677.13
+  y [1] =
+0.506041
+  z [1] =
+101650
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+44
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+45
+pos [1] =
+  x [1] =
+1583.03
+  y [1] =
+0
+  z [1] =
+101748
+team [1] =
+0
+label = npscr317_scrap
+isUser [1] =
+0
+obj_addr = 00000020
+transform [1] =
+  right_x [1] =
+0.687053
+  right_y [1] =
+0
+  right_z [1] =
+-0.726607
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.726607
+  front_y [1] =
+-0
+  front_z [1] =
+0.687053
+  posit_x [1] =
+1583.03
+  posit_y [1] =
+0
+  posit_z [1] =
+101748
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1583.12
+  y [1] =
+0.506041
+  z [1] =
+101749
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+45
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+46
+pos [1] =
+  x [1] =
+1593.24
+  y [1] =
+0
+  z [1] =
+101739
+team [1] =
+0
+label = npscr217_scrap
+isUser [1] =
+0
+obj_addr = 00000021
+transform [1] =
+  right_x [1] =
+0.999128
+  right_y [1] =
+0
+  right_z [1] =
+-0.0417422
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.0417422
+  front_y [1] =
+-0
+  front_z [1] =
+0.999128
+  posit_x [1] =
+1593.24
+  posit_y [1] =
+0
+  posit_z [1] =
+101739
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1593
+  y [1] =
+0.506041
+  z [1] =
+101739
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+46
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+47
+pos [1] =
+  x [1] =
+1591.65
+  y [1] =
+0
+  z [1] =
+101741
+team [1] =
+0
+label = npscr117_scrap
+isUser [1] =
+0
+obj_addr = 00000022
+transform [1] =
+  right_x [1] =
+0.811708
+  right_y [1] =
+0
+  right_z [1] =
+-0.584064
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.584064
+  front_y [1] =
+-0
+  front_z [1] =
+0.811708
+  posit_x [1] =
+1591.65
+  posit_y [1] =
+0
+  posit_z [1] =
+101741
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1591.46
+  y [1] =
+0.142622
+  z [1] =
+101741
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+47
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+48
+pos [1] =
+  x [1] =
+1578.59
+  y [1] =
+0
+  z [1] =
+101739
+team [1] =
+0
+label = npscr218_scrap
+isUser [1] =
+0
+obj_addr = 00000023
+transform [1] =
+  right_x [1] =
+0.510741
+  right_y [1] =
+-0
+  right_z [1] =
+0.859734
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.859734
+  front_y [1] =
+0
+  front_z [1] =
+0.510741
+  posit_x [1] =
+1578.59
+  posit_y [1] =
+0
+  posit_z [1] =
+101739
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1578.47
+  y [1] =
+0.506041
+  z [1] =
+101739
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+48
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+49
+pos [1] =
+  x [1] =
+1585.52
+  y [1] =
+0
+  z [1] =
+101722
+team [1] =
+0
+label = npscr318_scrap
+isUser [1] =
+0
+obj_addr = 00000024
+transform [1] =
+  right_x [1] =
+-0.473523
+  right_y [1] =
+0
+  right_z [1] =
+0.880781
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.880781
+  front_y [1] =
+0
+  front_z [1] =
+-0.473523
+  posit_x [1] =
+1585.52
+  posit_y [1] =
+0
+  posit_z [1] =
+101722
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1585.22
+  y [1] =
+0.506041
+  z [1] =
+101721
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+49
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+50
+pos [1] =
+  x [1] =
+1566.81
+  y [1] =
+0
+  z [1] =
+101734
+team [1] =
+0
+label = npscr319_scrap
+isUser [1] =
+0
+obj_addr = 00000025
+transform [1] =
+  right_x [1] =
+0.851724
+  right_y [1] =
+-0
+  right_z [1] =
+0.523991
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.523991
+  front_y [1] =
+0
+  front_z [1] =
+0.851724
+  posit_x [1] =
+1566.81
+  posit_y [1] =
+0
+  posit_z [1] =
+101734
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1566.03
+  y [1] =
+0.506041
+  z [1] =
+101734
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+50
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+51
+pos [1] =
+  x [1] =
+1587.61
+  y [1] =
+0
+  z [1] =
+101723
+team [1] =
+0
+label = npscr320_scrap
+isUser [1] =
+0
+obj_addr = 00000026
+transform [1] =
+  right_x [1] =
+0.250328
+  right_y [1] =
+-0
+  right_z [1] =
+0.968161
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.968161
+  front_y [1] =
+0
+  front_z [1] =
+0.250328
+  posit_x [1] =
+1587.61
+  posit_y [1] =
+0
+  posit_z [1] =
+101723
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1586.87
+  y [1] =
+0.506041
+  z [1] =
+101723
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+51
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+52
+pos [1] =
+  x [1] =
+1579.76
+  y [1] =
+0
+  z [1] =
+101737
+team [1] =
+0
+label = npscr321_scrap
+isUser [1] =
+0
+obj_addr = 00000027
+transform [1] =
+  right_x [1] =
+-0.83567
+  right_y [1] =
+0
+  right_z [1] =
+0.549232
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.549232
+  front_y [1] =
+0
+  front_z [1] =
+-0.83567
+  posit_x [1] =
+1579.76
+  posit_y [1] =
+0
+  posit_z [1] =
+101737
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1579.86
+  y [1] =
+0.506041
+  z [1] =
+101736
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+52
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+53
+pos [1] =
+  x [1] =
+1582.91
+  y [1] =
+0
+  z [1] =
+101740
+team [1] =
+0
+label = npscr221_scrap
+isUser [1] =
+0
+obj_addr = 00000028
+transform [1] =
+  right_x [1] =
+-0.717353
+  right_y [1] =
+0
+  right_z [1] =
+-0.69671
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.69671
+  front_y [1] =
+0
+  front_z [1] =
+-0.717353
+  posit_x [1] =
+1582.91
+  posit_y [1] =
+0
+  posit_z [1] =
+101740
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1583.08
+  y [1] =
+0.506041
+  z [1] =
+101740
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+53
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+54
+pos [1] =
+  x [1] =
+1582.24
+  y [1] =
+0
+  z [1] =
+101729
+team [1] =
+0
+label = npscr121_scrap
+isUser [1] =
+0
+obj_addr = 00000029
+transform [1] =
+  right_x [1] =
+-0.292953
+  right_y [1] =
+0
+  right_z [1] =
+0.956127
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.956127
+  front_y [1] =
+0
+  front_z [1] =
+-0.292953
+  posit_x [1] =
+1582.24
+  posit_y [1] =
+0
+  posit_z [1] =
+101729
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1582.31
+  y [1] =
+0.142622
+  z [1] =
+101729
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+54
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+55
+pos [1] =
+  x [1] =
+1346.53
+  y [1] =
+0
+  z [1] =
+101259
+team [1] =
+0
+label = npscr122_scrap
+isUser [1] =
+0
+obj_addr = 0000002A
+transform [1] =
+  right_x [1] =
+-0.622102
+  right_y [1] =
+0
+  right_z [1] =
+0.782936
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.782936
+  front_y [1] =
+0
+  front_z [1] =
+-0.622102
+  posit_x [1] =
+1346.53
+  posit_y [1] =
+0
+  posit_z [1] =
+101259
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1346.68
+  y [1] =
+0.142622
+  z [1] =
+101259
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+55
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+56
+pos [1] =
+  x [1] =
+1326.48
+  y [1] =
+0
+  z [1] =
+101244
+team [1] =
+0
+label = npscr322_scrap
+isUser [1] =
+0
+obj_addr = 0000002B
+transform [1] =
+  right_x [1] =
+0.848847
+  right_y [1] =
+0
+  right_z [1] =
+-0.528639
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.528639
+  front_y [1] =
+-0
+  front_z [1] =
+0.848847
+  posit_x [1] =
+1326.48
+  posit_y [1] =
+0
+  posit_z [1] =
+101244
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1326.36
+  y [1] =
+0.506041
+  z [1] =
+101245
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+56
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+57
+pos [1] =
+  x [1] =
+1311.01
+  y [1] =
+0
+  z [1] =
+101245
+team [1] =
+0
+label = npscr222_scrap
+isUser [1] =
+0
+obj_addr = 0000002C
+transform [1] =
+  right_x [1] =
+0.129738
+  right_y [1] =
+-0
+  right_z [1] =
+0.991548
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.991548
+  front_y [1] =
+0
+  front_z [1] =
+0.129738
+  posit_x [1] =
+1311.01
+  posit_y [1] =
+0
+  posit_z [1] =
+101245
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1310.98
+  y [1] =
+0.506041
+  z [1] =
+101245
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+57
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+58
+pos [1] =
+  x [1] =
+1336.24
+  y [1] =
+0
+  z [1] =
+101249
+team [1] =
+0
+label = npscr123_scrap
+isUser [1] =
+0
+obj_addr = 0000002D
+transform [1] =
+  right_x [1] =
+-0.990896
+  right_y [1] =
+0
+  right_z [1] =
+0.134632
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.134632
+  front_y [1] =
+0
+  front_z [1] =
+-0.990896
+  posit_x [1] =
+1336.24
+  posit_y [1] =
+0
+  posit_z [1] =
+101249
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1336.48
+  y [1] =
+0.142622
+  z [1] =
+101249
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+58
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+59
+pos [1] =
+  x [1] =
+1323.15
+  y [1] =
+0
+  z [1] =
+101254
+team [1] =
+0
+label = npscr124_scrap
+isUser [1] =
+0
+obj_addr = 0000002E
+transform [1] =
+  right_x [1] =
+0.40499
+  right_y [1] =
+-0
+  right_z [1] =
+0.914321
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.914321
+  front_y [1] =
+0
+  front_z [1] =
+0.40499
+  posit_x [1] =
+1323.15
+  posit_y [1] =
+0
+  posit_z [1] =
+101254
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1323.05
+  y [1] =
+0.142622
+  z [1] =
+101254
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+59
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+60
+pos [1] =
+  x [1] =
+1315.1
+  y [1] =
+0
+  z [1] =
+101269
+team [1] =
+0
+label = npscr324_scrap
+isUser [1] =
+0
+obj_addr = 0000002F
+transform [1] =
+  right_x [1] =
+-0.942169
+  right_y [1] =
+0
+  right_z [1] =
+0.335139
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.335139
+  front_y [1] =
+0
+  front_z [1] =
+-0.942169
+  posit_x [1] =
+1315.1
+  posit_y [1] =
+0
+  posit_z [1] =
+101269
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1315.39
+  y [1] =
+0.506041
+  z [1] =
+101268
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+60
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+61
+pos [1] =
+  x [1] =
+1332.66
+  y [1] =
+0
+  z [1] =
+101260
+team [1] =
+0
+label = npscr125_scrap
+isUser [1] =
+0
+obj_addr = 00000030
+transform [1] =
+  right_x [1] =
+0.475464
+  right_y [1] =
+0
+  right_z [1] =
+-0.879735
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.879735
+  front_y [1] =
+-0
+  front_z [1] =
+0.475464
+  posit_x [1] =
+1332.66
+  posit_y [1] =
+0
+  posit_z [1] =
+101260
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1332.55
+  y [1] =
+0.142622
+  z [1] =
+101260
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+61
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+62
+pos [1] =
+  x [1] =
+1327.09
+  y [1] =
+0
+  z [1] =
+101254
+team [1] =
+0
+label = npscr225_scrap
+isUser [1] =
+0
+obj_addr = 00000031
+transform [1] =
+  right_x [1] =
+-0.888448
+  right_y [1] =
+0
+  right_z [1] =
+-0.458977
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.458977
+  front_y [1] =
+0
+  front_z [1] =
+-0.888448
+  posit_x [1] =
+1327.09
+  posit_y [1] =
+0
+  posit_z [1] =
+101254
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1327.3
+  y [1] =
+0.506041
+  z [1] =
+101254
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+62
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+63
+pos [1] =
+  x [1] =
+1331.13
+  y [1] =
+0
+  z [1] =
+101235
+team [1] =
+0
+label = npscr126_scrap
+isUser [1] =
+0
+obj_addr = 00000032
+transform [1] =
+  right_x [1] =
+-0.894529
+  right_y [1] =
+0
+  right_z [1] =
+-0.44701
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.44701
+  front_y [1] =
+0
+  front_z [1] =
+-0.894529
+  posit_x [1] =
+1331.13
+  posit_y [1] =
+0
+  posit_z [1] =
+101235
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1331.34
+  y [1] =
+0.142622
+  z [1] =
+101235
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+63
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+64
+pos [1] =
+  x [1] =
+1313.11
+  y [1] =
+0
+  z [1] =
+101276
+team [1] =
+0
+label = npscr226_scrap
+isUser [1] =
+0
+obj_addr = 00000033
+transform [1] =
+  right_x [1] =
+-0.838816
+  right_y [1] =
+0
+  right_z [1] =
+0.544415
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.544415
+  front_y [1] =
+0
+  front_z [1] =
+-0.838816
+  posit_x [1] =
+1313.11
+  posit_y [1] =
+0
+  posit_z [1] =
+101276
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1313.31
+  y [1] =
+0.506041
+  z [1] =
+101276
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+64
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+65
+pos [1] =
+  x [1] =
+1260.61
+  y [1] =
+0
+  z [1] =
+101383
+team [1] =
+0
+label = npscr326_scrap
+isUser [1] =
+0
+obj_addr = 00000034
+transform [1] =
+  right_x [1] =
+0.996599
+  right_y [1] =
+-0
+  right_z [1] =
+0.0824084
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.0824084
+  front_y [1] =
+0
+  front_z [1] =
+0.996599
+  posit_x [1] =
+1260.61
+  posit_y [1] =
+0
+  posit_z [1] =
+101383
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1260.03
+  y [1] =
+0.506041
+  z [1] =
+101384
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+65
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+66
+pos [1] =
+  x [1] =
+1272.24
+  y [1] =
+0
+  z [1] =
+101391
+team [1] =
+0
+label = npscr127_scrap
+isUser [1] =
+0
+obj_addr = 00000035
+transform [1] =
+  right_x [1] =
+0.995719
+  right_y [1] =
+0
+  right_z [1] =
+-0.0924368
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.0924368
+  front_y [1] =
+-0
+  front_z [1] =
+0.995719
+  posit_x [1] =
+1272.24
+  posit_y [1] =
+0
+  posit_z [1] =
+101391
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1272
+  y [1] =
+0.142622
+  z [1] =
+101391
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+66
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+67
+pos [1] =
+  x [1] =
+1258.81
+  y [1] =
+0
+  z [1] =
+101378
+team [1] =
+0
+label = npscr128_scrap
+isUser [1] =
+0
+obj_addr = 00000036
+transform [1] =
+  right_x [1] =
+-0.171911
+  right_y [1] =
+0
+  right_z [1] =
+-0.985112
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.985112
+  front_y [1] =
+0
+  front_z [1] =
+-0.171911
+  posit_x [1] =
+1258.81
+  posit_y [1] =
+0
+  posit_z [1] =
+101378
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1258.85
+  y [1] =
+0.142622
+  z [1] =
+101378
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+67
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+68
+pos [1] =
+  x [1] =
+1265.29
+  y [1] =
+0
+  z [1] =
+101381
+team [1] =
+0
+label = npscr328_scrap
+isUser [1] =
+0
+obj_addr = 00000037
+transform [1] =
+  right_x [1] =
+-0.0171611
+  right_y [1] =
+0
+  right_z [1] =
+0.999853
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.999853
+  front_y [1] =
+0
+  front_z [1] =
+-0.0171611
+  posit_x [1] =
+1265.29
+  posit_y [1] =
+0
+  posit_z [1] =
+101381
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1264.67
+  y [1] =
+0.506041
+  z [1] =
+101380
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+68
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+69
+pos [1] =
+  x [1] =
+1250.23
+  y [1] =
+0
+  z [1] =
+101376
+team [1] =
+0
+label = npscr329_scrap
+isUser [1] =
+0
+obj_addr = 00000038
+transform [1] =
+  right_x [1] =
+0.741548
+  right_y [1] =
+-0
+  right_z [1] =
+0.6709
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.6709
+  front_y [1] =
+0
+  front_z [1] =
+0.741548
+  posit_x [1] =
+1250.23
+  posit_y [1] =
+0
+  posit_z [1] =
+101376
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1249.42
+  y [1] =
+0.506041
+  z [1] =
+101376
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+69
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+70
+pos [1] =
+  x [1] =
+1262.58
+  y [1] =
+0
+  z [1] =
+101363
+team [1] =
+0
+label = npscr129_scrap
+isUser [1] =
+0
+obj_addr = 00000039
+transform [1] =
+  right_x [1] =
+0.96523
+  right_y [1] =
+-0
+  right_z [1] =
+0.261404
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.261404
+  front_y [1] =
+0
+  front_z [1] =
+0.96523
+  posit_x [1] =
+1262.58
+  posit_y [1] =
+0
+  posit_z [1] =
+101363
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1262.35
+  y [1] =
+0.142622
+  z [1] =
+101363
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+70
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+71
+pos [1] =
+  x [1] =
+1260.67
+  y [1] =
+0
+  z [1] =
+101382
+team [1] =
+0
+label = npscr130_scrap
+isUser [1] =
+0
+obj_addr = 0000003A
+transform [1] =
+  right_x [1] =
+-0.980681
+  right_y [1] =
+0
+  right_z [1] =
+-0.195613
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.195613
+  front_y [1] =
+0
+  front_z [1] =
+-0.980681
+  posit_x [1] =
+1260.67
+  posit_y [1] =
+0
+  posit_z [1] =
+101382
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1260.91
+  y [1] =
+0.142622
+  z [1] =
+101382
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+71
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+72
+pos [1] =
+  x [1] =
+1255.29
+  y [1] =
+0
+  z [1] =
+101376
+team [1] =
+0
+label = npscr230_scrap
+isUser [1] =
+0
+obj_addr = 0000003B
+transform [1] =
+  right_x [1] =
+0.97275
+  right_y [1] =
+-0
+  right_z [1] =
+0.231858
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.231858
+  front_y [1] =
+0
+  front_z [1] =
+0.97275
+  posit_x [1] =
+1255.29
+  posit_y [1] =
+0
+  posit_z [1] =
+101376
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1255.06
+  y [1] =
+0.506041
+  z [1] =
+101376
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+72
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+73
+pos [1] =
+  x [1] =
+1262.01
+  y [1] =
+0
+  z [1] =
+101387
+team [1] =
+0
+label = npscr131_scrap
+isUser [1] =
+0
+obj_addr = 0000003C
+transform [1] =
+  right_x [1] =
+0.448682
+  right_y [1] =
+-0
+  right_z [1] =
+0.893691
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.893691
+  front_y [1] =
+0
+  front_z [1] =
+0.448682
+  posit_x [1] =
+1262.01
+  posit_y [1] =
+0
+  posit_z [1] =
+101387
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1261.9
+  y [1] =
+0.142622
+  z [1] =
+101387
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+73
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+74
+pos [1] =
+  x [1] =
+1259.13
+  y [1] =
+0
+  z [1] =
+101380
+team [1] =
+0
+label = npscr331_scrap
+isUser [1] =
+0
+obj_addr = 0000003D
+transform [1] =
+  right_x [1] =
+-0.66315
+  right_y [1] =
+0
+  right_z [1] =
+-0.748486
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.748486
+  front_y [1] =
+0
+  front_z [1] =
+-0.66315
+  posit_x [1] =
+1259.13
+  posit_y [1] =
+0
+  posit_z [1] =
+101380
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1259.95
+  y [1] =
+0.506041
+  z [1] =
+101380
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+74
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+75
+pos [1] =
+  x [1] =
+1392.34
+  y [1] =
+0
+  z [1] =
+101169
+team [1] =
+0
+label = npscr132_scrap
+isUser [1] =
+0
+obj_addr = 0000003E
+transform [1] =
+  right_x [1] =
+0.696125
+  right_y [1] =
+-0
+  right_z [1] =
+0.717921
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.717921
+  front_y [1] =
+0
+  front_z [1] =
+0.696125
+  posit_x [1] =
+1392.34
+  posit_y [1] =
+0
+  posit_z [1] =
+101169
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1392.17
+  y [1] =
+0.142622
+  z [1] =
+101169
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+75
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+76
+pos [1] =
+  x [1] =
+1397.03
+  y [1] =
+0
+  z [1] =
+101137
+team [1] =
+0
+label = npscr232_scrap
+isUser [1] =
+0
+obj_addr = 0000003F
+transform [1] =
+  right_x [1] =
+0.801909
+  right_y [1] =
+-0
+  right_z [1] =
+0.597446
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.597446
+  front_y [1] =
+0
+  front_z [1] =
+0.801909
+  posit_x [1] =
+1397.03
+  posit_y [1] =
+0
+  posit_z [1] =
+101137
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1396.84
+  y [1] =
+0.506041
+  z [1] =
+101137
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+76
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+77
+pos [1] =
+  x [1] =
+1405.21
+  y [1] =
+0
+  z [1] =
+101151
+team [1] =
+0
+label = npscr133_scrap
+isUser [1] =
+0
+obj_addr = 00000040
+transform [1] =
+  right_x [1] =
+0.998876
+  right_y [1] =
+-0
+  right_z [1] =
+0.0473934
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.0473934
+  front_y [1] =
+0
+  front_z [1] =
+0.998876
+  posit_x [1] =
+1405.21
+  posit_y [1] =
+0
+  posit_z [1] =
+101151
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1404.97
+  y [1] =
+0.142622
+  z [1] =
+101151
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+77
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+78
+pos [1] =
+  x [1] =
+1395
+  y [1] =
+0
+  z [1] =
+101150
+team [1] =
+0
+label = npscr333_scrap
+isUser [1] =
+0
+obj_addr = 00000041
+transform [1] =
+  right_x [1] =
+0.934789
+  right_y [1] =
+0
+  right_z [1] =
+-0.355205
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.355205
+  front_y [1] =
+-0
+  front_z [1] =
+0.934789
+  posit_x [1] =
+1395
+  posit_y [1] =
+0
+  posit_z [1] =
+101150
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1394.73
+  y [1] =
+0.506041
+  z [1] =
+101151
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+78
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+79
+pos [1] =
+  x [1] =
+1406.27
+  y [1] =
+0
+  z [1] =
+101167
+team [1] =
+0
+label = npscr134_scrap
+isUser [1] =
+0
+obj_addr = 00000042
+transform [1] =
+  right_x [1] =
+-0.998643
+  right_y [1] =
+0
+  right_z [1] =
+-0.0520857
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.0520857
+  front_y [1] =
+0
+  front_z [1] =
+-0.998643
+  posit_x [1] =
+1406.27
+  posit_y [1] =
+0
+  posit_z [1] =
+101167
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1406.51
+  y [1] =
+0.142622
+  z [1] =
+101167
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+79
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+80
+pos [1] =
+  x [1] =
+1397.57
+  y [1] =
+0
+  z [1] =
+101148
+team [1] =
+0
+label = npscr135_scrap
+isUser [1] =
+0
+obj_addr = 00000043
+transform [1] =
+  right_x [1] =
+0.679493
+  right_y [1] =
+0
+  right_z [1] =
+-0.733682
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.733682
+  front_y [1] =
+-0
+  front_z [1] =
+0.679493
+  posit_x [1] =
+1397.57
+  posit_y [1] =
+0
+  posit_z [1] =
+101148
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1397.41
+  y [1] =
+0.142622
+  z [1] =
+101148
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+80
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+81
+pos [1] =
+  x [1] =
+1412.22
+  y [1] =
+0
+  z [1] =
+101148
+team [1] =
+0
+label = npscr335_scrap
+isUser [1] =
+0
+obj_addr = 00000044
+transform [1] =
+  right_x [1] =
+-0.872877
+  right_y [1] =
+0
+  right_z [1] =
+0.48794
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.48794
+  front_y [1] =
+0
+  front_z [1] =
+-0.872877
+  posit_x [1] =
+1412.22
+  posit_y [1] =
+0
+  posit_z [1] =
+101148
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1412.38
+  y [1] =
+0.506041
+  z [1] =
+101147
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+81
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+82
+pos [1] =
+  x [1] =
+1402.41
+  y [1] =
+0
+  z [1] =
+101151
+team [1] =
+0
+label = npscr336_scrap
+isUser [1] =
+0
+obj_addr = 00000045
+transform [1] =
+  right_x [1] =
+-0.301375
+  right_y [1] =
+0
+  right_z [1] =
+0.953506
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.953506
+  front_y [1] =
+0
+  front_z [1] =
+-0.301375
+  posit_x [1] =
+1402.41
+  posit_y [1] =
+0
+  posit_z [1] =
+101151
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1401.97
+  y [1] =
+0.506041
+  z [1] =
+101150
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+82
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+83
+pos [1] =
+  x [1] =
+1407.6
+  y [1] =
+0
+  z [1] =
+101142
+team [1] =
+0
+label = npscr236_scrap
+isUser [1] =
+0
+obj_addr = 00000046
+transform [1] =
+  right_x [1] =
+-0.374086
+  right_y [1] =
+0
+  right_z [1] =
+0.927394
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.927394
+  front_y [1] =
+0
+  front_z [1] =
+-0.374086
+  posit_x [1] =
+1407.6
+  posit_y [1] =
+0
+  posit_z [1] =
+101142
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1407.69
+  y [1] =
+0.506041
+  z [1] =
+101142
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+83
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+84
+pos [1] =
+  x [1] =
+1410.55
+  y [1] =
+0
+  z [1] =
+101135
+team [1] =
+0
+label = npscr337_scrap
+isUser [1] =
+0
+obj_addr = 00000047
+transform [1] =
+  right_x [1] =
+0.114417
+  right_y [1] =
+0
+  right_z [1] =
+-0.993433
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.993433
+  front_y [1] =
+-0
+  front_z [1] =
+0.114417
+  posit_x [1] =
+1410.55
+  posit_y [1] =
+0
+  posit_z [1] =
+101135
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1411.11
+  y [1] =
+0.506041
+  z [1] =
+101136
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+84
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+85
+pos [1] =
+  x [1] =
+1468.56
+  y [1] =
+0
+  z [1] =
+101023
+team [1] =
+0
+label = npscr237_scrap
+isUser [1] =
+0
+obj_addr = 00000048
+transform [1] =
+  right_x [1] =
+-0.971011
+  right_y [1] =
+0
+  right_z [1] =
+-0.239033
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.239033
+  front_y [1] =
+0
+  front_z [1] =
+-0.971011
+  posit_x [1] =
+1468.56
+  posit_y [1] =
+0
+  posit_z [1] =
+101023
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1468.79
+  y [1] =
+0.506041
+  z [1] =
+101023
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+85
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+86
+pos [1] =
+  x [1] =
+1484.68
+  y [1] =
+0
+  z [1] =
+101032
+team [1] =
+0
+label = npscr238_scrap
+isUser [1] =
+0
+obj_addr = 00000049
+transform [1] =
+  right_x [1] =
+0.421926
+  right_y [1] =
+-0
+  right_z [1] =
+0.906631
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.906631
+  front_y [1] =
+0
+  front_z [1] =
+0.421926
+  posit_x [1] =
+1484.68
+  posit_y [1] =
+0
+  posit_z [1] =
+101032
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1484.58
+  y [1] =
+0.506041
+  z [1] =
+101032
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+86
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+87
+pos [1] =
+  x [1] =
+1484.95
+  y [1] =
+0
+  z [1] =
+101040
+team [1] =
+0
+label = npscr338_scrap
+isUser [1] =
+0
+obj_addr = 0000004A
+transform [1] =
+  right_x [1] =
+-0.265797
+  right_y [1] =
+0
+  right_z [1] =
+-0.964029
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.964029
+  front_y [1] =
+0
+  front_z [1] =
+-0.265797
+  posit_x [1] =
+1484.95
+  posit_y [1] =
+0
+  posit_z [1] =
+101040
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1485.69
+  y [1] =
+0.506041
+  z [1] =
+101040
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+87
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+88
+pos [1] =
+  x [1] =
+1478.16
+  y [1] =
+0
+  z [1] =
+101008
+team [1] =
+0
+label = npscr339_scrap
+isUser [1] =
+0
+obj_addr = 0000004B
+transform [1] =
+  right_x [1] =
+-0.24122
+  right_y [1] =
+0
+  right_z [1] =
+0.97047
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.97047
+  front_y [1] =
+0
+  front_z [1] =
+-0.24122
+  posit_x [1] =
+1478.16
+  posit_y [1] =
+0
+  posit_z [1] =
+101008
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1477.68
+  y [1] =
+0.506041
+  z [1] =
+101007
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+88
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+89
+pos [1] =
+  x [1] =
+1481.59
+  y [1] =
+0
+  z [1] =
+101022
+team [1] =
+0
+label = npscr340_scrap
+isUser [1] =
+0
+obj_addr = 0000004C
+transform [1] =
+  right_x [1] =
+-0.144364
+  right_y [1] =
+0
+  right_z [1] =
+0.989525
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.989525
+  front_y [1] =
+0
+  front_z [1] =
+-0.144364
+  posit_x [1] =
+1481.59
+  posit_y [1] =
+0
+  posit_z [1] =
+101022
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1481.05
+  y [1] =
+0.506041
+  z [1] =
+101021
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+89
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+90
+pos [1] =
+  x [1] =
+1476.21
+  y [1] =
+0
+  z [1] =
+101023
+team [1] =
+0
+label = npscr240_scrap
+isUser [1] =
+0
+obj_addr = 0000004D
+transform [1] =
+  right_x [1] =
+-0.42904
+  right_y [1] =
+0
+  right_z [1] =
+0.903285
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.903285
+  front_y [1] =
+0
+  front_z [1] =
+-0.42904
+  posit_x [1] =
+1476.21
+  posit_y [1] =
+0
+  posit_z [1] =
+101023
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1476.31
+  y [1] =
+0.506041
+  z [1] =
+101023
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+90
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+91
+pos [1] =
+  x [1] =
+1483.51
+  y [1] =
+0
+  z [1] =
+101027
+team [1] =
+0
+label = npscr241_scrap
+isUser [1] =
+0
+obj_addr = 0000004E
+transform [1] =
+  right_x [1] =
+-0.882434
+  right_y [1] =
+0
+  right_z [1] =
+0.470437
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.470437
+  front_y [1] =
+0
+  front_z [1] =
+-0.882434
+  posit_x [1] =
+1483.51
+  posit_y [1] =
+0
+  posit_z [1] =
+101027
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1483.72
+  y [1] =
+0.506041
+  z [1] =
+101027
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+91
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+92
+pos [1] =
+  x [1] =
+1480.21
+  y [1] =
+0
+  z [1] =
+101022
+team [1] =
+0
+label = npscr341_scrap
+isUser [1] =
+0
+obj_addr = 0000004F
+transform [1] =
+  right_x [1] =
+0.568668
+  right_y [1] =
+-0
+  right_z [1] =
+0.822567
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.822567
+  front_y [1] =
+0
+  front_z [1] =
+0.568668
+  posit_x [1] =
+1480.21
+  posit_y [1] =
+0
+  posit_z [1] =
+101022
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1479.39
+  y [1] =
+0.506041
+  z [1] =
+101022
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+92
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+93
+pos [1] =
+  x [1] =
+1470.62
+  y [1] =
+0
+  z [1] =
+101007
+team [1] =
+0
+label = npscr242_scrap
+isUser [1] =
+0
+obj_addr = 00000050
+transform [1] =
+  right_x [1] =
+0.771322
+  right_y [1] =
+0
+  right_z [1] =
+-0.636445
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.636445
+  front_y [1] =
+-0
+  front_z [1] =
+0.771322
+  posit_x [1] =
+1470.62
+  posit_y [1] =
+0
+  posit_z [1] =
+101007
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1470.43
+  y [1] =
+0.506041
+  z [1] =
+101007
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+93
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+94
+pos [1] =
+  x [1] =
+1478.06
+  y [1] =
+0
+  z [1] =
+101016
+team [1] =
+0
+label = npscr142_scrap
+isUser [1] =
+0
+obj_addr = 00000051
+transform [1] =
+  right_x [1] =
+0.941233
+  right_y [1] =
+0
+  right_z [1] =
+-0.337757
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.337757
+  front_y [1] =
+-0
+  front_z [1] =
+0.941233
+  posit_x [1] =
+1478.06
+  posit_y [1] =
+0
+  posit_z [1] =
+101016
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1477.83
+  y [1] =
+0.142622
+  z [1] =
+101016
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+94
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+1
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+95
+pos [1] =
+  x [1] =
+1526.73
+  y [1] =
+1.2
+  z [1] =
+100863
+team [1] =
+0
+label = npscr243_scrap
+isUser [1] =
+0
+obj_addr = 00000052
+transform [1] =
+  right_x [1] =
+0.726113
+  right_y [1] =
+0
+  right_z [1] =
+-0.687576
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.687576
+  front_y [1] =
+-0
+  front_z [1] =
+0.726113
+  posit_x [1] =
+1526.73
+  posit_y [1] =
+1.2
+  posit_z [1] =
+100863
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1526.56
+  y [1] =
+1.70604
+  z [1] =
+100863
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+95
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+96
+pos [1] =
+  x [1] =
+1528.03
+  y [1] =
+1.2
+  z [1] =
+100848
+team [1] =
+0
+label = npscr343_scrap
+isUser [1] =
+0
+obj_addr = 00000053
+transform [1] =
+  right_x [1] =
+-0.721482
+  right_y [1] =
+0
+  right_z [1] =
+-0.692434
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.692434
+  front_y [1] =
+0
+  front_z [1] =
+-0.721482
+  posit_x [1] =
+1528.03
+  posit_y [1] =
+1.2
+  posit_z [1] =
+100848
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1528.85
+  y [1] =
+1.70604
+  z [1] =
+100848
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+96
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+97
+pos [1] =
+  x [1] =
+1523.76
+  y [1] =
+1.2
+  z [1] =
+100865
+team [1] =
+0
+label = npscr244_scrap
+isUser [1] =
+0
+obj_addr = 00000054
+transform [1] =
+  right_x [1] =
+-0.158106
+  right_y [1] =
+0
+  right_z [1] =
+-0.987422
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.987422
+  front_y [1] =
+0
+  front_z [1] =
+-0.158106
+  posit_x [1] =
+1523.76
+  posit_y [1] =
+1.2
+  posit_z [1] =
+100865
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1523.8
+  y [1] =
+1.70604
+  z [1] =
+100865
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+97
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+98
+pos [1] =
+  x [1] =
+1516.37
+  y [1] =
+1.2
+  z [1] =
+100854
+team [1] =
+0
+label = npscr344_scrap
+isUser [1] =
+0
+obj_addr = 00000055
+transform [1] =
+  right_x [1] =
+0.643481
+  right_y [1] =
+-0
+  right_z [1] =
+0.765462
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.765462
+  front_y [1] =
+0
+  front_z [1] =
+0.643481
+  posit_x [1] =
+1516.37
+  posit_y [1] =
+1.2
+  posit_z [1] =
+100854
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1515.55
+  y [1] =
+1.70604
+  z [1] =
+100854
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+98
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+99
+pos [1] =
+  x [1] =
+1524.77
+  y [1] =
+1.2
+  z [1] =
+100866
+team [1] =
+0
+label = npscr144_scrap
+isUser [1] =
+0
+obj_addr = 00000056
+transform [1] =
+  right_x [1] =
+-0.983096
+  right_y [1] =
+0
+  right_z [1] =
+0.183092
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.183092
+  front_y [1] =
+0
+  front_z [1] =
+-0.983096
+  posit_x [1] =
+1524.77
+  posit_y [1] =
+1.2
+  posit_z [1] =
+100866
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1525.01
+  y [1] =
+1.34262
+  z [1] =
+100866
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+99
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+100
+pos [1] =
+  x [1] =
+1509.78
+  y [1] =
+1.2
+  z [1] =
+100860
+team [1] =
+0
+label = npscr345_scrap
+isUser [1] =
+0
+obj_addr = 00000057
+transform [1] =
+  right_x [1] =
+0.852075
+  right_y [1] =
+0
+  right_z [1] =
+-0.52342
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.52342
+  front_y [1] =
+-0
+  front_z [1] =
+0.852075
+  posit_x [1] =
+1509.78
+  posit_y [1] =
+1.2
+  posit_z [1] =
+100860
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1509.66
+  y [1] =
+1.70604
+  z [1] =
+100861
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+100
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+101
+pos [1] =
+  x [1] =
+1507.74
+  y [1] =
+1.2
+  z [1] =
+100858
+team [1] =
+0
+label = npscr145_scrap
+isUser [1] =
+0
+obj_addr = 00000058
+transform [1] =
+  right_x [1] =
+0.997588
+  right_y [1] =
+-0
+  right_z [1] =
+0.0694068
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.0694068
+  front_y [1] =
+0
+  front_z [1] =
+0.997588
+  posit_x [1] =
+1507.74
+  posit_y [1] =
+1.2
+  posit_z [1] =
+100858
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1507.5
+  y [1] =
+1.34262
+  z [1] =
+100858
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+101
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+102
+pos [1] =
+  x [1] =
+1522.95
+  y [1] =
+1.2
+  z [1] =
+100859
+team [1] =
+0
+label = npscr146_scrap
+isUser [1] =
+0
+obj_addr = 00000059
+transform [1] =
+  right_x [1] =
+-0.48999
+  right_y [1] =
+0
+  right_z [1] =
+0.871728
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.871728
+  front_y [1] =
+0
+  front_z [1] =
+-0.48999
+  posit_x [1] =
+1522.95
+  posit_y [1] =
+1.2
+  posit_z [1] =
+100859
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1523.07
+  y [1] =
+1.34262
+  z [1] =
+100859
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+102
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+103
+pos [1] =
+  x [1] =
+1543.16
+  y [1] =
+1.2
+  z [1] =
+100879
+team [1] =
+0
+label = npscr246_scrap
+isUser [1] =
+0
+obj_addr = 0000005A
+transform [1] =
+  right_x [1] =
+0.951151
+  right_y [1] =
+0
+  right_z [1] =
+-0.308725
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.308725
+  front_y [1] =
+-0
+  front_z [1] =
+0.951151
+  posit_x [1] =
+1543.16
+  posit_y [1] =
+1.2
+  posit_z [1] =
+100879
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1542.93
+  y [1] =
+1.70604
+  z [1] =
+100879
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+103
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+104
+pos [1] =
+  x [1] =
+1508.45
+  y [1] =
+1.2
+  z [1] =
+100873
+team [1] =
+0
+label = npscr247_scrap
+isUser [1] =
+0
+obj_addr = 0000005B
+transform [1] =
+  right_x [1] =
+0.044089
+  right_y [1] =
+0
+  right_z [1] =
+-0.999028
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.999028
+  front_y [1] =
+-0
+  front_z [1] =
+0.044089
+  posit_x [1] =
+1508.45
+  posit_y [1] =
+1.2
+  posit_z [1] =
+100873
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1508.44
+  y [1] =
+1.70604
+  z [1] =
+100873
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+104
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+105
+pos [1] =
+  x [1] =
+1511.35
+  y [1] =
+0
+  z [1] =
+100692
+team [1] =
+0
+label = npscr347_scrap
+isUser [1] =
+0
+obj_addr = 0000005C
+transform [1] =
+  right_x [1] =
+0.536793
+  right_y [1] =
+0
+  right_z [1] =
+-0.843714
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.843714
+  front_y [1] =
+-0
+  front_z [1] =
+0.536793
+  posit_x [1] =
+1511.35
+  posit_y [1] =
+0
+  posit_z [1] =
+100692
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1511.6
+  y [1] =
+0.506041
+  z [1] =
+100693
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+105
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+106
+pos [1] =
+  x [1] =
+1518.23
+  y [1] =
+0
+  z [1] =
+100707
+team [1] =
+0
+label = npscr147_scrap
+isUser [1] =
+0
+obj_addr = 0000005D
+transform [1] =
+  right_x [1] =
+0.852977
+  right_y [1] =
+0
+  right_z [1] =
+-0.521949
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.521949
+  front_y [1] =
+-0
+  front_z [1] =
+0.852977
+  posit_x [1] =
+1518.23
+  posit_y [1] =
+0
+  posit_z [1] =
+100707
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1518.03
+  y [1] =
+0.142622
+  z [1] =
+100707
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+106
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+107
+pos [1] =
+  x [1] =
+1513.1
+  y [1] =
+0
+  z [1] =
+100695
+team [1] =
+0
+label = npscr248_scrap
+isUser [1] =
+0
+obj_addr = 0000005E
+transform [1] =
+  right_x [1] =
+0.957507
+  right_y [1] =
+0
+  right_z [1] =
+-0.288411
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.288411
+  front_y [1] =
+-0
+  front_z [1] =
+0.957507
+  posit_x [1] =
+1513.1
+  posit_y [1] =
+0
+  posit_z [1] =
+100695
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1512.87
+  y [1] =
+0.506041
+  z [1] =
+100695
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+107
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+108
+pos [1] =
+  x [1] =
+1511.04
+  y [1] =
+0
+  z [1] =
+100689
+team [1] =
+0
+label = npscr249_scrap
+isUser [1] =
+0
+obj_addr = 0000005F
+transform [1] =
+  right_x [1] =
+0.891204
+  right_y [1] =
+-0
+  right_z [1] =
+0.453602
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.453602
+  front_y [1] =
+0
+  front_z [1] =
+0.891204
+  posit_x [1] =
+1511.04
+  posit_y [1] =
+0
+  posit_z [1] =
+100689
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1510.83
+  y [1] =
+0.506041
+  z [1] =
+100689
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+108
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+109
+pos [1] =
+  x [1] =
+1517.24
+  y [1] =
+0
+  z [1] =
+100700
+team [1] =
+0
+label = npscr250_scrap
+isUser [1] =
+0
+obj_addr = 00000060
+transform [1] =
+  right_x [1] =
+0.0520374
+  right_y [1] =
+-0
+  right_z [1] =
+0.998645
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.998645
+  front_y [1] =
+0
+  front_z [1] =
+0.0520374
+  posit_x [1] =
+1517.24
+  posit_y [1] =
+0
+  posit_z [1] =
+100700
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1517.23
+  y [1] =
+0.506041
+  z [1] =
+100700
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+109
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+110
+pos [1] =
+  x [1] =
+1528.51
+  y [1] =
+0
+  z [1] =
+100694
+team [1] =
+0
+label = npscr350_scrap
+isUser [1] =
+0
+obj_addr = 00000061
+transform [1] =
+  right_x [1] =
+0.980793
+  right_y [1] =
+0
+  right_z [1] =
+-0.195049
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.195049
+  front_y [1] =
+-0
+  front_z [1] =
+0.980793
+  posit_x [1] =
+1528.51
+  posit_y [1] =
+0
+  posit_z [1] =
+100694
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1528.11
+  y [1] =
+0.506041
+  z [1] =
+100695
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+110
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+111
+pos [1] =
+  x [1] =
+1517.64
+  y [1] =
+0
+  z [1] =
+100699
+team [1] =
+0
+label = npscr150_scrap
+isUser [1] =
+0
+obj_addr = 00000062
+transform [1] =
+  right_x [1] =
+-0.621276
+  right_y [1] =
+0
+  right_z [1] =
+-0.783592
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.783592
+  front_y [1] =
+0
+  front_z [1] =
+-0.621276
+  posit_x [1] =
+1517.64
+  posit_y [1] =
+0
+  posit_z [1] =
+100699
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1517.79
+  y [1] =
+0.142622
+  z [1] =
+100699
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+111
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+112
+pos [1] =
+  x [1] =
+1516.42
+  y [1] =
+0
+  z [1] =
+100693
+team [1] =
+0
+label = npscr151_scrap
+isUser [1] =
+0
+obj_addr = 00000063
+transform [1] =
+  right_x [1] =
+0.147115
+  right_y [1] =
+0
+  right_z [1] =
+-0.989119
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.989119
+  front_y [1] =
+-0
+  front_z [1] =
+0.147115
+  posit_x [1] =
+1516.42
+  posit_y [1] =
+0
+  posit_z [1] =
+100693
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1516.38
+  y [1] =
+0.142622
+  z [1] =
+100693
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+112
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+113
+pos [1] =
+  x [1] =
+1514.56
+  y [1] =
+0
+  z [1] =
+100697
+team [1] =
+0
+label = npscr351_scrap
+isUser [1] =
+0
+obj_addr = 00000064
+transform [1] =
+  right_x [1] =
+-0.773939
+  right_y [1] =
+0
+  right_z [1] =
+0.63326
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.63326
+  front_y [1] =
+0
+  front_z [1] =
+-0.773939
+  posit_x [1] =
+1514.56
+  posit_y [1] =
+0
+  posit_z [1] =
+100697
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1514.57
+  y [1] =
+0.506041
+  z [1] =
+100696
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+113
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+114
+pos [1] =
+  x [1] =
+1526.68
+  y [1] =
+0
+  z [1] =
+100680
+team [1] =
+0
+label = npscr352_scrap
+isUser [1] =
+0
+obj_addr = 00000065
+transform [1] =
+  right_x [1] =
+0.601935
+  right_y [1] =
+-0
+  right_z [1] =
+0.798545
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.798545
+  front_y [1] =
+0
+  front_z [1] =
+0.601935
+  posit_x [1] =
+1526.68
+  posit_y [1] =
+0
+  posit_z [1] =
+100680
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1525.86
+  y [1] =
+0.506041
+  z [1] =
+100680
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+114
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+115
+pos [1] =
+  x [1] =
+1373.85
+  y [1] =
+0
+  z [1] =
+100464
+team [1] =
+0
+label = npscr353_scrap
+isUser [1] =
+0
+obj_addr = 00000066
+transform [1] =
+  right_x [1] =
+-0.990557
+  right_y [1] =
+0
+  right_z [1] =
+0.137102
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.137102
+  front_y [1] =
+0
+  front_z [1] =
+-0.990557
+  posit_x [1] =
+1373.85
+  posit_y [1] =
+0
+  posit_z [1] =
+100464
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1374.29
+  y [1] =
+0.506041
+  z [1] =
+100463
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+115
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+116
+pos [1] =
+  x [1] =
+1381.94
+  y [1] =
+0
+  z [1] =
+100463
+team [1] =
+0
+label = npscr354_scrap
+isUser [1] =
+0
+obj_addr = 00000067
+transform [1] =
+  right_x [1] =
+-0.457144
+  right_y [1] =
+0
+  right_z [1] =
+-0.889393
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.889393
+  front_y [1] =
+0
+  front_z [1] =
+-0.457144
+  posit_x [1] =
+1381.94
+  posit_y [1] =
+0
+  posit_z [1] =
+100463
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1382.74
+  y [1] =
+0.506041
+  z [1] =
+100463
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+116
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+117
+pos [1] =
+  x [1] =
+1382.71
+  y [1] =
+0
+  z [1] =
+100453
+team [1] =
+0
+label = npscr254_scrap
+isUser [1] =
+0
+obj_addr = 00000068
+transform [1] =
+  right_x [1] =
+0.93092
+  right_y [1] =
+0
+  right_z [1] =
+-0.365222
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.365222
+  front_y [1] =
+-0
+  front_z [1] =
+0.93092
+  posit_x [1] =
+1382.71
+  posit_y [1] =
+0
+  posit_z [1] =
+100453
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1382.49
+  y [1] =
+0.506041
+  z [1] =
+100453
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+117
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+118
+pos [1] =
+  x [1] =
+1396.98
+  y [1] =
+0
+  z [1] =
+100447
+team [1] =
+0
+label = npscr255_scrap
+isUser [1] =
+0
+obj_addr = 00000069
+transform [1] =
+  right_x [1] =
+-0.616758
+  right_y [1] =
+0
+  right_z [1] =
+-0.787153
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.787153
+  front_y [1] =
+0
+  front_z [1] =
+-0.616758
+  posit_x [1] =
+1396.98
+  posit_y [1] =
+0
+  posit_z [1] =
+100447
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1397.13
+  y [1] =
+0.506041
+  z [1] =
+100447
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+118
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+119
+pos [1] =
+  x [1] =
+1371.23
+  y [1] =
+0
+  z [1] =
+100470
+team [1] =
+0
+label = npscr355_scrap
+isUser [1] =
+0
+obj_addr = 0000006A
+transform [1] =
+  right_x [1] =
+0.782727
+  right_y [1] =
+-0
+  right_z [1] =
+0.622365
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.622365
+  front_y [1] =
+0
+  front_z [1] =
+0.782727
+  posit_x [1] =
+1371.23
+  posit_y [1] =
+0
+  posit_z [1] =
+100470
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1370.43
+  y [1] =
+0.506041
+  z [1] =
+100470
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+119
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+120
+pos [1] =
+  x [1] =
+1396.25
+  y [1] =
+0
+  z [1] =
+100464
+team [1] =
+0
+label = npscr155_scrap
+isUser [1] =
+0
+obj_addr = 0000006B
+transform [1] =
+  right_x [1] =
+-0.919354
+  right_y [1] =
+0
+  right_z [1] =
+-0.393431
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.393431
+  front_y [1] =
+0
+  front_z [1] =
+-0.919354
+  posit_x [1] =
+1396.25
+  posit_y [1] =
+0
+  posit_z [1] =
+100464
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1396.47
+  y [1] =
+0.142622
+  z [1] =
+100464
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+120
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+121
+pos [1] =
+  x [1] =
+1391.58
+  y [1] =
+0
+  z [1] =
+100459
+team [1] =
+0
+label = npscr256_scrap
+isUser [1] =
+0
+obj_addr = 0000006C
+transform [1] =
+  right_x [1] =
+-0.990636
+  right_y [1] =
+0
+  right_z [1] =
+0.136532
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.136532
+  front_y [1] =
+0
+  front_z [1] =
+-0.990636
+  posit_x [1] =
+1391.58
+  posit_y [1] =
+0
+  posit_z [1] =
+100459
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1391.82
+  y [1] =
+0.506041
+  z [1] =
+100459
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+121
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+122
+pos [1] =
+  x [1] =
+1377.17
+  y [1] =
+0
+  z [1] =
+100455
+team [1] =
+0
+label = npscr257_scrap
+isUser [1] =
+0
+obj_addr = 0000006D
+transform [1] =
+  right_x [1] =
+-0.415657
+  right_y [1] =
+0
+  right_z [1] =
+0.909521
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.909521
+  front_y [1] =
+0
+  front_z [1] =
+-0.415657
+  posit_x [1] =
+1377.17
+  posit_y [1] =
+0
+  posit_z [1] =
+100455
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1377.27
+  y [1] =
+0.506041
+  z [1] =
+100455
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+122
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+123
+pos [1] =
+  x [1] =
+1381.19
+  y [1] =
+0
+  z [1] =
+100453
+team [1] =
+0
+label = npscr357_scrap
+isUser [1] =
+0
+obj_addr = 0000006E
+transform [1] =
+  right_x [1] =
+-0.765863
+  right_y [1] =
+0
+  right_z [1] =
+0.643003
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.643003
+  front_y [1] =
+0
+  front_z [1] =
+-0.765863
+  posit_x [1] =
+1381.19
+  posit_y [1] =
+0
+  posit_z [1] =
+100453
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1381.19
+  y [1] =
+0.506041
+  z [1] =
+100452
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+123
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+124
+pos [1] =
+  x [1] =
+1387.57
+  y [1] =
+0
+  z [1] =
+100449
+team [1] =
+0
+label = npscr157_scrap
+isUser [1] =
+0
+obj_addr = 0000006F
+transform [1] =
+  right_x [1] =
+-0.687402
+  right_y [1] =
+0
+  right_z [1] =
+0.726277
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.726277
+  front_y [1] =
+0
+  front_z [1] =
+-0.687402
+  posit_x [1] =
+1387.57
+  posit_y [1] =
+0
+  posit_z [1] =
+100449
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1387.74
+  y [1] =
+0.142622
+  z [1] =
+100449
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+124
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+125
+pos [1] =
+  x [1] =
+1286.44
+  y [1] =
+0
+  z [1] =
+100537
+team [1] =
+0
+label = npscr358_scrap
+isUser [1] =
+0
+obj_addr = 00000070
+transform [1] =
+  right_x [1] =
+0.777448
+  right_y [1] =
+-0
+  right_z [1] =
+0.628947
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.628947
+  front_y [1] =
+0
+  front_z [1] =
+0.777448
+  posit_x [1] =
+1286.44
+  posit_y [1] =
+0
+  posit_z [1] =
+100537
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1285.63
+  y [1] =
+0.506041
+  z [1] =
+100537
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+125
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+126
+pos [1] =
+  x [1] =
+1274.99
+  y [1] =
+0
+  z [1] =
+100535
+team [1] =
+0
+label = npscr359_scrap
+isUser [1] =
+0
+obj_addr = 00000071
+transform [1] =
+  right_x [1] =
+0.900198
+  right_y [1] =
+0
+  right_z [1] =
+-0.435481
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.435481
+  front_y [1] =
+-0
+  front_z [1] =
+0.900198
+  posit_x [1] =
+1274.99
+  posit_y [1] =
+0
+  posit_z [1] =
+100535
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1274.79
+  y [1] =
+0.506041
+  z [1] =
+100536
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+126
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+127
+pos [1] =
+  x [1] =
+1271.02
+  y [1] =
+0
+  z [1] =
+100545
+team [1] =
+0
+label = npscr360_scrap
+isUser [1] =
+0
+obj_addr = 00000072
+transform [1] =
+  right_x [1] =
+-0.972191
+  right_y [1] =
+0
+  right_z [1] =
+-0.234189
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.234189
+  front_y [1] =
+0
+  front_z [1] =
+-0.972191
+  posit_x [1] =
+1271.02
+  posit_y [1] =
+0
+  posit_z [1] =
+100545
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1271.68
+  y [1] =
+0.506041
+  z [1] =
+100545
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+127
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+128
+pos [1] =
+  x [1] =
+1275.64
+  y [1] =
+0
+  z [1] =
+100538
+team [1] =
+0
+label = npscr260_scrap
+isUser [1] =
+0
+obj_addr = 00000073
+transform [1] =
+  right_x [1] =
+-0.971944
+  right_y [1] =
+0
+  right_z [1] =
+0.235214
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.235214
+  front_y [1] =
+0
+  front_z [1] =
+-0.971944
+  posit_x [1] =
+1275.64
+  posit_y [1] =
+0
+  posit_z [1] =
+100538
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1275.87
+  y [1] =
+0.506041
+  z [1] =
+100538
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+128
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+129
+pos [1] =
+  x [1] =
+1271.17
+  y [1] =
+0
+  z [1] =
+100542
+team [1] =
+0
+label = npscr160_scrap
+isUser [1] =
+0
+obj_addr = 00000074
+transform [1] =
+  right_x [1] =
+0.542524
+  right_y [1] =
+-0
+  right_z [1] =
+0.84004
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.84004
+  front_y [1] =
+0
+  front_z [1] =
+0.542524
+  posit_x [1] =
+1271.17
+  posit_y [1] =
+0
+  posit_z [1] =
+100542
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1271.04
+  y [1] =
+0.142622
+  z [1] =
+100542
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+129
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+130
+pos [1] =
+  x [1] =
+1279.49
+  y [1] =
+0
+  z [1] =
+100540
+team [1] =
+0
+label = npscr361_scrap
+isUser [1] =
+0
+obj_addr = 00000075
+transform [1] =
+  right_x [1] =
+-0.99984
+  right_y [1] =
+0
+  right_z [1] =
+0.0178799
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.0178799
+  front_y [1] =
+0
+  front_z [1] =
+-0.99984
+  posit_x [1] =
+1279.49
+  posit_y [1] =
+0
+  posit_z [1] =
+100540
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1280.01
+  y [1] =
+0.506041
+  z [1] =
+100539
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+130
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+131
+pos [1] =
+  x [1] =
+1261.74
+  y [1] =
+0
+  z [1] =
+100538
+team [1] =
+0
+label = npscr161_scrap
+isUser [1] =
+0
+obj_addr = 00000076
+transform [1] =
+  right_x [1] =
+-0.775031
+  right_y [1] =
+0
+  right_z [1] =
+0.631923
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.631923
+  front_y [1] =
+0
+  front_z [1] =
+-0.775031
+  posit_x [1] =
+1261.74
+  posit_y [1] =
+0
+  posit_z [1] =
+100538
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1261.93
+  y [1] =
+0.142622
+  z [1] =
+100538
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+131
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+132
+pos [1] =
+  x [1] =
+1276.55
+  y [1] =
+0
+  z [1] =
+100524
+team [1] =
+0
+label = npscr162_scrap
+isUser [1] =
+0
+obj_addr = 00000077
+transform [1] =
+  right_x [1] =
+0.890158
+  right_y [1] =
+-0
+  right_z [1] =
+0.455651
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.455651
+  front_y [1] =
+0
+  front_z [1] =
+0.890158
+  posit_x [1] =
+1276.55
+  posit_y [1] =
+0
+  posit_z [1] =
+100524
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1276.34
+  y [1] =
+0.142622
+  z [1] =
+100524
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+132
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+133
+pos [1] =
+  x [1] =
+1280.47
+  y [1] =
+0
+  z [1] =
+100551
+team [1] =
+0
+label = npscr262_scrap
+isUser [1] =
+0
+obj_addr = 00000078
+transform [1] =
+  right_x [1] =
+0.996423
+  right_y [1] =
+-0
+  right_z [1] =
+0.0845103
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.0845103
+  front_y [1] =
+0
+  front_z [1] =
+0.996423
+  posit_x [1] =
+1280.47
+  posit_y [1] =
+0
+  posit_z [1] =
+100551
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1280.23
+  y [1] =
+0.506041
+  z [1] =
+100551
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+133
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+134
+pos [1] =
+  x [1] =
+1276.31
+  y [1] =
+0
+  z [1] =
+100518
+team [1] =
+0
+label = npscr362_scrap
+isUser [1] =
+0
+obj_addr = 00000079
+transform [1] =
+  right_x [1] =
+0.307128
+  right_y [1] =
+0
+  right_z [1] =
+-0.951668
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.951668
+  front_y [1] =
+-0
+  front_z [1] =
+0.307128
+  posit_x [1] =
+1276.31
+  posit_y [1] =
+0
+  posit_z [1] =
+100518
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1276.74
+  y [1] =
+0.506041
+  z [1] =
+100519
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+134
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+135
+pos [1] =
+  x [1] =
+1227.91
+  y [1] =
+0
+  z [1] =
+100454
+team [1] =
+0
+label = npscr163_scrap
+isUser [1] =
+0
+obj_addr = 0000007A
+transform [1] =
+  right_x [1] =
+0.344112
+  right_y [1] =
+0
+  right_z [1] =
+-0.938929
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.938929
+  front_y [1] =
+-0
+  front_z [1] =
+0.344112
+  posit_x [1] =
+1227.91
+  posit_y [1] =
+0
+  posit_z [1] =
+100454
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1227.83
+  y [1] =
+0.142622
+  z [1] =
+100454
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+135
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+136
+pos [1] =
+  x [1] =
+1239.35
+  y [1] =
+0
+  z [1] =
+100474
+team [1] =
+0
+label = npscr263_scrap
+isUser [1] =
+0
+obj_addr = 0000007B
+transform [1] =
+  right_x [1] =
+0.657678
+  right_y [1] =
+0
+  right_z [1] =
+-0.753299
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.753299
+  front_y [1] =
+-0
+  front_z [1] =
+0.657678
+  posit_x [1] =
+1239.35
+  posit_y [1] =
+0
+  posit_z [1] =
+100474
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1239.19
+  y [1] =
+0.506041
+  z [1] =
+100474
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+136
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+137
+pos [1] =
+  x [1] =
+1253.07
+  y [1] =
+0
+  z [1] =
+100457
+team [1] =
+0
+label = npscr264_scrap
+isUser [1] =
+0
+obj_addr = 0000007C
+transform [1] =
+  right_x [1] =
+0.907136
+  right_y [1] =
+-0
+  right_z [1] =
+0.420839
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.420839
+  front_y [1] =
+0
+  front_z [1] =
+0.907136
+  posit_x [1] =
+1253.07
+  posit_y [1] =
+0
+  posit_z [1] =
+100457
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1252.85
+  y [1] =
+0.506041
+  z [1] =
+100457
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+137
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+138
+pos [1] =
+  x [1] =
+1239.88
+  y [1] =
+0
+  z [1] =
+100478
+team [1] =
+0
+label = npscr265_scrap
+isUser [1] =
+0
+obj_addr = 0000007D
+transform [1] =
+  right_x [1] =
+0.988757
+  right_y [1] =
+0
+  right_z [1] =
+-0.149532
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.149532
+  front_y [1] =
+-0
+  front_z [1] =
+0.988757
+  posit_x [1] =
+1239.88
+  posit_y [1] =
+0
+  posit_z [1] =
+100478
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1239.64
+  y [1] =
+0.506041
+  z [1] =
+100478
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+138
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr1
+seqno [1] =
+139
+pos [1] =
+  x [1] =
+1248.66
+  y [1] =
+0
+  z [1] =
+100461
+team [1] =
+0
+label = npscr165_scrap
+isUser [1] =
+0
+obj_addr = 0000007E
+transform [1] =
+  right_x [1] =
+0.444048
+  right_y [1] =
+-0
+  right_z [1] =
+0.896003
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.896003
+  front_y [1] =
+0
+  front_z [1] =
+0.444048
+  posit_x [1] =
+1248.66
+  posit_y [1] =
+0
+  posit_z [1] =
+100461
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1248.55
+  y [1] =
+0.142622
+  z [1] =
+100461
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+139
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr3
+seqno [1] =
+140
+pos [1] =
+  x [1] =
+1233.83
+  y [1] =
+0
+  z [1] =
+100468
+team [1] =
+0
+label = npscr365_scrap
+isUser [1] =
+0
+obj_addr = 0000007F
+transform [1] =
+  right_x [1] =
+-0.884633
+  right_y [1] =
+0
+  right_z [1] =
+-0.466287
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.466287
+  front_y [1] =
+0
+  front_z [1] =
+-0.884633
+  posit_x [1] =
+1233.83
+  posit_y [1] =
+0
+  posit_z [1] =
+100468
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1234.59
+  y [1] =
+0.506041
+  z [1] =
+100468
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+140
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+141
+pos [1] =
+  x [1] =
+1241.51
+  y [1] =
+0
+  z [1] =
+100451
+team [1] =
+0
+label = npscr266_scrap
+isUser [1] =
+0
+obj_addr = 00000080
+transform [1] =
+  right_x [1] =
+0.409805
+  right_y [1] =
+0
+  right_z [1] =
+-0.912173
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.912173
+  front_y [1] =
+-0
+  front_z [1] =
+0.409805
+  posit_x [1] =
+1241.51
+  posit_y [1] =
+0
+  posit_z [1] =
+100451
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1241.41
+  y [1] =
+0.506041
+  z [1] =
+100451
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+141
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+142
+pos [1] =
+  x [1] =
+1234.48
+  y [1] =
+0
+  z [1] =
+100466
+team [1] =
+0
+label = npscr267_scrap
+isUser [1] =
+0
+obj_addr = 00000081
+transform [1] =
+  right_x [1] =
+-0.127076
+  right_y [1] =
+0
+  right_z [1] =
+0.991893
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.991893
+  front_y [1] =
+0
+  front_z [1] =
+-0.127076
+  posit_x [1] =
+1234.48
+  posit_y [1] =
+0
+  posit_z [1] =
+100466
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1234.51
+  y [1] =
+0.506041
+  z [1] =
+100466
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+142
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+143
+pos [1] =
+  x [1] =
+1227.43
+  y [1] =
+0
+  z [1] =
+100457
+team [1] =
+0
+label = npscr268_scrap
+isUser [1] =
+0
+obj_addr = 00000082
+transform [1] =
+  right_x [1] =
+0.872783
+  right_y [1] =
+-0
+  right_z [1] =
+0.488108
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+-0.488108
+  front_y [1] =
+0
+  front_z [1] =
+0.872783
+  posit_x [1] =
+1227.43
+  posit_y [1] =
+0
+  posit_z [1] =
+100457
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1227.22
+  y [1] =
+0.506041
+  z [1] =
+100457
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+143
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+npscr2
+seqno [1] =
+144
+pos [1] =
+  x [1] =
+1244.98
+  y [1] =
+0
+  z [1] =
+100467
+team [1] =
+0
+label = npscr269_scrap
+isUser [1] =
+0
+obj_addr = 00000083
+transform [1] =
+  right_x [1] =
+0.622777
+  right_y [1] =
+0
+  right_z [1] =
+-0.782399
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.782399
+  front_y [1] =
+-0
+  front_z [1] =
+0.622777
+  posit_x [1] =
+1244.98
+  posit_y [1] =
+0
+  posit_z [1] =
+100467
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1244.83
+  y [1] =
+0.506041
+  z [1] =
+100467
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+144
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+[GameObject]
+PrjID [1] =
+pspwn_1
+seqno [1] =
+145
+pos [1] =
+  x [1] =
+1611.97
+  y [1] =
+0
+  z [1] =
+101708
+team [1] =
+0
+label = pspwn_10_spawnpnt
+isUser [1] =
+0
+obj_addr = 00000084
+transform [1] =
+  right_x [1] =
+0.999851
+  right_y [1] =
+0
+  right_z [1] =
+-0.0172509
+  up_x [1] =
+0
+  up_y [1] =
+1
+  up_z [1] =
+0
+  front_x [1] =
+0.0172509
+  front_y [1] =
+-0
+  front_z [1] =
+0.999851
+  posit_x [1] =
+1611.97
+  posit_y [1] =
+0
+  posit_z [1] =
+101708
+illumination [1] =
+0
+pos [1] =
+  x [1] =
+1611.97
+  y [1] =
+6.44176
+  z [1] =
+101708
+euler =
+ mass [1] =
+0
+ mass_inv [1] =
+1e+030
+ v_mag [1] =
+0
+ v_mag_inv [1] =
+1e+030
+ I [1] =
+1
+ k_i [1] =
+0
+ v [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ omega [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+ Accel [1] =
+  x [1] =
+0
+  y [1] =
+0
+  z [1] =
+0
+seqNo [1] =
+145
+name = 
+isCritical [1] =
+false
+isObjective [1] =
+false
+isSelected [1] =
+false
+isVisible [1] =
+1
+seen [1] =
+3
+healthRatio [1] =
+1
+curHealth [1] =
+0
+maxHealth [1] =
+0
+ammoRatio [1] =
+0
+curAmmo [1] =
+0
+maxAmmo [1] =
+0
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+
+aiProcess [1] =
+false
+isCargo [1] =
+false
+independence [1] =
+1
+curPilot [1] =
+
+perceivedTeam [1] =
+0
+name = MultSTMission
+sObject = 00000085
+[AiMission]
+[AOIs]
+size [1] =
+0
+[AiPaths]
+count [1] =
+0
