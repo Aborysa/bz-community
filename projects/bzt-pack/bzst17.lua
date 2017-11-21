@@ -353,8 +353,6 @@ local GameController = utils.createClass("GameController", {
     local r = runtimeController:getRoutine(self.spectate_r)
     if key == "O" then
       self.showInfo = not self.showInfo
-    elseif key == "Tab" and r~=nil then
-      r:nextPlayer()
     end
     local w = key:gmatch("[^F](%d)")();
     if(w and self.ready and self.spectating) then
@@ -368,6 +366,7 @@ local GameController = utils.createClass("GameController", {
         end
         local id, r = runtimeController:createRoutine(SpectateController, players, w)
         self.spectate_r = id
+        r:enableGamekey(event)
       end
     end
   end
