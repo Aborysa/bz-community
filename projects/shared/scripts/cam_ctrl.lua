@@ -26,11 +26,14 @@ CameraController = bzutils.utils.createClass("CameraController", {
   end,
   setBase = function(self, base, offset)
     self.base = base
-    self.offset = offset or self.offset or SetVector(0, 0, 0)
+    self:setOffset(offset)
     if IsValid(self.dummy) then
       --SetPosition(self.dummy, GetPosition(self.base))
       --self.prev = GetPosition(self.dummy)
     end
+  end,
+  setOffset = function(self, offset)
+    self.offset = offset or self.offset or SetVector(0, 0, 0)
   end,
   setTarget = function(self, target)
     self.target = target or self.base
@@ -82,7 +85,9 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
     self.players = {}
     self.cameraRoutineId = -1
   end,
-  routineWasCreated = function(self, players, offset)
+  routineWasCreated = function(self, players, offset, zoom)
+    offset = offset or 0
+    self:setZoom(zoom)
     self.playerIdx = (offset > 0 and offset <= #players and offset) or self.playerIdx
     self.players = players
   end,
@@ -99,6 +104,22 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
       self.terminate()
     end
   end,
+  setZoom = function(self, zoom)
+    self.zoom = math.min(math.max(zoom==nil and 1 or zoom, 0), 3)
+    local r = runtimeController:getRoutine(self.cameraRoutineId)
+    if r ~= nil then
+      r:setOffset(self:getOffsetVec())
+    end
+  end,
+  getOffsetVec = function(self)
+    return SetVector(-10 - math.pow(4-self.zoom, 2)*1.1,2 + math.pow(4-self.zoom, 2.2)/1.5,0)
+  end,
+  zoomIn = function(self)
+    self:setZoom(self.zoom + 1)
+  end,
+  zoomOut = function(self)
+    self:setZoom(self.zoom - 1)
+  end,
   updatePlayer = function(self)
     --self.playerIdx = (self.playerIdx % #self.players) + 1
     local ph = self.players[self.playerIdx] and net:getPlayerHandle(self.players[self.playerIdx].team) --GetPlayerHandle(self.players[self.playerIdx].team)
@@ -109,7 +130,7 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
     self.retry = 0
     local r = runtimeController:getRoutine(self.cameraRoutineId)
     if r==nil then
-      self.cameraRoutineId, camctrl = runtimeController:createRoutine(CameraController, ph, SetVector(-20,10,0))
+      self.cameraRoutineId, camctrl = runtimeController:createRoutine(CameraController, ph, self:getOffsetVec())
       self.sub = camctrl:onDestroyed():subscribe(function(a)
         if a then
           self:updatePlayer()
@@ -126,6 +147,23 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
   end,
   update = function(self)
 
+  end,
+  enableGamekey = function(self, ed)
+    self.ed_sub = ed:on("GAME_KEY"):subscribe(function(event)
+      self:gameKey(event:getArgs())
+    end)
+  end,
+  enableMovelayer = function()
+    self.movePlayer = true
+  end,
+  gameKey = function(self, key)
+    if key == "GreyPlus" or key == "+" then
+      self:zoomIn()
+    elseif key == "GreyMinus" or key == "-" then
+      self:zoomOut()
+    elseif key == "Tab" then
+      self:nextPlayer()
+    end
   end,
   routineWasDestroyed = function(self)
     if self.sub then
