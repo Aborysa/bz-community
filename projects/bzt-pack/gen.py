@@ -2,13 +2,13 @@ from glob import glob
 import json
 
 
-with open("name_map", "r") as f:
+with open("templates/data.map", "r") as f:
   file_map = json.loads(f.read())
 
-with open("ini_template") as f:
+with open("templates/ini_template.tmp") as f:
   ini_template = f.read()
 
-with open("vxt_template") as f:
+with open("templates/vxt_template.tmp") as f:
   vxt_template = f.read()
 
 for file, name in file_map.items():
