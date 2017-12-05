@@ -7,7 +7,7 @@ local easeOutBackV = easing.easeOutBackV
 
 local local2Global = bzutils.utils.local2Global
 local global2Local = bzutils.utils.global2Local
-
+local isNullPos = bzutils.utils.isNullPos
 local interpolatedNormal = easing.interpolatedNormal
 
 local net = bzutils.net.net
@@ -85,8 +85,10 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
     self.players = {}
     self.cameraRoutineId = -1
   end,
-  routineWasCreated = function(self, players, offset, zoom)
+  routineWasCreated = function(self, players, offset, zoom, tp_player)
     offset = offset or 0
+    self.tp_player = tp_player==nil and true or tp_player
+    self.playerPos = GetTransform(GetPlayerHandle())
     self:setZoom(zoom)
     self.playerIdx = (offset > 0 and offset <= #players and offset) or self.playerIdx
     self.players = players
@@ -146,7 +148,17 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
     self:updatePlayer()
   end,
   update = function(self)
-
+    if self.tp_player then
+      local ph = self.players[self.playerIdx] and net:getPlayerHandle(self.players[self.playerIdx].team)
+      if IsValid(ph) then
+        local pp = GetPosition(ph)
+        if not isNullPos(pp) then
+          local h = GetTerrainHeightAndNormal(pp)
+          pp.y = h - 35
+          SetPosition(GetPlayerHandle(), pp)
+        end
+      end
+    end
   end,
   enableGamekey = function(self, ed)
     self.ed_sub = ed:on("GAME_KEY"):subscribe(function(event)
@@ -170,6 +182,9 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
       self.sub:unsubscribe()
     end
     runtimeController:clearRoutine(self.cameraRoutineId)
+    if self.tp_player then
+      SetTransform(GetPlayerHandle(), self.playerPos)
+    end
   end
 })
 

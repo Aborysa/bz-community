@@ -37,8 +37,8 @@ end
 
 
 
-SetCloaked = SetCloaked or function()
-end
+SetCloaked = SetCloaked or function()end
+Hide = Hide or function()end
 
 local function forceSpectatorCraft(handle)
   SetPilotClass(handle, "tvspec")
@@ -337,7 +337,8 @@ local GameController = utils.createClass("GameController", {
       end
     end
     if self.spectating then
-      --SetCloaked(ph)
+      Hide(ph)
+      SetCloaked(ph)
     end
     self.renderTimer:update(dtime)
   end,
@@ -364,7 +365,7 @@ local GameController = utils.createClass("GameController", {
         for i,v in ipairs(self.gameStore:getState().players) do
           table.insert(players, net:getPlayer(v))
         end
-        local id, r = runtimeController:createRoutine(SpectateController, players, w)
+        local id, r = runtimeController:createRoutine(SpectateController, players, w, 1, true)
         self.spectate_r = id
         r:enableGamekey(event)
       end
