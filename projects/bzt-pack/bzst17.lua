@@ -337,7 +337,7 @@ local GameController = utils.createClass("GameController", {
       end
     end
     if self.spectating then
-      Hide(ph)
+      --Hide(ph)
       SetCloaked(ph)
     end
     self.renderTimer:update(dtime)
@@ -395,8 +395,8 @@ function Update(dtime)
   end
   for i, v in pairs(removeOnNext) do
     RemoveObject(i)
-    removeOnDead[i] = nil
   end
+  removeOnNext = {}
 end
 
 function AddObject(h)
