@@ -33,7 +33,7 @@ pipeline:
       - mv /tmp/files /tmp/1196613614
       - cd /tmp
       - zip -r /community/projects/build-output/bzt17-bundle.zip ./1196613614
-      - python3 /bztools/uploadKVFile.py $${steam_username} $${steam_password} /community/projects/bzt-pack/.bzt-pack.vdf -contentfolder /tmp/1196613614 -changenote ${DRONE_TAG} -title ${DRONE_TAG}
+      - python3 /bztools/uploadKVFile.py $${STEAM_USERNAME} $${STEAM_PASSWORD} /community/projects/bzt-pack/.bzt-pack.vdf -contentfolder /tmp/1196613614 -changenote ${DRONE_TAG} -title ${DRONE_TAG}
 
   build-halloween:
     image: docker.faavne.no/bzone/bztools:latest
