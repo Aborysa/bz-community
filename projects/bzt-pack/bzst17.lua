@@ -73,7 +73,8 @@ local GameController = utils.createClass("GameController", {
       spectatorCount = 0,
       gameStarted = false,
       spawnOffset = 0,
-      players = {}
+      players = {},
+      usedSpawnpoints = {}
     })
     self.playerStore = Store({})
     AddObjective("stats.obj", "white", 8, self.displayText)
@@ -164,7 +165,7 @@ local GameController = utils.createClass("GameController", {
         print("Client rec", ...)
         self:_onReceive(...)
       end)
-      if not self.gameStore:getState().gameStarted then
+      if self.spawn_point==nil then
         if IsHosting() then
           if self.spectating then
             self.spawn_point = self:_addSpectator()
@@ -204,7 +205,22 @@ local GameController = utils.createClass("GameController", {
       local players = assignObject({}, state.players)
       table.insert(players, id)
       self.gameStore:set("players", players)
-      return true, (pc + offset) % (self.maxPlayers) + 1
+      local pcOffset = pc + offset
+      local spawnPoint = pcOffset + (math.min(0, (self.maxPlayers-pcOffset)*2))
+      local usedSpawnpoints = assignObject({},state.usedSpawnpoints)
+      -- there is a posiblity that the spawnpoint is occupied
+      local i = 1
+      while usedSpawnpoints[spawnPoint] do
+        pcOffset = pc + offset + i
+        spawnPoint = pcOffset + (math.min(0, (self.maxPlayers-pcOffset)*2 ))
+        i = i + 1
+        if i > self.maxPlayers then
+          return false, self:_addSpectator()
+        end
+      end
+      usedSpawnpoints[spawnPoint] = true
+      self.gameStore:set("usedSpawnpoints", usedSpawnpoints)
+      return true, spawnPoint  --% (self.maxPlayers) + 1
     else
       return false, self:_addSpectator()
     end
