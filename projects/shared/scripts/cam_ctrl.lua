@@ -27,10 +27,6 @@ CameraController = bzutils.utils.createClass("CameraController", {
   setBase = function(self, base, offset)
     self.base = base
     self:setOffset(offset)
-    if IsValid(self.dummy) then
-      --SetPosition(self.dummy, GetPosition(self.base))
-      --self.prev = GetPosition(self.dummy)
-    end
   end,
   setOffset = function(self, offset)
     self.offset = offset or self.offset or SetVector(0, 0, 0)
@@ -42,8 +38,7 @@ CameraController = bzutils.utils.createClass("CameraController", {
     return self.destroySubject
   end,
   postInit = function(self)
-    --self.dummy = BuildLocal("dummy", 0, GetPosition(self.base))
-    --self.prev = GetPosition(self.dummy)
+    print("Creating camera")
     CameraReady()
   end,
   update = function(self, dtime)
@@ -62,16 +57,11 @@ CameraController = bzutils.utils.createClass("CameraController", {
       offset.x * 100,
       self.base) or cc then
         self.terminate(cc)
-    else
-      --local pos = GetPosition(self.dummy)
-      --SetTransform(self.dummy, GetTransform(self.base))
-      --SetPosition(self.dummy, self.easingFunc(self.prev, GetPosition(self.base), dtime*4))
-      --self.prev = self.easingFunc(self.prev, GetPosition(self.dummy), dtime*4)
     end
   end,
   routineWasDestroyed = function(self, cc)
     CameraFinish()
-    --RemoveObject(self.dummy)
+    print("Removing camera")
     self.destroySubject:onNext(not cc)
   end
 })
@@ -84,6 +74,7 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
     self.retry = 0
     self.players = {}
     self.cameraRoutineId = -1
+    self.cancelled = false
   end,
   routineWasCreated = function(self, players, offset, zoom, tp_player)
     offset = offset or 0
@@ -131,23 +122,31 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
     end
     self.retry = 0
     local r = runtimeController:getRoutine(self.cameraRoutineId)
-    if r==nil then
-      self.cameraRoutineId, camctrl = runtimeController:createRoutine(CameraController, ph, self:getOffsetVec())
-      self.sub = camctrl:onDestroyed():subscribe(function(a)
-        if a then
-          self:updatePlayer()
-        else
-          self.terminate()
-        end
-      end)
-    else
+    if r~=nil then
       r:setBase(ph)
     end
   end,
-  postInit = function(self)
+  _createCameraR = function(self)
+    print("Creating new!", self.cancelled)
+    self.cameraRoutineId, camctrl = runtimeController:createRoutine(CameraController, ph, self:getOffsetVec())
+    self.sub = camctrl:onDestroyed():subscribe(function(a)
+      if not a then
+        self.cancelled = true
+        self.terminate()
+      else
+        self.cameraRoutineId = -1
+      end
+    end)
     self:updatePlayer()
   end,
+  postInit = function(self)
+    self:_createCameraR()
+  end,
   update = function(self)
+    local r = runtimeController:getRoutine(self.cameraRoutineId)
+    if r==nil and not self.cancelled then
+      self:_createCameraR()
+    end
     if self.tp_player then
       local ph = self.players[self.playerIdx] and net:getPlayerHandle(self.players[self.playerIdx].team)
       if IsValid(ph) then
@@ -156,6 +155,7 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
           local h = GetTerrainHeightAndNormal(pp)
           pp.y = h - 35
           SetPosition(GetPlayerHandle(), pp)
+          SetVelocity(GetPlayerHandle(), SetVector(0,0,0))
         end
       end
     end
