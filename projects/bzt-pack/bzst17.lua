@@ -35,6 +35,11 @@ function DisplayMessage(...)
   _DisplayMessage(...)
 end
 
+local config = Store({
+  playerSpawns = "p_spawns",
+  spectatorSpawns = "spectator_spawns",
+  spawnLayers = {}
+})
 
 
 SetCloaked = SetCloaked or function()end
@@ -445,4 +450,9 @@ end
 
 function GameKey(...)
   core:gameKey(...)
+end
+
+return function(player_spawns, spectator_spawns, layers)
+  -- config function
+
 end
