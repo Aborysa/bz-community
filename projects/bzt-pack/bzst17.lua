@@ -29,6 +29,8 @@ local assignObject = utils.assignObject
 
 local event = bzutils.event.bzApi
 
+local spawnlib = require("spawnlib")
+
 local _DisplayMessage = DisplayMessage
 function DisplayMessage(...)
   print("Display: ", ...)
@@ -38,12 +40,17 @@ end
 local config = Store({
   playerSpawns = "p_spawns",
   spectatorSpawns = "spectator_spawns",
-  spawnLayers = {}
+  spawnLayers = {},
+  spawnType = "roundRobin" --roundRobin, --layered, --furtherAway
 })
+
+
 
 
 SetCloaked = SetCloaked or function()end
 Hide = Hide or function()end
+
+
 
 local function forceSpectatorCraft(handle)
   SetPilotClass(handle, "tvspec")
@@ -57,7 +64,7 @@ local GameController = utils.createClass("GameController", {
     self.showInfo = true
     self.ready = false
     self.spectating = false
-    
+
     -- has player spawned
     self.spawned = false
 
@@ -79,15 +86,18 @@ local GameController = utils.createClass("GameController", {
       gameStarted = false,
       spawnOffset = 0,
       players = {},
-      usedSpawnpoints = {}
+      usedSpawnpoints = {},
+      spawnSequence = {}
     })
     self.playerStore = Store({})
     AddObjective("stats.obj", "white", 8, self.displayText)
   end,
-  routineWasCreated = function(sef)
+  routineWasCreated = function(self, config)
+    self.mapConfig = config
     print("routineWasCreated")
   end,
   postInit = function(self)
+    local conf = self.mapConfig:getState()
     print("postInit")
     -- check local players craft to determin if they're spectating or not
     RemoveObject(GetRecyclerHandle())
@@ -98,8 +108,11 @@ local GameController = utils.createClass("GameController", {
     event:on("CREATE_OBJECT"):subscribe(function(event)
       self:createObject(event:getArgs())
     end)
-    self.maxPlayers = GetPathPointCount("p_spawns")
-    self.gameStore:set("spawnOffset", math.random(1, self.maxPlayers))
+    local playerPoints = GetPathPoints(conf.playerSpawns)
+    self.maxPlayers = #playerPoints
+    local spawnOffset = math.random(1, self.maxPlayers)
+    self.gameStore:set("spawnOffset", spawnOffset)
+    self.gameStore:set("spawnSequence", spawnlib.generateSpawnSequence(conf.spawnType, playerPoints, spawnOffset, conf.spawnLayers))
     local ph = GetPlayerHandle()
     print(GetLabel(ph))
     if IsOdf(ph, "tvspec") then
@@ -206,22 +219,14 @@ local GameController = utils.createClass("GameController", {
     local offset = state.spawnOffset
     local pc = state.playerCount
     if (not state.gameStarted) and pc < self.maxPlayers then
-      self.gameStore:set("playerCount", pc + 1)      
+      self.gameStore:set("playerCount", pc + 1)
       local players = assignObject({}, state.players)
       table.insert(players, id)
       self.gameStore:set("players", players)
-      local pcOffset = pc + offset
-      local spawnPoint = pcOffset + (math.min(0, (self.maxPlayers-pcOffset)*2))
       local usedSpawnpoints = assignObject({},state.usedSpawnpoints)
-      -- there is a posiblity that the spawnpoint is occupied
-      local i = 1
-      while usedSpawnpoints[spawnPoint] do
-        pcOffset = pc + offset + i
-        spawnPoint = pcOffset + (math.min(0, (self.maxPlayers-pcOffset)*2 ))
-        i = i + 1
-        if i > self.maxPlayers then
-          return false, self:_addSpectator()
-        end
+      local spawnPoint = spawnlib.getNextSpawnPoint(usedSpawnpoints, state.spawnSequence)
+      if spawnPoint == nil then
+        return false, self:_addSpectator()
       end
       usedSpawnpoints[spawnPoint] = true
       self.gameStore:set("usedSpawnpoints", usedSpawnpoints)
@@ -241,7 +246,7 @@ local GameController = utils.createClass("GameController", {
       self.displayText = ("Starting in %d seconds\n"):format(value)
       if value > 0 and value <= 3 then
         DisplayMessage(("Starting in %d"):format(value))
-      end 
+      end
     end
   end,
   _playerStoreUpdate = function(self, nstate)
@@ -369,7 +374,7 @@ local GameController = utils.createClass("GameController", {
         removeOnNext[handle] = true
         --RemoveObject(handle)
       end
-    end 
+    end
   end,
   gameKey = function(self, key)
     local r = runtimeController:getRoutine(self.spectate_r)
@@ -400,7 +405,7 @@ namespace("bzt", GameController)
 runtimeController:useClass(GameController)
 
 function Start()
-  runtimeController:createRoutine(GameController)
+  runtimeController:createRoutine(GameController, config)
   core:start()
 end
 
@@ -452,7 +457,22 @@ function GameKey(...)
   core:gameKey(...)
 end
 
-return function(player_spawns, spectator_spawns, layers)
-  -- config function
-
-end
+return {
+  setSpawns = function(player_spawns, spectator_spawns)
+    config:assign({
+      playerSpawns = player_spawns,
+      spectatorSpawns = spectator_spawns,
+    })
+  end,
+  furtherAwaySpawnConfig = function()
+    config:assign({
+      spawnType = 'furtherAway'
+    })
+  end,
+  layerSpawnConfig = function(layers, roundRobin)
+    config:assign({
+      spawnLayers = layers,
+      spawnType = roundRobin and 'layeredRoundRobin' or 'layeredFurtherAway'
+    })
+  end
+}
