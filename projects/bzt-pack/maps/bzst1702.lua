@@ -1,1 +1,1 @@
-local _ = require('bzst17')
+local bzt = require('bzst17')
