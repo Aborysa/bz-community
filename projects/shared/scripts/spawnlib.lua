@@ -1,8 +1,3 @@
-local utils = require("utils")
-local assignObject = utils.assignObject
-local copyList = utils.copyList
-
-
 local function mapLayers(spawn_points, layers)
   local ret = {}
   for i, v in ipairs(layers) do
