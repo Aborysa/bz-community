@@ -1,0 +1,22 @@
+material ELYSIUM.MAP
+{
+	technique
+	{
+		pass
+		{
+			vertex_program_ref Effect_vertex
+			{
+			}
+			fragment_program_ref Effect_fragment
+			{
+			}
+
+			lighting off
+			depth_write off
+			texture_unit
+			{
+				texture elysium.tga
+			}
+		}
+	}
+}

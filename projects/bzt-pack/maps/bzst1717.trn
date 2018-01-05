@@ -17,7 +17,7 @@ FlatRange=250
 ShadowLuma=0
 FogDirection=1
 TerrainShadowLuma=20
-CarAmbient=10
+CarAmbient=20
 
 [Atlases]
 MaterialName	= ac_detail_atlas

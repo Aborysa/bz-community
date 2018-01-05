@@ -1,5 +1,5 @@
 build-win:
-	cmd /C "for /R ./projects %F in (*) do copy /Y %F ./dist"
+	cmd "/C for /R projects %F in (*) do copy /Y %F dist"
 
 build-linux:
 	rm -r ./dist/*
