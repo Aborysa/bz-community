@@ -299,8 +299,9 @@ local GameController = utils.createClass("GameController", {
     if (not self.spectating) and (self.spawn_point ~= nil) then
       local n = GetNation(GetPlayerHandle())
       local rtable = {"%svremp", "%svrecy", "avremp", "avrecy"}
+      local conf = self.mapConfig.getState()
       for i, v in ipairs(rtable) do
-        local recy = BuildObject(v:format(n), net:getLocalPlayer().team, GetPathPoints(self.spectating and "spectator_spawns" or "p_spawns")[self.spawn_point])
+        local recy = BuildObject(v:format(n), net:getLocalPlayer().team, GetPathPoints(self.spectating and conf.spectatorSpawns or conf.playerPoints)[self.spawn_point])
         if IsValid(recy) then
           break
         end
@@ -342,7 +343,8 @@ local GameController = utils.createClass("GameController", {
         end
       end
       if IsAlive(ph) and (not self.spawned) and (self.spawn_point ~= nil) and IsValid(GetPlayerHandle()) then
-        local spawn =  GetPathPoints(self.spectating and "spectator_spawns" or "p_spawns")[self.spawn_point]
+        local conf = self.mapConfig.getState()
+        local spawn =  GetPathPoints(self.spectating and conf.spectatorSpawns or conf.playerPoints)[self.spawn_point]
         SetPosition(ph,GetPositionNear(spawn, 50, 60))
         self.spawned = true
       end
