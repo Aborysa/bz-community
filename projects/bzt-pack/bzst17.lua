@@ -98,11 +98,9 @@ local GameController = utils.createClass("GameController", {
   end,
   routineWasCreated = function(self, config)
     self.mapConfig = config
-    print("routineWasCreated")
   end,
   postInit = function(self)
     local conf = self.mapConfig:getState()
-    print("postInit")
     -- check local players craft to determin if they're spectating or not
     RemoveObject(GetRecyclerHandle())
     self.serviceManager:getService("bzutils.bzapi"):subscribe(function(bzapi)
@@ -134,7 +132,7 @@ local GameController = utils.createClass("GameController", {
     self.serviceManager:getService("bzutils.net"):subscribe(function(net)
       self.net = net
       self.net:onNetworkReady():subscribe(function()
-        DisplayMessage("Network is read!")
+        DisplayMessage("Network is ready!")
         self.displayText = self.displayText .. "Network is ready!\n"
         self:_setUpSockets()
       end)
@@ -315,9 +313,9 @@ local GameController = utils.createClass("GameController", {
       SetPilotClass(GetPlayerHandle(), self.playerPilot)
       local n = GetNation(GetPlayerHandle())
       local rtable = {"%svremp", "%svrecy", "avremp", "avrecy"}
-      local conf = self.mapConfig.getState()
+      local conf = self.mapConfig:getState()
       for i, v in ipairs(rtable) do
-        local recy = BuildObject(v:format(n), net:getLocalPlayer().team, GetPathPoints(self.spectating and conf.spectatorSpawns or conf.playerPoints)[self.spawn_point])
+        local recy = BuildObject(v:format(n), self.net:getLocalPlayer().team, GetPathPoints(self.spectating and conf.spectatorSpawns or conf.playerSpawns)[self.spawn_point])
         if IsValid(recy) then
           break
         end
@@ -359,8 +357,8 @@ local GameController = utils.createClass("GameController", {
         end
       end
       if IsAlive(ph) and (not self.spawned) and (self.spawn_point ~= nil) and IsValid(GetPlayerHandle()) then
-        local conf = self.mapConfig.getState()
-        local spawn =  GetPathPoints(self.spectating and conf.spectatorSpawns or conf.playerPoints)[self.spawn_point]
+        local conf = self.mapConfig:getState()
+        local spawn =  GetPathPoints(self.spectating and conf.spectatorSpawns or conf.playerSpawns)[self.spawn_point]
         SetPosition(ph,GetPositionNear(spawn, 50, 60))
         self.spawned = true
       end
@@ -425,7 +423,6 @@ namespace("bzt", GameController)
 
 
 serviceManager:getServices("bzutils.component","bzutils.runtime"):subscribe(function(componentManager, runtimeController)
-  print(getFullName(componentManager.__class), getFullName(runtimeController.__class))
   componentManager:useClass(SpectatorCraft)
   runtimeController:useClass(GameController)
 end)
