@@ -1,6 +1,6 @@
 local bzutils = require("bzutils")
 local rx = require("rx")
-local runtimeController = bzutils.runtime.runtimeController
+-- local runtimeController = bzutils.runtime.runtimeController
 local easing = require("easing")
 
 local easeOutBackV = easing.easeOutBackV
@@ -10,11 +10,9 @@ local global2Local = bzutils.utils.global2Local
 local isNullPos = bzutils.utils.isNullPos
 local interpolatedNormal = easing.interpolatedNormal
 
-local net = bzutils.net.net
-
 CameraController = bzutils.utils.createClass("CameraController", {
-  new = function(self, terminate)
-    self.terminate = terminate
+  new = function(self, props)
+    self.terminate = props.terminate
     self.base = nil
     self:setBase(nil, SetVector(0,0,0))
     self.destroySubject = rx.Subject.create()
@@ -68,8 +66,13 @@ CameraController = bzutils.utils.createClass("CameraController", {
 
 -- controller for spectating players
 SpectateController = bzutils.utils.createClass("SpectateController", {
-  new = function(self, terminate)
-    self.terminate = terminate
+  new = function(self, props)
+    self.terminate = props.terminate
+    self.serviceManager = props.serviceManager
+    self.serviceManager:getServices("bzutils.runtime", "bzutils.net"):subscribe(function(runtimeController, net) 
+      self.runtimeController = runtimeController
+      self.net = net
+    end)
     self.playerIdx = 1
     self.retry = 0
     self.players = {}
@@ -99,7 +102,7 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
   end,
   setZoom = function(self, zoom)
     self.zoom = math.min(math.max(zoom==nil and 1 or zoom, 0), 3)
-    local r = runtimeController:getRoutine(self.cameraRoutineId)
+    local r = self.runtimeController:getRoutine(self.cameraRoutineId)
     if r ~= nil then
       r:setOffset(self:getOffsetVec())
     end
@@ -115,20 +118,20 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
   end,
   updatePlayer = function(self)
     --self.playerIdx = (self.playerIdx % #self.players) + 1
-    local ph = self.players[self.playerIdx] and net:getPlayerHandle(self.players[self.playerIdx].team) --GetPlayerHandle(self.players[self.playerIdx].team)
+    local ph = self.players[self.playerIdx] and self.net:getPlayerHandle(self.players[self.playerIdx].team) --GetPlayerHandle(self.players[self.playerIdx].team)
     if not IsValid(ph) then
       self:nextPlayer()
       return
     end
     self.retry = 0
-    local r = runtimeController:getRoutine(self.cameraRoutineId)
+    local r = self.runtimeController:getRoutine(self.cameraRoutineId)
     if r~=nil then
       r:setBase(ph)
     end
   end,
   _createCameraR = function(self)
     print("Creating new!", self.cancelled)
-    self.cameraRoutineId, camctrl = runtimeController:createRoutine(CameraController, ph, self:getOffsetVec())
+    self.cameraRoutineId, camctrl = self.runtimeController:createRoutine(CameraController, ph, self:getOffsetVec())
     self.sub = camctrl:onDestroyed():subscribe(function(a)
       if not a then
         self.cancelled = true
@@ -143,12 +146,12 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
     self:_createCameraR()
   end,
   update = function(self)
-    local r = runtimeController:getRoutine(self.cameraRoutineId)
+    local r = self.runtimeController:getRoutine(self.cameraRoutineId)
     if r==nil and not self.cancelled then
       self:_createCameraR()
     end
     if self.tp_player then
-      local ph = self.players[self.playerIdx] and net:getPlayerHandle(self.players[self.playerIdx].team)
+      local ph = self.players[self.playerIdx] and self.net:getPlayerHandle(self.players[self.playerIdx].team)
       if IsValid(ph) then
         local pp = GetPosition(ph)
         if not isNullPos(pp) then
@@ -181,7 +184,7 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
     if self.sub then
       self.sub:unsubscribe()
     end
-    runtimeController:clearRoutine(self.cameraRoutineId)
+    self.runtimeController:clearRoutine(self.cameraRoutineId)
     if self.tp_player then
       SetTransform(GetPlayerHandle(), self.playerPos)
     end

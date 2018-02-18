@@ -1,6 +1,7 @@
 -- Game mode for VS AI
 
 local bzutils = require("bzutils")
+
 local rx = require("rx")
 local helper = require("helpers")
 

@@ -1,13 +1,18 @@
 local bzutils = require("bzutils")
-local core = bzutils.core
+
+local setup = bzutils.defaultSetup()
+
+local core = setup.core
+local serviceManager = setup.serviceManager
+
 local utils = bzutils.utils
 local rx = require("rx")
-local runtimeController = bzutils.runtime.runtimeController
 
 local shared = require("shared")
+
+shared.setup(serviceManager)
 local SpectateController = shared.SpectateController
 
-local net = bzutils.net.net
 local Store = utils.Store
 local SharedStore = bzutils.net.SharedStore
 local Observable = rx.Observable
@@ -18,16 +23,14 @@ local ServerSocket = bzutils.net.ServerSocket
 
 local compareTables = utils.compareTables
 local namespace = utils.namespace
-
+local getFullName = utils.getFullName
 local SpectatorCraft = shared.SpectatorCraft
-
-bzutils.component.componentManager:useClass(SpectatorCraft)
 
 local removeOnDead = {}
 local removeOnNext = {}
 local assignObject = utils.assignObject
 
-local event = bzutils.event.bzApi
+--local event = bzutils.event.bzApi
 
 local spawnlib = require("spawnlib")
 
@@ -59,7 +62,7 @@ local function forceSpectatorCraft(handle)
 end
 
 local GameController = utils.createClass("GameController", {
-  new = function(self, terminate)
+  new = function(self, props)
     self.displayText = ""
     self.showInfo = true
     self.ready = false
@@ -76,7 +79,8 @@ local GameController = utils.createClass("GameController", {
       self:_rerender()
     end)
     self.renderTimer:start()
-    self.terminate = terminate
+    self.terminate = props.terminate
+    self.serviceManager = props.serviceManager
     self.ph = GetPlayerHandle()
     self.pp = GetPosition(self.ph)
     self.gameStore = Store({
@@ -101,12 +105,15 @@ local GameController = utils.createClass("GameController", {
     print("postInit")
     -- check local players craft to determin if they're spectating or not
     RemoveObject(GetRecyclerHandle())
-    event:on("GAME_KEY"):subscribe(function(event)
-      self:gameKey(event:getArgs())
-    end)
-
-    event:on("CREATE_OBJECT"):subscribe(function(event)
-      self:createObject(event:getArgs())
+    self.serviceManager:getService("bzutils.bzapi"):subscribe(function(bzapi)
+      local dp = bzapi:getDispatcher()
+      dp:on("GAME_KEY"):subscribe(function(event)
+        self:gameKey(event:getArgs())
+      end)
+  
+      dp:on("CREATE_OBJECT"):subscribe(function(event)
+        self:createObject(event:getArgs())
+      end)
     end)
     local playerPoints = GetPathPoints(conf.playerSpawns)
     self.maxPlayers = #playerPoints
@@ -117,19 +124,27 @@ local GameController = utils.createClass("GameController", {
     print(GetLabel(ph))
     if IsOdf(ph, "tvspec") then
       self.spectating = true
+    else
+      self.playerPilot = GetPilotClass(ph)
+      SetPilotClass(ph, "")
     end
     self.displayText = "Waiting for network...\n"
     DisplayMessage("Waiting for network...")
-    net:onNetworkReady():subscribe(function()
-      DisplayMessage("Network is read!")
-      self.displayText = self.displayText .. "Network is ready!\n"
-      self:_setUpSockets()
+    
+    self.serviceManager:getService("bzutils.net"):subscribe(function(net)
+      self.net = net
+      self.net:onNetworkReady():subscribe(function()
+        DisplayMessage("Network is read!")
+        self.displayText = self.displayText .. "Network is ready!\n"
+        self:_setUpSockets()
+      end)
+      self.net:onHostMigration():subscribe(function()
+        DisplayMessage("Host migrated")
+        self.displayText = "Host migrated\n"
+        self:_setUpSockets()
+      end)
     end)
-    net:onHostMigration():subscribe(function()
-      DisplayMessage("Host migrated")
-      self.displayText = "Host migrated\n"
-      self:_setUpSockets()
-    end)
+
   end,
   _rerender = function(self)
     if self.showInfo or (not self.ready) then
@@ -150,13 +165,13 @@ local GameController = utils.createClass("GameController", {
     local socketsub3 = nil
     local socketsLeft = 3
     if IsHosting() then
-      socketsub2 = Observable.of(net:openSocket(0, ServerSocket, "bzt", "event", "sock"))
-      socketsub1 = Observable.of(net:openSocket(0, BroadcastSocket, "bzt", "state", "sock"))
-      socketsub3 = Observable.of(net:openSocket(0, BroadcastSocket, "bzt", "player", "sock"))
+      socketsub2 = Observable.of(self.net:openSocket(0, ServerSocket, "bzt", "event", "sock"))
+      socketsub1 = Observable.of(self.net:openSocket(0, BroadcastSocket, "bzt", "state", "sock"))
+      socketsub3 = Observable.of(self.net:openSocket(0, BroadcastSocket, "bzt", "player", "sock"))
     else
-      socketsub2 = net:getRemoteSocket("bzt", "event", "sock")
-      socketsub1 = net:getRemoteSocket("bzt","state","sock")
-      socketsub3 = net:getRemoteSocket("bzt", "player", "sock")
+      socketsub2 = self.net:getRemoteSocket("bzt", "event", "sock")
+      socketsub1 = self.net:getRemoteSocket("bzt","state","sock")
+      socketsub3 = self.net:getRemoteSocket("bzt", "player", "sock")
     end
 
     socketsub1:subscribe(function(socket)
@@ -188,7 +203,7 @@ local GameController = utils.createClass("GameController", {
           if self.spectating then
             self.spawn_point = self:_addSpectator()
           else
-            local succ, spawn = self:_addPlayer(net:getLocalPlayer().id)
+            local succ, spawn = self:_addPlayer(self.net:getLocalPlayer().id)
             self.spawn_point = spawn
             if not succ then
               self.spectating = true
@@ -196,7 +211,7 @@ local GameController = utils.createClass("GameController", {
             end
           end
         else
-          socket:send(self.spectating and "SPECTATE" or "JOIN", net:getLocalPlayer().id)
+          socket:send(self.spectating and "SPECTATE" or "JOIN", self.net:getLocalPlayer().id)
         end
       end
     end)
@@ -253,10 +268,10 @@ local GameController = utils.createClass("GameController", {
     self.displayText = ""
     local sorted = {}
     for i, v in pairs(nstate) do
-      local p = net:getPlayer(i)
+      local p = self.net:getPlayer(i)
       table.insert(sorted, {
         order = i,
-        player = net:getPlayer(i) or {team = 0, name = "Unknown", id = i},
+        player = self.net:getPlayer(i) or {team = 0, name = "Unknown", id = i},
         state = v
       })
     end
@@ -297,6 +312,7 @@ local GameController = utils.createClass("GameController", {
   end,
   _spawnInRecycler = function(self)
     if (not self.spectating) and (self.spawn_point ~= nil) then
+      SetPilotClass(GetPlayerHandle(), self.playerPilot)
       local n = GetNation(GetPlayerHandle())
       local rtable = {"%svremp", "%svrecy", "avremp", "avrecy"}
       local conf = self.mapConfig.getState()
@@ -306,10 +322,10 @@ local GameController = utils.createClass("GameController", {
           break
         end
       end
-      SetScrap(net:getLocalPlayer().team, 20)
+      SetScrap(self.net:getLocalPlayer().team, 20)
     else
       for i=1,15 do
-        Ally(net:getLocalPlayer().team, i)
+        Ally(self.net:getLocalPlayer().team, i)
       end
     end
   end,
@@ -349,7 +365,7 @@ local GameController = utils.createClass("GameController", {
         self.spawned = true
       end
       if gameState.gameStarted and not self.spectating then
-        local player = net:getLocalPlayer()
+        local player = self.net:getLocalPlayer()
         local pstate = self.playerStore:getState()[player.id] or {scrap = 0, pilot = 0, mscrap = 0, mpilot = 0}
         local nstate = {
           scrap = GetScrap(player.team),
@@ -379,35 +395,45 @@ local GameController = utils.createClass("GameController", {
     end
   end,
   gameKey = function(self, key)
-    local r = runtimeController:getRoutine(self.spectate_r)
-    if key == "O" then
-      self.showInfo = not self.showInfo
-    end
-    local w = key:gmatch("[^F](%d)")();
-    if(w and self.ready and self.spectating) then
-      w = tonumber(w)
-      if r ~= nil then
-        r:setPlayer(w)
-      else
-        local players = {}
-        for i,v in ipairs(self.gameStore:getState().players) do
-          table.insert(players, net:getPlayer(v))
-        end
-        local id, r = runtimeController:createRoutine(SpectateController, players, w, 1, true)
-        self.spectate_r = id
-        r:enableGamekey(event)
+    self.serviceManager:getService("bzutils.runtime"):subscribe(function(runtimeController)
+      local r = runtimeController:getRoutine(self.spectate_r)
+      if key == "O" then
+        self.showInfo = not self.showInfo
       end
-    end
+      local w = key:gmatch("[^F](%d)")();
+      if(w and self.ready and self.spectating) then
+        w = tonumber(w)
+        if r ~= nil then
+          r:setPlayer(w)
+        else
+          local players = {}
+          for i,v in ipairs(self.gameStore:getState().players) do
+            table.insert(players, self.net:getPlayer(v))
+          end
+          local id, r = runtimeController:createRoutine(SpectateController, players, w, 1, true)
+          self.spectate_r = id
+          r:enableGamekey(self.serviceManager:getServiceSync("bzutils.bzapi"):getDispatcher())
+        end
+      end
+    end)
   end
 })
 
 
 namespace("bzt", GameController)
 
-runtimeController:useClass(GameController)
+
+
+serviceManager:getServices("bzutils.component","bzutils.runtime"):subscribe(function(componentManager, runtimeController)
+  print(getFullName(componentManager.__class), getFullName(runtimeController.__class))
+  componentManager:useClass(SpectatorCraft)
+  runtimeController:useClass(GameController)
+end)
 
 function Start()
-  runtimeController:createRoutine(GameController, config)
+  serviceManager:getService("bzutils.runtime"):subscribe(function(runtimeController)
+    runtimeController:createRoutine(GameController, config)
+  end)
   core:start()
 end
 
