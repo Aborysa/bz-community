@@ -19,7 +19,7 @@ pipeline:
       - cd /tmp/lua
       - curl -O https://raw.githubusercontent.com/bjornbytes/RxLua/master/rx.lua
       - cd /tmp/bzmoon
-      - curl -O https://media.faavne.no/bzmoon/bzmoon_latest.zip
+      - curl -O https://media.faavne.no/bzmoon/bzmoon_v2.0.0.zip
       - unzip bzmoon_latest.zip
       - mv ./bzutils.lua /tmp/lua
       - find /community/projects/bzt-pack -type f \( -name "*.lua" -o -name "*.squish" \) -exec cp {} /tmp/lua \;
@@ -51,7 +51,7 @@ pipeline:
       - cd /tmp/lua
       - curl -O https://raw.githubusercontent.com/bjornbytes/RxLua/master/rx.lua
       - cd /tmp/bzmoon
-      - curl -O https://media.faavne.no/bzmoon/bzmoon_latest.zip
+      - curl -O https://media.faavne.no/bzmoon/bzmoon_v2.0.0.zip
       - unzip bzmoon_latest.zip
       - mv ./bzutils.lua /tmp/lua
       - find /community/projects/halloween-pack -type f \( -name "*.lua" -o -name "*.squish" \) -exec cp {} /tmp/lua \;
