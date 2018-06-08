@@ -66,15 +66,34 @@ pipeline:
       - cd /tmp
       - zip -r /community/projects/build-output/halloween-bundle.zip ./731940591
 
+  upload:
+    image: appleboy/drone-scp
+    host: faavne.no
+    username: root
+    secrets: [ssh_key]
+    key_path: /ssh/id_rsa
+    target:
+      - /tmp/
+    source:
+      - /community/projects/build-output/bzt17-bundle.zip
+      - /community/projects/build-output/halloween-bundle.zip
+    strip_components: 2
+
+    volumes:
+      - /root/.ssh/id_rsa:/ssh/id_rsa
+
 
   release:
     group: deploy
-    image: docker.faavne.no/bzone/bztools:latest
+    image: appleboy/drone-ssh
+    host: faavne.no
+    username: root
+    key_path: /ssh/id_rsa
+    secrets: [ssh_key]
     when:
       event:
         - tag
-    commands:
-      - \cp -f /community/projects/build-output/halloween-bundle.zip /drone/deploy/bz-halloween/bz-halloween_${DRONE_TAG}.zip || true
-      - \cp -f /community/projects/build-output/bzt17-bundle.zip /drone/deploy/bzt-2017/bzt17_${DRONE_TAG}.zip || true
-    volumes:
-      - /mnt/nginx-fs/files/public/bz-community:/drone/deploy
+    script:
+      - \cp -f /tmp/halloween-bundle.zip /mnt/nginx-fs/files/bz-community/bz-halloween/bz-halloween_${DRONE_TAG}.zip || true
+      - \cp -f /tmp/bzt17-bundle.zip /mnt/nginx-fs/files/bz-community/bzt-2017/bzt17_${DRONE_TAG}.zip || true
+
