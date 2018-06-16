@@ -1,16 +1,18 @@
 -- Game mode for VS AI
 
 local bzutils = require("bzutils")
+
+local setup = bzutils.defaultSetup()
+
+local core = setup.core
+local serviceManager = setup.serviceManager
+
+
 local rx = require("rx")
 local helper = require("helpers")
 
-
-
-helper.setup(bzutils.event.bzApi)
-
-local core = bzutils.core
-local net = bzutils.net.net
 local SharedStore = bzutils.net.SharedStore
+
 local Store = bzutils.utils.Store
 local BroadcastSocket = bzutils.net.BroadcastSocket
 
@@ -18,6 +20,7 @@ local Timer = bzutils.utils.Timer
 
 local createClass = bzutils.utils.createClass
 
+local net = bzutils.net.net
 
 local WaveController = require("wave_c") 
 
@@ -79,18 +82,22 @@ local furyWaves = {
 
 
 local GameManager = createClass("game.vsai", {
-  new = function(self)
-    self:super("__init")
+  new = function(self, serviceManager)
+    self:super("__init", serviceManager)
     self.initialized = false
-    net:onNetworkReady():subscribe(function()
-      self.displayText = ("Network initilized!\n")
-      self:_initState()
-    end) 
-    net:onHostMigration():subscribe(function(host)
-      self.initialized = false
-      self.displayText = ("Host migrated, %s\n is now hosting\n"):format(host.name)
-      self:_initState()
-    end)
+
+    serviceManager:getService("bzutils.net"):subscribe(function(net)
+      self.net = net
+      net:onNetworkReady():subscribe(function()
+        self.displayText = ("Network initilized!\n")
+        self:_initState()
+      end) 
+      net:onHostMigration():subscribe(function(host)
+        self.initialized = false
+        self.displayText = ("Host migrated, %s\n is now hosting\n"):format(host.name)
+        self:_initState()
+      end)
+    end
     self.renderTimer = Timer(0.1, -1)
     self.renderTimer:onAlarm():subscribe(function()
       self:_rerender()
@@ -127,9 +134,9 @@ local GameManager = createClass("game.vsai", {
     -- set up sockets
     local socketSub 
     if IsHosting() then
-      socketSub = rx.Observable.of(net:openSocket(0, BroadcastSocket, "vsai.sock" ,"state"))
+      socketSub = rx.Observable.of(self.net:openSocket(0, BroadcastSocket, "vsai.sock" ,"state"))
     else
-      socketSub = net:getRemoteSocket("vsai.sock","state")
+      socketSub = self.net:getRemoteSocket("vsai.sock","state")
     end
     socketSub:subscribe(function(socket)
       self.initialized = true
@@ -279,6 +286,12 @@ bzutils.utils.namespace("vsai", GameManager)
 core:useModule(GameManager)
 
 local ambientTimer = math.random(5,20)
+
+
+serviceManager:getService("bzutils.bzapi"):subscribe(function(bzApi)
+  helper.setup(bzApi)
+end)
+
 
 
 function Start()

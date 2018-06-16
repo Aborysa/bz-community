@@ -3,9 +3,6 @@
 
 local bzutils = require("bzutils")
 
-
-local bzutils = require("bzutils")
-
 local utils = bzutils.utils
 local component = bzutils.component
 
