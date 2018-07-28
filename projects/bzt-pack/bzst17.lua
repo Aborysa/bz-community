@@ -56,6 +56,9 @@ Hide = Hide or function()end
 
 
 local function forceSpectatorCraft(handle)
+  for i=1,15 do
+    Ally(GetTeamNum(handle), i)
+  end
   SetPilotClass(handle, "tvspec")
   HopOut(handle)
   removeOnDead[handle] = true
@@ -321,10 +324,6 @@ local GameController = utils.createClass("GameController", {
         end
       end
       SetScrap(self.net:getLocalPlayer().team, 20)
-    else
-      for i=1,15 do
-        Ally(self.net:getLocalPlayer().team, i)
-      end
     end
   end,
   update = function(self, dtime)
