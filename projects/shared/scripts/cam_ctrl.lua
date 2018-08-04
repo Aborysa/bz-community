@@ -95,35 +95,44 @@ CameraController = bzutils.utils.createClass("CameraController", {
   end,
   update = function(self, dtime)
     local offset = self.offset
-    local anchor_offset = SetVector(-1000, -1000, -1000) 
+    local anchor_offset = SetVector(-10000, -10000, -10000) 
     
     local cc = CameraCancelled()
     local ntransform = InterpolateMatrix(self.previous_transform, GetTransform(self.base),self.smoothness/dtime)
-    
-    local lookAt = GetPosition(self.target) + self.target_offset
-    if(self.previous_lookat) then
-      lookAt = calcPt(self.previous_lookat, lookAt, 1/(self.smoothness/dtime) )
-    end
+    --local lookatbase_transform = InterpolateMatrix(self.previous_transform, GetTransform(self.target),self.smoothness/dtime)
+    local inter_pos = SetVector(ntransform.posit_x, ntransform.posit_y, ntransform.posit_z)
 
-    self.previous_lookat = lookAt
+    local lookAt = GetPosition(self.target) + self.target_offset
+    --if(self.previous_lookat) then
+    --  lookAt = calcPt(self.previous_lookat, lookAt, 1/(self.smoothness/dtime) )
+    --end
+
+    --self.previous_lookat = lookAt
     
     self.previous_transform = ntransform
     SetTransform(self.anchor, ntransform)
     SetPosition(self.anchor, GetPosition(self.anchor) + anchor_offset)
     
-
+    
     offset = local2Global(offset, ntransform)
-    local actualOffset = offset + GetPosition(self.base)
+    local actualOffset = offset + inter_pos
     local h, normal = GetFloorHeightAndNormal(actualOffset + SetVector(0,5,0))
     if(self.avoid_ground) then
       actualOffset.y = math.max(actualOffset.y, h + 5)
     end
-    offset = actualOffset - GetPosition(self.base) - anchor_offset
+    offset = actualOffset - inter_pos - anchor_offset
     offset = global2Local(offset, ntransform)
 
-    local target_anchor_pos = Normalize(lookAt - actualOffset)*10000 + actualOffset
-    SetPosition(self.target_anchor, target_anchor_pos)
+    local look_dir = Normalize(lookAt - actualOffset)
+    if(self.previous_lookat) then
+      look_dir = Normalize(calcPt(self.previous_lookat, look_dir, 1/( (self.smoothness*0.25) /dtime) ))
+    end
+    local target_anchor_pos = look_dir*10000 + actualOffset
+    
 
+    self.previous_lookat = look_dir
+    
+    SetPosition(self.target_anchor, target_anchor_pos)
     if (not IsValid(self.base)) or CameraObject(
       self.anchor, 
       (offset.z) * 100,
@@ -186,7 +195,7 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
     if r ~= nil then
       local vm = self.viewModes[self.currentViewMode]
       if(vm == "FIRST_PERSON") then 
-        r:setOffset(SetVector(0, 0, 0))
+        r:setOffset(SetVector(0.0278-0.0050, 1.6991 + 8.5467 + 5.2735 -5.4967, 0.3690 -3.1196 + 0.7436 + 0.6834))
         r:setSmoothnessFactor(0.01)
       else
         r:setOffset(self:getOffsetVec())
@@ -222,7 +231,7 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
       lookAt = GetPosition(t) - GetPosition(ph)
     end
     if(vm == "AHEAD" or vm == "FIRST_PERSON") then
-      lookAt = GetFront(ph) * 1000
+      lookAt = GetFront(ph) * 500
     end
     if(vm == "TARGET" or vm == "FIRST_PERSON") then
       SetUserTarget(t)
