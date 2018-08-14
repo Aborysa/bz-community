@@ -77,11 +77,17 @@ local GameController = utils.createClass("GameController", {
     self.spectate_r = -1
     self.spawn_point = nil
     self.maxPlayers = 0
-    self.renderTimer = utils.Timer(0.1,-1)
+    self.renderTimer = utils.Timer(0.3,-1)
     self.renderTimer:onAlarm():subscribe(function()
       self:_rerender()
     end)
     self.renderTimer:start()
+
+    self.statsUpdateTimer = utils.Timer(1, -1)
+    self.statsUpdateTimer:onAlarm():subscribe(function()
+      self:_updateStats()
+    end)
+    self.statsUpdateTimer:start()
     self.terminate = props.terminate
     self.serviceManager = props.serviceManager
     self.ph = GetPlayerHandle()
@@ -97,6 +103,19 @@ local GameController = utils.createClass("GameController", {
       spawnSequence = {}
     })
     self.playerStore = Store({})
+    self.extraStatsStore = Store({
+      --factoryCount = 0,
+      --armoryCount = 0,
+      destroyedVehicles = 0,
+      destroyedBuildings = 0,
+      --builtVehicleTotal = 0,
+      --builtBuildingsTotal = 0,
+      --vehicleCount = 0,
+      --buildingCount = 0
+    })
+
+    self.trackedObjects = {}
+    self.removeObjectCache = {}
     AddObjective("stats.obj", "white", 8, self.displayText)
   end,
   routineWasCreated = function(self, config)
@@ -115,6 +134,14 @@ local GameController = utils.createClass("GameController", {
       dp:on("CREATE_OBJECT"):subscribe(function(event)
         self:createObject(event:getArgs())
       end)
+
+      dp:on("ADD_OBJECT"):subscribe(function(event)
+        self:addObject(event:getArgs())
+      end)
+      
+      dp:on("DELETE_OBJECT"):subscribe(function(event)
+        self:deleteObject(event:getArgs())
+      end)
     end)
     local playerPoints = GetPathPoints(conf.playerSpawns)
     self.maxPlayers = #playerPoints
@@ -122,7 +149,6 @@ local GameController = utils.createClass("GameController", {
     self.gameStore:set("spawnOffset", spawnOffset)
     self.gameStore:set("spawnSequence", spawnlib.generateSpawnSequence(conf.spawnType, playerPoints, spawnOffset, conf.spawnLayers))
     local ph = GetPlayerHandle()
-    print(GetLabel(ph))
     if IsOdf(ph, "tvspec") then
       self.spectating = true
     else
@@ -153,26 +179,95 @@ local GameController = utils.createClass("GameController", {
       self.showInfo = true
     end
   end,
+  _updateStats = function(self)
+    local player = self.net:getLocalPlayer()
+    local ph = GetPlayerHandle()
+    local pstate = self.playerStore:getState()[player.id] or assignObject({scrap = 0, pilot = 0, mscrap = 0, mpilot = 0, hasRecycler = true, hasFactory = false, hasArmory = false, hasConstructor = false}, self.extraStatsStore:getState())
+    local nstate = {
+      scrap = GetScrap(player.team),
+      pilot = GetPilot(player.team),
+      mscrap = GetMaxScrap(player.team),
+      mpilot = GetMaxPilot(player.team),
+      --ammo = GetAmmo(ph),
+      --health = GetHealth(ph),
+      hasRecycler = IsAlive(GetRecyclerHandle()),
+      hasFactory = IsAlive(GetFactoryHandle()),
+      hasArmory = IsAlive(GetArmoryHandle()),
+      hasConstructor = IsAlive(GetConstructorHandle())
+    }
+
+    for k, v in pairs(self.extraStatsStore:getState()) do
+      nstate[k] = v
+    end
+
+    -- for loop to just check if the table isn't empty
+    for i, v in pairs(compareTables(pstate, nstate)) do
+      self.playerStore:set(player.id, nstate)
+      break
+    end
+
+    local destroyList = {}
+
+    for i, h in pairs(self.removeObjectCache) do
+      local v = self.trackedObjects[h]
+      if(v ~= nil) then
+        if v.lastEnemyShot < 10+GetTime() and v.lastEnemyShot > v.lastFriendShot then
+          if(IsValid(v.whoShotMeLast)) then
+            local team = GetTeamNum(v.whoShotMeLast)
+            destroyList[team] = destroyList[team] or {vcount=0, bcount=0}
+            local list = destroyList[team]
+            if(v.isVehicle) then
+              list.vcount = list.vcount + 1
+            else
+              list.bcount = list.bcount + 1 
+            end
+          end
+        end
+      end
+
+      self.trackedObjects[h] = nil
+    end
+    self.removeObjectCache = {}
+
+    for h, v in pairs(self.trackedObjects) do
+      if(IsAlive(h)) then
+        v.whoShotMeLast = GetWhoShotMe(h)
+        v.lastEnemyShot = GetLastEnemyShot(h)
+        v.lastFriendShot = GetLastFriendShot(h)
+      else
+        table.insert(self.removeObjectCache, v)
+      end
+    end
+
+    for team, dstats in pairs(destroyList) do
+      self.gameEventSocket:send("DESTROYED", team, dstats.vcount, dstats.bcount)
+    end
+
+  end,
   _setUpSockets = function(self)
     self.displayText = self.displayText .. "Setting up sockets...\n"
     DisplayMessage("Setting up sockets...")
     self.stateSocket = nil
     self.eventSocket = nil
     self.playerSocket = nil
+    self.gameEventSocket = nil
     self.ready = false
     self.acc = 0
     local socketsub1 = nil
     local socketsub2 = nil
     local socketsub3 = nil
-    local socketsLeft = 3
+    local socketsub4 = nil
+    local socketsLeft = 4
     if IsHosting() then
       socketsub2 = Observable.of(self.net:openSocket(0, ServerSocket, "bzt", "event", "sock"))
       socketsub1 = Observable.of(self.net:openSocket(0, BroadcastSocket, "bzt", "state", "sock"))
       socketsub3 = Observable.of(self.net:openSocket(0, BroadcastSocket, "bzt", "player", "sock"))
+      socketsub4 = Observable.of(self.net:openSocket(0, BroadcastSocket, "bzt", "game_event", "sock"))
     else
       socketsub2 = self.net:getRemoteSocket("bzt", "event", "sock")
       socketsub1 = self.net:getRemoteSocket("bzt","state","sock")
       socketsub3 = self.net:getRemoteSocket("bzt", "player", "sock")
+      socketsub4 = self.net:getRemoteSocket("bzt", "game_event", "sock")
     end
 
     socketsub1:subscribe(function(socket)
@@ -229,6 +324,17 @@ local GameController = utils.createClass("GameController", {
         end
       end)
     end)
+    socketsub4:subscribe(function(socket)
+      socketsLeft = socketsLeft - 1
+      self.ready = socketsLeft <= 0
+      self.displayText = self.displayText .. "Game event socket set up!\n"
+      DisplayMessage("Game event socket set up!")
+      self.gameEventSocket = socket
+      socket:onReceive():subscribe(function(...)
+        self:_onGameEventReceive(...)
+      end)
+    end)
+
   end,
   _addPlayer = function(self, id)
     local state = self.gameStore:getState()
@@ -281,8 +387,11 @@ local GameController = utils.createClass("GameController", {
     end)
     for i, v in ipairs(sorted) do
       self.displayText = self.displayText .. ("%s (%d, %d):\n"):format(v.player.name, v.player.team, v.player.id)
+      self.displayText = self.displayText .. ("  has factory, armory, const?: %s, %s, %s\n"):format(v.state.hasFactory and "yes" or "no", v.state.hasArmory and "yes" or "no", v.state.hasConstructor and "yes" or "no")
       self.displayText = self.displayText .. ("  scrap: %d/%d\n"):format(v.state.scrap, v.state.mscrap)
-      self.displayText = self.displayText .. ("  pilot: %d/%d\n\n"):format(v.state.pilot, v.state.mpilot)
+      self.displayText = self.displayText .. ("  pilot: %d/%d\n"):format(v.state.pilot, v.state.mpilot)
+      self.displayText = self.displayText .. ("  destroyed buildings: %d\n"):format(v.state.destroyedBuildings)
+      self.displayText = self.displayText .. ("  destroyed vehicles: %d\n"):format(v.state.destroyedVehicles)
     end
   end,
   _onReceive = function(self, what, ...)
@@ -311,6 +420,17 @@ local GameController = utils.createClass("GameController", {
       socket:send("SPEC_SPAWN", spawn)
     end
   end,
+  _onGameEventReceive = function(self, what, ...)
+    -- object(s) were destroyed
+    if(what == "DESTROYED") then
+      local team, vcount, bcount = ...
+      if(self.net:getLocalPlayer().team == team) then
+        local state = self.extraStatsStore:getState()
+        self.extraStatsStore:set("destroyedVehicles", state.destroyedVehicles + vcount)
+        self.extraStatsStore:set("destroyedBuildings", state.destroyedBuildings + bcount)
+      end
+    end
+  end,
   _spawnInRecycler = function(self)
     if (not self.spectating) and (self.spawn_point ~= nil) then
       SetPilotClass(GetPlayerHandle(), self.playerPilot)
@@ -320,9 +440,12 @@ local GameController = utils.createClass("GameController", {
       for i, v in ipairs(rtable) do
         local recy = BuildObject(v:format(n), self.net:getLocalPlayer().team, GetPathPoints(self.spectating and conf.spectatorSpawns or conf.playerSpawns)[self.spawn_point])
         if IsValid(recy) then
+          self:_trackObject(recy)
           break
         end
       end
+      self:_trackObject(GetPlayerHandle())
+      
       SetScrap(self.net:getLocalPlayer().team, 20)
     end
   end,
@@ -362,19 +485,7 @@ local GameController = utils.createClass("GameController", {
         self.spawned = true
       end
       if gameState.gameStarted and not self.spectating then
-        local player = self.net:getLocalPlayer()
-        local pstate = self.playerStore:getState()[player.id] or {scrap = 0, pilot = 0, mscrap = 0, mpilot = 0}
-        local nstate = {
-          scrap = GetScrap(player.team),
-          pilot = GetPilot(player.team),
-          mscrap = GetMaxScrap(player.team),
-          mpilot = GetMaxPilot(player.team)
-        }
-        -- for loop to just check if the table isn't empty
-        for i, v in pairs(compareTables(pstate, nstate)) do
-          self.playerStore:set(player.id, nstate)
-          break
-        end
+        self.statsUpdateTimer:update(dtime)
       end
     end
     if self.spectating then
@@ -384,11 +495,30 @@ local GameController = utils.createClass("GameController", {
     self.renderTimer:update(dtime)
   end,
   createObject = function(self, handle)
-    if (not self.gameStore:getState().gameStarted or self.spectating) and not IsRemote(handle) then
+    if (not self.gameStore:getState().gameStarted or self.spectating) then
       if GetClassLabel(handle) == "camerapod" then
         removeOnNext[handle] = true
         --RemoveObject(handle)
       end
+    end
+  end,
+  deleteObject = function(self, handle)
+    if(self.trackedObjects[handle] ~= nil) then
+      table.insert(self.removeObjectCache, handle)
+    end
+  end,
+  _trackObject = function(self, handle)
+    print("Tracking object", handle)
+    self.trackedObjects[handle] = {
+      isVehicle = IsCraft(handle),
+      whoShotMeLast = nil,
+      lastEnemyShot = 0,
+      lastFriendShot = 0
+    }
+  end,
+  addObject = function(self, handle)
+    if(self.gameStore:getState().gameStarted and not self.spectating) then
+      self:_trackObject(handle)
     end
   end,
   gameKey = function(self, key)
