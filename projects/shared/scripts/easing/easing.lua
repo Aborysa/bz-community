@@ -3,7 +3,7 @@
 
 
 local function calcPt(n1, n2, perc)
-  return n1 + (n2 - n1)*perc
+  return n1 + (n2 - n1)*math.max(math.min(perc, 1), 0)
 end
 
 local function quadBezier(x1, x2, x3, perc)
