@@ -83,7 +83,7 @@ local GameController = utils.createClass("GameController", {
     end)
     self.renderTimer:start()
 
-    self.statsUpdateTimer = utils.Timer(0.5, -1)
+    self.statsUpdateTimer = utils.Timer(1, -1)
     self.statsUpdateTimer:onAlarm():subscribe(function()
       self:_updateStats()
     end)
@@ -149,7 +149,6 @@ local GameController = utils.createClass("GameController", {
     self.gameStore:set("spawnOffset", spawnOffset)
     self.gameStore:set("spawnSequence", spawnlib.generateSpawnSequence(conf.spawnType, playerPoints, spawnOffset, conf.spawnLayers))
     local ph = GetPlayerHandle()
-    print(GetLabel(ph))
     if IsOdf(ph, "tvspec") then
       self.spectating = true
     else
@@ -183,7 +182,7 @@ local GameController = utils.createClass("GameController", {
   _updateStats = function(self)
     local player = self.net:getLocalPlayer()
     local ph = GetPlayerHandle()
-    local pstate = self.playerStore:getState()[player.id] or assignObject({scrap = 0, pilot = 0, mscrap = 0, mpilot = 0, hasRecycler = true, hasFactory = false, hasArmory = false}, self.extraStatsStore:getState())
+    local pstate = self.playerStore:getState()[player.id] or assignObject({scrap = 0, pilot = 0, mscrap = 0, mpilot = 0, hasRecycler = true, hasFactory = false, hasArmory = false, hasConstructor = false}, self.extraStatsStore:getState())
     local nstate = {
       scrap = GetScrap(player.team),
       pilot = GetPilot(player.team),
@@ -194,6 +193,7 @@ local GameController = utils.createClass("GameController", {
       hasRecycler = IsAlive(GetRecyclerHandle()),
       hasFactory = IsAlive(GetFactoryHandle()),
       hasArmory = IsAlive(GetArmoryHandle()),
+      hasConstructor = IsAlive(GetConstructorHandle())
     }
 
     for k, v in pairs(self.extraStatsStore:getState()) do
@@ -209,10 +209,8 @@ local GameController = utils.createClass("GameController", {
     local destroyList = {}
 
     for i, h in pairs(self.removeObjectCache) do
-      print("Object destroyed", h)
       local v = self.trackedObjects[h]
       if(v ~= nil) then
-        print(GetTime() - v.lastEnemyShot, v.lastFriendShot, v.whoShotMeLast)
         if v.lastEnemyShot < 10+GetTime() and v.lastEnemyShot > v.lastFriendShot then
           if(IsValid(v.whoShotMeLast)) then
             local team = GetTeamNum(v.whoShotMeLast)
@@ -242,7 +240,6 @@ local GameController = utils.createClass("GameController", {
     end
 
     for team, dstats in pairs(destroyList) do
-      print("Sending destoryed message", team, dstats.vcount, dstats.bcount)
       self.gameEventSocket:send("DESTROYED", team, dstats.vcount, dstats.bcount)
     end
 
@@ -390,7 +387,7 @@ local GameController = utils.createClass("GameController", {
     end)
     for i, v in ipairs(sorted) do
       self.displayText = self.displayText .. ("%s (%d, %d):\n"):format(v.player.name, v.player.team, v.player.id)
-      self.displayText = self.displayText .. ("  has factory, armory?: %s, %s\n"):format(v.state.hasFactory and "yes" or "no", v.state.hasArmory and "yes" or "no")
+      self.displayText = self.displayText .. ("  has factory, armory, const?: %s, %s, %s\n"):format(v.state.hasFactory and "yes" or "no", v.state.hasArmory and "yes" or "no", v.state.hasConstructor and "yes" or "no")
       self.displayText = self.displayText .. ("  scrap: %d/%d\n"):format(v.state.scrap, v.state.mscrap)
       self.displayText = self.displayText .. ("  pilot: %d/%d\n"):format(v.state.pilot, v.state.mpilot)
       self.displayText = self.displayText .. ("  destroyed buildings: %d\n"):format(v.state.destroyedBuildings)
@@ -425,7 +422,6 @@ local GameController = utils.createClass("GameController", {
   end,
   _onGameEventReceive = function(self, what, ...)
     -- object(s) were destroyed
-    print(what, ...)
     if(what == "DESTROYED") then
       local team, vcount, bcount = ...
       if(self.net:getLocalPlayer().team == team) then
