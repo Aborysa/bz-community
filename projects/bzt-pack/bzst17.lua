@@ -77,7 +77,7 @@ local GameController = utils.createClass("GameController", {
     self.spectate_r = -1
     self.spawn_point = nil
     self.maxPlayers = 0
-    self.renderTimer = utils.Timer(0.3,-1)
+    self.renderTimer = utils.Timer(0.19,-1)
     self.renderTimer:onAlarm():subscribe(function()
       self:_rerender()
     end)
