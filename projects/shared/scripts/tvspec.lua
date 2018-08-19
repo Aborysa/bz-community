@@ -28,8 +28,8 @@ local SpectatorCraft = createClass("Spectator", {
         --print(Length(diff),lander:getPosition(),GetPosition(v),v);
         if(Length(diff) < 30) then
           local p = GetPosition(v) + Normalize(diff)*30
-          local height = GetTerrainHeightAndNormal(p)
-          p.y = math.max(height,p.y)
+          --local height = GetTerrainHeightAndNormal(p)
+          --p.y = math.max(height,p.y)
           h:setPosition(p)
         end
       end

@@ -1,9 +1,9 @@
 [DESCRIPTION]
-missionName = "BZT 17 {name}"
+missionName = "BZT 18 {name}"
 
 [WORKSHOP]
 mapType = "multiplayer"
-customtags = "Tournament, 2017, Strategy, Lua"
+customtags = "Tournament, 2018, Strategy, Lua"
 
 [MULTIPLAYER]
 minPlayers = "2"

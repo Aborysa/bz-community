@@ -40165,8 +40165,8 @@ pathType = 00000000
 [AiPath]
 old_ptr = 0000013A
 size [1] =
-7
-label = p_spawn
+8
+label = p_spawns
 pointCount [1] =
 4
 points [4] =
