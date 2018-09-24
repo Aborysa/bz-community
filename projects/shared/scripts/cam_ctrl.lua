@@ -41,7 +41,7 @@ local function InterpolateMatrix(base, target, smoothness)
   local f1 = SetVector(base.front_x, base.front_y, base.front_z)
   local f2 = SetVector(target.front_x, target.front_y, target.front_z)
   local fn = Normalize(calcPt(f1, f2, 1/smoothness))
-  
+
   local p1 = SetVector(base.posit_x, base.posit_y, base.posit_z)
   local p2 = SetVector(target.posit_x, target.posit_y, target.posit_z)
   local pn = calcPt(p1, p2, 1/smoothness)
@@ -65,6 +65,8 @@ CameraController = bzutils.utils.createClass("CameraController", {
     self.easingFunc = easingFunc or easeOutBackV
     self.anchor = BuildObject("nparr", 0, GetPosition(self.base))
     self.target_anchor = BuildObject("nparr", 0, GetPosition(self.base))
+    SetLocal(self.anchor)
+    SetLocal(self.target_anchor)
   end,
   setBase = function(self, base, offset)
     self.base = base
@@ -95,8 +97,8 @@ CameraController = bzutils.utils.createClass("CameraController", {
   end,
   update = function(self, dtime)
     local offset = self.offset
-    local anchor_offset = SetVector(-10000, -10000, -10000) 
-    
+    local anchor_offset = SetVector(-10000, -10000, -10000)
+
     local cc = CameraCancelled()
     local ntransform = InterpolateMatrix(self.previous_transform, GetTransform(self.base),self.smoothness/dtime)
     --local lookatbase_transform = InterpolateMatrix(self.previous_transform, GetTransform(self.target),self.smoothness/dtime)
@@ -108,12 +110,12 @@ CameraController = bzutils.utils.createClass("CameraController", {
     --end
 
     --self.previous_lookat = lookAt
-    
+
     self.previous_transform = ntransform
     SetTransform(self.anchor, ntransform)
     SetPosition(self.anchor, GetPosition(self.anchor) + anchor_offset)
-    
-    
+
+
     offset = local2Global(offset, ntransform)
     local actualOffset = offset + inter_pos
     local h, normal = GetFloorHeightAndNormal(actualOffset + SetVector(0,5,0))
@@ -128,13 +130,13 @@ CameraController = bzutils.utils.createClass("CameraController", {
       look_dir = Normalize(calcPt(self.previous_lookat, look_dir, 1/( (self.smoothness*0.25) /dtime) ))
     end
     local target_anchor_pos = look_dir*10000 + actualOffset
-    
+
 
     self.previous_lookat = look_dir
-    
+
     SetPosition(self.target_anchor, target_anchor_pos)
     if (not IsValid(self.base)) or CameraObject(
-      self.anchor, 
+      self.anchor,
       (offset.z) * 100,
       (offset.y) * 100,
       (offset.x) * 100,
@@ -156,7 +158,7 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
   new = function(self, props)
     self.terminate = props.terminate
     self.serviceManager = props.serviceManager
-    self.serviceManager:getServices("bzutils.runtime", "bzutils.net"):subscribe(function(runtimeController, net) 
+    self.serviceManager:getServices("bzutils.runtime", "bzutils.net"):subscribe(function(runtimeController, net)
       self.runtimeController = runtimeController
       self.net = net
     end)
@@ -194,14 +196,14 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
     local r = self.runtimeController:getRoutine(self.cameraRoutineId)
     if r ~= nil then
       local vm = self.viewModes[self.currentViewMode]
-      if(vm == "FIRST_PERSON") then 
+      if(vm == "FIRST_PERSON") then
         r:setOffset(SetVector(0.0278-0.0050, 1.6991 + 8.5467 + 5.2735 -5.4967, 0.3690 -3.1196 + 0.7436 + 0.6834))
         r:setSmoothnessFactor(0.01)
       else
         r:setOffset(self:getOffsetVec())
         r:setSmoothnessFactor(0.1 + ({0.0, 0.1, 0.35, 0.9})[(3-self.zoom + 1)] )
       end
-      
+
     end
   end,
   getOffsetVec = function(self)
@@ -238,7 +240,7 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
     else
       SetUserTarget(nil)
     end
-    
+
 
     local r = self.runtimeController:getRoutine(self.cameraRoutineId)
     if r~= nil then
@@ -294,9 +296,10 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
         local pp = GetPosition(ph)
         if not isNullPos(pp) then
           local h = GetTerrainHeightAndNormal(pp)
+          SetTransform(GetPlayerHandle(), GetTransform(ph))
           pp.y = h - 35
           SetPosition(GetPlayerHandle(), pp)
-          SetVelocity(GetPlayerHandle(), SetVector(0,0,0))
+          SetVelocity(GetPlayerHandle(), GetVelocity(ph))
           self:_updateViewMode(ph, pt)
         end
       end
