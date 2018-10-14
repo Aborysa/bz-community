@@ -31,9 +31,6 @@ local SpectatorCraft = createClass("Spectator", {
           local height = GetTerrainHeightAndNormal(p)
           --p.y = math.max(height,p.y)
           h:setPosition(p)
-          h:setObjectiveOn()
-        else
-          h:setObjectiveOff()
         end
       end
     end
