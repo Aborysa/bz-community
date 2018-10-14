@@ -9,3 +9,7 @@ customtags = "Tournament, 2018, Strategy, Lua"
 minPlayers = "2"
 maxPlayers = "16"
 gameType = "S"
+
+
+[MODMANAGER]
+name="Tournament 2018 Map Pack v0.7.4"
