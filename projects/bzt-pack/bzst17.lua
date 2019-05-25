@@ -1,4 +1,6 @@
+local bzindex = require("bzindex")
 local bzutils = require("bzutils")
+local runtime = require("runtime")
 
 local setup = bzutils.defaultSetup()
 
@@ -66,6 +68,8 @@ end
 
 local GameController = utils.createClass("GameController", {
   new = function(self, props)
+    self.serviceManager = props.serviceManager
+    
     self.displayText = ""
     self.showInfo = true
     self.ready = false
@@ -77,19 +81,19 @@ local GameController = utils.createClass("GameController", {
     self.spectate_r = -1
     self.spawn_point = nil
     self.maxPlayers = 0
-    self.renderTimer = utils.Timer(0.19,-1)
+    self.renderTimer = runtime.Timer(0.19,-1, self.serviceManager)
     self.renderTimer:onAlarm():subscribe(function()
       self:_rerender()
     end)
     self.renderTimer:start()
 
-    self.statsUpdateTimer = utils.Timer(1, -1)
+    self.statsUpdateTimer = runtime.Timer(1, -1, self.serviceManager)
     self.statsUpdateTimer:onAlarm():subscribe(function()
       self:_updateStats()
     end)
     self.statsUpdateTimer:start()
     self.terminate = props.terminate
-    self.serviceManager = props.serviceManager
+
     self.ph = GetPlayerHandle()
     self.pp = GetPosition(self.ph)
     self.gameStore = Store({
@@ -113,6 +117,8 @@ local GameController = utils.createClass("GameController", {
       --vehicleCount = 0,
       --buildingCount = 0
     })
+
+
 
     self.trackedObjects = {}
     self.removeObjectCache = {}
@@ -145,7 +151,10 @@ local GameController = utils.createClass("GameController", {
     end)
     local playerPoints = GetPathPoints(conf.playerSpawns)
     self.maxPlayers = #playerPoints
-    local spawnOffset = math.random(1, self.maxPlayers)
+    local spawnOffset = 1
+    if self.maxPlayers > 1 then
+      spawnOffset = math.random(1, self.maxPlayers)
+    end
     self.gameStore:set("spawnOffset", spawnOffset)
     self.gameStore:set("spawnSequence", spawnlib.generateSpawnSequence(conf.spawnType, playerPoints, spawnOffset, conf.spawnLayers))
     local ph = GetPlayerHandle()
@@ -180,6 +189,9 @@ local GameController = utils.createClass("GameController", {
     end
   end,
   _updateStats = function(self)
+    if not (gameState.gameStarted and not self.spectating) then
+      return
+    end
     local player = self.net:getLocalPlayer()
     local ph = GetPlayerHandle()
     local pstate = self.playerStore:getState()[player.id] or assignObject({scrap = 0, pilot = 0, mscrap = 0, mpilot = 0, hasRecycler = true, hasFactory = false, hasArmory = false, hasConstructor = false}, self.extraStatsStore:getState())
@@ -484,15 +496,11 @@ local GameController = utils.createClass("GameController", {
         SetPosition(ph,GetPositionNear(spawn, 50, 60))
         self.spawned = true
       end
-      if gameState.gameStarted and not self.spectating then
-        self.statsUpdateTimer:update(dtime)
-      end
     end
     if self.spectating then
       --Hide(ph)
       SetCloaked(ph)
     end
-    self.renderTimer:update(dtime)
   end,
   createObject = function(self, handle)
     if (not self.gameStore:getState().gameStarted or self.spectating) then
