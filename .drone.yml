@@ -96,8 +96,8 @@ pipeline:
       event:
         - tag
     script:
-      - \cp -f /tmp/halloween-bundle.zip /mnt/nginx-fs/files/public/bz-community/bz-halloween/bz-halloween_${DRONE_TAG}.zip || true
-      - \cp -f /tmp/bzt17-bundle.zip /mnt/nginx-fs/files/public/bz-community/bzt-2017/bzt17_${DRONE_TAG}.zip || true
+      - \cp -f /tmp/halloween-bundle.zip /mnt/primary/nginx-fs/files/public/bz-community/bz-halloween/bz-halloween_${DRONE_TAG}.zip || true
+      - \cp -f /tmp/bzt17-bundle.zip /mnt/primary/nginx-fs/files/public/bz-community/bzt-2017/bzt17_${DRONE_TAG}.zip || true
 
     volumes:
       - /root/.ssh/id_rsa:/ssh/id_rsa
