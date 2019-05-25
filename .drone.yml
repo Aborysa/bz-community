@@ -19,9 +19,9 @@ pipeline:
       - cd /tmp/lua
       - curl -O https://raw.githubusercontent.com/bjornbytes/RxLua/master/rx.lua
       - cd /tmp/bzmoon
-      - curl -O https://media.faavne.no/bzmoon/bzmoon_v3.0.0-alpha.8.zip
-      - unzip bzmoon_v3.0.0-alpha.8.zip
-      - mv ./bzutils.lua /tmp/lua
+      - curl -O https://media.faavne.no/bzmoon/bzmoon_v3.0.0-alpha.9.zip
+      - unzip bzmoon_v3.0.0-alpha.9.zip
+      - mv ./bzindex.lua /tmp/lua
       - find /community/projects/bzt-pack -type f \( -name "*.lua" -o -name "*.squish" \) -exec cp {} /tmp/lua \;
       - find /community/projects/shared -type f -name "*.lua" -exec cp {} /tmp/lua \;
       - find /community/projects/shared -type f -not -name "*.lua" -exec cp {} /tmp/files \;
@@ -30,6 +30,7 @@ pipeline:
       - find /tmp/lua -name '*.lua' -type f -exec mv {} /tmp/files \;
       - python3 /bztools/crlf_fixer.py /tmp/files
       - mkdir -p /community/projects/build-output
+      - mv /tmp/bzmoon/*.pvdf /tmp/files
       - mv /tmp/files /tmp/1196613614
       - cd /tmp
       - zip -r /community/projects/build-output/bzt17-bundle.zip ./1196613614
@@ -50,9 +51,9 @@ pipeline:
       - cd /tmp/lua
       - curl -O https://raw.githubusercontent.com/bjornbytes/RxLua/master/rx.lua
       - cd /tmp/bzmoon
-      - curl -O https://media.faavne.no/bzmoon/bzmoon_v3.0.0-alpha.8.zip
-      - unzip bzmoon_v3.0.0-alpha.8.zip
-      - mv ./bzutils.lua /tmp/lua
+      - curl -O https://media.faavne.no/bzmoon/bzmoon_v3.0.0-alpha.9.zip
+      - unzip bzmoon_v3.0.0-alpha.9.zip
+      - mv ./bzindex.lua /tmp/lua
       - find /community/projects/halloween-pack -type f \( -name "*.lua" -o -name "*.squish" \) -exec cp {} /tmp/lua \;
       - find /community/projects/shared -type f -name "*.lua" -exec cp {} /tmp/lua \;
       - find /community/projects/shared -type f -not -name "*.lua" -exec cp {} /tmp/files \;
@@ -60,6 +61,7 @@ pipeline:
       - find /community/projects/halloween-pack -not -ipath '*/\.*' -not -name '*.lua' -not -name '*.bin' -type f -exec cp {} /tmp/files \;
       - find /tmp/lua -name '*.lua' -type f -exec mv {} /tmp/files \;
       - python3 /bztools/crlf_fixer.py /tmp/files
+      - mv /tmp/bzmoon/*.pvdf /tmp/files
       - mkdir -p /community/projects/build-output
       - mv /tmp/files /tmp/731940591
       - cd /tmp
