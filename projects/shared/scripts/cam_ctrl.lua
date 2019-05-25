@@ -1,13 +1,24 @@
 local bzutils = require("bzutils")
 local rx = require("rx")
--- local runtimeController = bzutils.runtime.runtimeController
 local easing = require("easing")
+local exmath = require("exmath")
+local utils = require("utils")
+
+local lvdf = require("lvdf")
+
+
+local bundle = lvdf.loadBundle()
+
+local function _GetBase(...)
+  return (GetBase(...) or ""):gmatch("[^%c]*")()
+end
+
 
 local easeOutBackV = easing.easeOutBackV
 
-local local2Global = bzutils.utils.local2Global
-local global2Local = bzutils.utils.global2Local
-local isNullPos = bzutils.utils.isNullPos
+local local2Global = exmath.local2Global
+local global2Local = exmath.global2Local
+local isNullPos = utils.isNullPos
 local interpolatedNormal = easing.interpolatedNormal
 local calcPt = easing.calcPt
 
@@ -17,6 +28,20 @@ local mfield = {
   "front_x", "front_y", "front_z",
   "posit_x", "posit_y", "posit_z"
 }
+
+
+local function hasVdf(handle)
+  local base = _GetBase(handle)
+  return bundle[base] ~= nil
+end
+
+local function getVdf(handle)
+  if hasVdf(handle) then
+    local base = _GetBase(handle)
+    return bundle[base]
+  end
+end
+
 
 local AddMatrix = function(...)
   local m = SetMatrix()
@@ -48,6 +73,19 @@ local function InterpolateMatrix(base, target, smoothness)
 
   return BuildDirectionalMatrix(pn, fn)
 end
+
+
+local fperson_parts = {
+  "hed", "tur","lgt", "gc1", "gc2", "gr1", "gr2", "pov"
+}
+
+local default_parts = {
+  "tur", "bda", "ty1"
+}
+-- parts that has greater influence on camera position
+local strong_parts = {
+  "nrr", "hed", "rsh", "tx1", "nfr", "gc2"
+}
 
 CameraController = bzutils.utils.createClass("CameraController", {
   new = function(self, props)
@@ -156,6 +194,7 @@ CameraController = bzutils.utils.createClass("CameraController", {
 -- controller for spectating players
 SpectateController = bzutils.utils.createClass("SpectateController", {
   new = function(self, props)
+    self.hfunc = nil
     self.terminate = props.terminate
     self.serviceManager = props.serviceManager
     self.serviceManager:getServices("bzutils.runtime", "bzutils.net"):subscribe(function(runtimeController, net)
@@ -170,13 +209,14 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
     self.viewModes = {"SHOULDER", "TARGET", "AHEAD", "FIRST_PERSON"}
     self.currentViewMode = 1
   end,
-  routineWasCreated = function(self, players, offset, zoom, tp_player)
+  routineWasCreated = function(self, players, offset, zoom, tp_player, hfunc)
     offset = offset or 0
     self.tp_player = tp_player==nil and true or tp_player
     self.playerPos = GetTransform(GetPlayerHandle())
     self:setZoom(zoom)
     self.playerIdx = (offset > 0 and offset <= #players and offset) or self.playerIdx
     self.players = players
+    self.hfunc = hfunc
   end,
   setPlayer = function(self, offset)
     self.playerIdx = (offset > 0 and offset <= #self.players and offset) or self.playerIdx
@@ -192,22 +232,66 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
     end
   end,
   setZoom = function(self, zoom)
+    local ph = nil
+    if not self.hfunc then
+      ph = self.players[self.playerIdx] and self.net:getPlayerHandle(self.players[self.playerIdx].team) --GetPlayerHandle(self.players[self.playerIdx].team)
+    else
+      ph = self.hfunc(self.players[self.playerIdx])
+    end
     self.zoom = math.min(math.max(zoom==nil and 1 or zoom, 0), 3)
     local r = self.runtimeController:getRoutine(self.cameraRoutineId)
     if r ~= nil then
       local vm = self.viewModes[self.currentViewMode]
       if(vm == "FIRST_PERSON") then
-        r:setOffset(SetVector(0.0278-0.0050, 1.6991 + 8.5467 + 5.2735 -5.4967, 0.3690 -3.1196 + 0.7436 + 0.6834))
+        if hasVdf(ph) then
+          -- modify our offset
+          local newOffset = SetVector(0, 0, 0)
+          local d = 1
+          local vdf = getVdf(ph)
+          for _, partname in ipairs(fperson_parts) do
+            if vdf:hasPart(partname) then
+              newOffset = newOffset + vdf:getPart(partname):getPosition()
+              d = d + 1
+            end
+          end
+          newOffset = newOffset/d + SetVector(0.7, 1.1, -0.1)
+          r:setOffset(newOffset)
+        else
+          r:setOffset(self:getOffsetVec(ph))
+        end
+        
         r:setSmoothnessFactor(0.01)
       else
-        r:setOffset(self:getOffsetVec())
+        r:setOffset(self:getOffsetVec(ph))
         r:setSmoothnessFactor(0.1 + ({0.0, 0.1, 0.35, 0.9})[(3-self.zoom + 1)] )
       end
 
     end
   end,
-  getOffsetVec = function(self)
-    return SetVector(-10 - math.pow(4-self.zoom, 2)*1.1,2 + math.pow(4-self.zoom, 2.2)/1.5,0)
+  getBaseVector = function(self, ph)
+    local baseOffset = SetVector(0, 0, 0)
+    if hasVdf(ph) then
+      local vdf = getVdf(ph)
+      local vm = self.viewModes[self.currentViewMode]
+      local d = 1
+      for _, partname in ipairs(default_parts) do
+        if vdf:hasPart(partname) then
+          baseOffset = baseOffset + vdf:getPart(partname):getPosition()
+          d = d + 1
+        end
+      end
+      for _, partname in ipairs(strong_parts) do
+        if vdf:hasPart(partname) then
+          baseOffset = baseOffset + (vdf:getPart(partname):getPosition()*5)
+          d = d + 5
+        end
+      end
+      baseOffset = baseOffset/d
+    end
+    return baseOffset
+  end,
+  getOffsetVec = function(self, ph)
+    return self:getBaseVector(ph) + SetVector(-10 - math.pow(4-self.zoom, 2)*1.1,2 + math.pow(4-self.zoom, 2.2)/1.5,0)
   end,
   zoomIn = function(self)
     self:setZoom(self.zoom + 1)
@@ -223,17 +307,21 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
     local lookAt = SetVector(0, 0, 0)
     local vm = self.viewModes[self.currentViewMode]
     local t = GetTarget(ph)
+
+
+    local offsetVec = self:getBaseVector(ph)
+    offsetVec = local2Global(offsetVec + SetVector(5, 0, 0), GetTransform(ph))
     if(not IsValid(t)) then
       t = alttarget
     end
     if(vm == "SHOULDER" or vm == "TARGET") then
-      lookAt = SetVector(0, 3, 0)
+      lookAt = offsetVec
     end
     if(vm == "TARGET") and IsValid(t) then
       lookAt = GetPosition(t) - GetPosition(ph)
     end
     if(vm == "AHEAD" or vm == "FIRST_PERSON") then
-      lookAt = GetFront(ph) * 500
+      lookAt = GetFront(ph) * 500 + offsetVec
     end
     if(vm == "TARGET" or vm == "FIRST_PERSON") then
       SetUserTarget(t)
@@ -255,7 +343,12 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
   end,
   updatePlayer = function(self)
     --self.playerIdx = (self.playerIdx % #self.players) + 1
-    local ph = self.players[self.playerIdx] and self.net:getPlayerHandle(self.players[self.playerIdx].team) --GetPlayerHandle(self.players[self.playerIdx].team)
+    local ph = nil
+    if not self.hfunc then
+      ph = self.players[self.playerIdx] and self.net:getPlayerHandle(self.players[self.playerIdx].team) --GetPlayerHandle(self.players[self.playerIdx].team)
+    else
+      ph = self.hfunc(self.players[self.playerIdx])
+    end
     if not IsValid(ph) then
       self:nextPlayer()
       return
@@ -270,7 +363,7 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
   end,
   _createCameraR = function(self)
     print("Creating new!", self.cancelled)
-    self.cameraRoutineId, camctrl = self.runtimeController:createRoutine(CameraController, ph, self:getOffsetVec(), ph, SetVector(0, 0, 0))
+    self.cameraRoutineId, camctrl = self.runtimeController:createRoutine(CameraController, ph, self:getOffsetVec(ph), ph, SetVector(0, 0, 0))
     self.sub = camctrl:onDestroyed():subscribe(function(a)
       if not a then
         self.cancelled = true
@@ -289,18 +382,26 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
     if r==nil and not self.cancelled then
       self:_createCameraR()
     end
-    if self.tp_player then
-      local ph = self.players[self.playerIdx] and self.net:getPlayerHandle(self.players[self.playerIdx].team)
-      if IsValid(ph) then
-        local pt = self.players[self.playerIdx] and self.net:getTarget(ph)
-        local pp = GetPosition(ph)
+
+    local ph = nil
+    if not self.hfunc then
+      ph = self.players[self.playerIdx] and self.net:getPlayerHandle(self.players[self.playerIdx].team)
+    else
+      ph = self.hfunc(self.players[self.playerIdx])
+    end
+
+    if IsValid(ph) then
+      local pt = self.players[self.playerIdx] and self.net:getTarget(ph)
+      local pp = GetPosition(ph)
+
+      self:_updateViewMode(ph, pt)
+      if self.tp_player then
         if not isNullPos(pp) then
           local h = GetTerrainHeightAndNormal(pp)
           SetTransform(GetPlayerHandle(), GetTransform(ph))
           pp.y = h - 35
           SetPosition(GetPlayerHandle(), pp)
           SetVelocity(GetPlayerHandle(), GetVelocity(ph))
-          self:_updateViewMode(ph, pt)
         end
       end
     end
@@ -327,6 +428,9 @@ SpectateController = bzutils.utils.createClass("SpectateController", {
   routineWasDestroyed = function(self)
     if self.sub then
       self.sub:unsubscribe()
+    end
+    if self.ed_sub then
+      self.ed_sub:unsubscribe()
     end
     self.runtimeController:clearRoutine(self.cameraRoutineId)
     if self.tp_player then
