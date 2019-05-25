@@ -189,6 +189,7 @@ local GameController = utils.createClass("GameController", {
     end
   end,
   _updateStats = function(self)
+    local gameState = self.gameStore:getState()
     if not (gameState.gameStarted and not self.spectating) then
       return
     end
