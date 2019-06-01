@@ -71,6 +71,7 @@ local GameController = utils.createClass("GameController", {
     self.serviceManager = props.serviceManager
     
     self.displayText = ""
+    self.netStatText = ""
     self.showInfo = true
     self.ready = false
     self.spectating = false
@@ -83,6 +84,7 @@ local GameController = utils.createClass("GameController", {
     self.maxPlayers = 0
     self.renderTimer = runtime.Timer(0.19,math.huge, self.serviceManager)
     self.renderTimer:onAlarm():subscribe(function()
+      self:updateNetStatText()
       self:_rerender()
     end)
     self.renderTimer:start()
@@ -123,6 +125,15 @@ local GameController = utils.createClass("GameController", {
     self.trackedObjects = {}
     self.removeObjectCache = {}
     AddObjective("stats.obj", "white", 8, self.displayText)
+    AddObjective("netstat", "dkyellow", 8, self.netStatText)
+  end,
+  updateNetStatText = function(self)
+    if self.net then
+      self.netStatText = ("Total TX: %d\n"):format(net:getTotalTx())
+      self.netStatText = ("Total RX: %d\n\n"):format(net:getTotalRx())
+      self.netStatText = ("TX rate: %d\n"):format(net:getTxRate())
+      self.netStatText = ("Rx rate: %d\n"):format(net:getRxRate())
+    end
   end,
   routineWasCreated = function(self, config)
     self.mapConfig = config
@@ -185,6 +196,7 @@ local GameController = utils.createClass("GameController", {
   _rerender = function(self)
     if self.showInfo or (not self.ready) then
       UpdateObjective("stats.obj", "yellow", 0.2, self.displayText)
+      UpdateObjective("netstat", "dkyellow", 0.2, self.netStatText)
       self.showInfo = true
     end
   end,
@@ -301,10 +313,8 @@ local GameController = utils.createClass("GameController", {
       DisplayMessage("Event socket set up!")
       self.eventSocket = socket
       socket:onReceive():subscribe(IsHosting() and function(...)
-        print("Host rec", ...)
         self:_onHostReceive(...)
       end or function(...)
-        print("Client rec", ...)
         self:_onReceive(...)
       end)
       if self.spawn_point==nil then
