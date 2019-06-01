@@ -128,7 +128,9 @@ local GameController = utils.createClass("GameController", {
     AddObjective("netstat", "dkyellow", 8, self.netStatText)
   end,
   updateNetStatText = function(self)
+
     if self.net then
+      local net = self.net
       self.netStatText = ("Total TX: %d\n"):format(net:getTotalTx())
       self.netStatText = ("Total RX: %d\n\n"):format(net:getTotalRx())
       self.netStatText = ("TX rate: %d\n"):format(net:getTxRate())
