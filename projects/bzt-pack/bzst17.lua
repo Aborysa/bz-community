@@ -132,9 +132,9 @@ local GameController = utils.createClass("GameController", {
     if self.net then
       local net = self.net
       self.netStatText = ("Total TX: %d\n"):format(net:getTotalTx())
-      self.netStatText = ("Total RX: %d\n\n"):format(net:getTotalRx())
-      self.netStatText = ("TX rate: %d\n"):format(net:getTxRate())
-      self.netStatText = ("Rx rate: %d\n"):format(net:getRxRate())
+      self.netStatText = self.netStatText .. ("Total RX: %d\n\n"):format(net:getTotalRx())
+      self.netStatText = self.netStatText .. ("TX rate: %d\n"):format(net:getTxRate())
+      self.netStatText = self.netStatText .. ("Rx rate: %d\n"):format(net:getRxRate())
     end
   end,
   routineWasCreated = function(self, config)
