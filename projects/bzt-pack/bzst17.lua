@@ -595,7 +595,9 @@ function Update(dtime)
     end
   end
   for i, v in pairs(removeOnNext) do
-    RemoveObject(i)
+    if IsLocal(i) then
+      RemoveObject(i)
+    end
   end
   removeOnNext = {}
 end
