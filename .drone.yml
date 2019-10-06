@@ -19,8 +19,8 @@ pipeline:
       - cd /tmp/lua
       - curl -O https://raw.githubusercontent.com/bjornbytes/RxLua/master/rx.lua
       - cd /tmp/bzmoon
-      - curl -O https://media.faavne.no/bzmoon/bzmoon_v3.1.0.zip
-      - unzip bzmoon_v3.1.0.zip
+      - curl -O https://media.faavne.no/bzmoon/bzmoon_v3.1.1.zip
+      - unzip bzmoon_v3.1.1.zip
       - mv ./bzindex.lua /tmp/lua
       - find /community/projects/bzt-pack -type f \( -name "*.lua" -o -name "*.squish" \) -exec cp {} /tmp/lua \;
       - find /community/projects/shared -type f -name "*.lua" -exec cp {} /tmp/lua \;
