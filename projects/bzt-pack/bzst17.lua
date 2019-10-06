@@ -1,17 +1,26 @@
+
+
 local bzindex = require("bzindex")
+
+local dloader = require("dloader")
+local USE_STATISTICS = dloader.initLoader("1196613614", true, true)
+local json = require("json")
+
+
 local bzutils = require("bzutils")
 local runtime = require("runtime")
 
-local setup = bzutils.defaultSetup()
+local setup = bzutils.defaultSetup(USE_STATISTICS)
 
 local core = setup.core
 local serviceManager = setup.serviceManager
+
 
 local utils = bzutils.utils
 local rx = require("rx")
 
 local shared = require("shared")
-
+local statistics = require("stat_help")
 shared.setup(serviceManager)
 local SpectateController = shared.SpectateController
 
@@ -93,6 +102,12 @@ local GameController = utils.createClass("GameController", {
     self.statsUpdateTimer:onAlarm():subscribe(function()
       self:_updateStats()
     end)
+
+    self.statisticsUpdateTimer = runtime.Timer(10, math.huge, self.serviceManager)
+    self.statisticsUpdateTimer:onAlarm():subscribe(function()
+      self:_updateStatistics()
+    end)
+
     self.statsUpdateTimer:start()
     self.terminate = props.terminate
 
@@ -183,8 +198,23 @@ local GameController = utils.createClass("GameController", {
     self.serviceManager:getService("bzutils.net"):subscribe(function(net)
       self.net = net
       self.net:onNetworkReady():subscribe(function()
+        local player = self.net:getLocalPlayer()
         DisplayMessage("Network is ready!")
         self.displayText = self.displayText .. "Network is ready!\n"
+        if USE_STATISTICS then
+          statistics.checkServer():subscribe(function(ok)
+            if ok then
+              DisplayMessage("Fetching user token...!")
+              self.displayText = self.displayText .. "Fetching user token...!\n"
+              statistics.createSession(player.name):subscribe(function(token)
+                self.session_token = token
+                self.displayText = self.displayText .. "User token fetched!\n"
+                DisplayMessage("User token fetched!")
+              end)
+            end
+          end)
+        end
+        
         self:_setUpSockets()
       end)
       self.net:onHostMigration():subscribe(function()
@@ -200,6 +230,19 @@ local GameController = utils.createClass("GameController", {
       UpdateObjective("stats.obj", "yellow", 0.2, self.displayText)
       UpdateObjective("netstat", "dkyellow", 0.2, self.netStatText)
       self.showInfo = true
+    end
+  end,
+  _updateStatistics = function(self)
+    -- check if we have game info
+    if self.game_info then
+      local player = self.net:getLocalPlayer()
+      local ph = GetPlayerHandle()
+      
+      local extraStats = self.extraStatsStore:getState()
+      local totalKills = extraStats["destroyedVehicles"] + extraStats["destroyedBuildings"] 
+      statistics.postStats(player.team,self.session_token, self.game_info.game_id, {
+        kills = totalKills
+      })
     end
   end,
   _updateStats = function(self)
@@ -361,6 +404,25 @@ local GameController = utils.createClass("GameController", {
     end)
 
   end,
+  _setUpStatistics = function(self, game_id)
+    if (USE_STATISTICS and self.session_token) then
+      if IsHosting() then
+        statistics.createGame(self.session_token):subscribe(function(data)
+          self.game_info = data
+          self.eventSocket:send("GAME_ID", self.game_info.game_id)
+          self.statisticsUpdateTimer:start()
+        end)
+      else
+        statistics.joinGame(self.session_token, game_id):subscribe(function(data)
+          self.game_info = data
+          self.statisticsUpdateTimer:start()
+        end)
+      end
+    end
+    -- create a session
+    -- create/join a game
+    
+  end,
   _addPlayer = function(self, id)
     local state = self.gameStore:getState()
     local offset = state.spawnOffset
@@ -432,6 +494,8 @@ local GameController = utils.createClass("GameController", {
       self.spectating = true
     elseif what == "START" then
       self:_spawnInRecycler()
+    elseif what == "GAME_ID" then
+      self:_setUpStatistics(...)
     end
   end,
   _onHostReceive = function(self, socket, what, ...)
@@ -495,6 +559,7 @@ local GameController = utils.createClass("GameController", {
             self.gameStore:set("gameStarted", true)
             self.eventSocket:send("START")
             self:_spawnInRecycler()
+            self:_setUpStatistics()
           end
           self.acc = self.acc + dtime
           if self.acc >= 1 then

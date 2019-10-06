@@ -6,9 +6,11 @@ local utils = require("utils")
 
 local lvdf = require("lvdf")
 
+local bundle = {}
 
-local bundle = lvdf.loadBundle()
-
+if IsBzr() then
+  bundle = lvdf.loadBundle()
+end
 local function _GetBase(...)
   return (GetBase(...) or ""):gmatch("[^%c]*")()
 end
