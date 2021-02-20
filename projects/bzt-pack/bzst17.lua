@@ -2,7 +2,7 @@ local bzindex = require("bzindex")
 local bzutils = require("bzutils")
 local runtime = require("runtime")
 
-local setup = bzutils.defaultSetup()
+local setup = bzutils.defaultSetup(false)
 
 local core = setup.core
 local serviceManager = setup.serviceManager
