@@ -1,5 +1,5 @@
 [GameObjectClass]
-baseName = "apcamr"
+baseName = "tvspec"
 collisionRadius = 0.0
 classLabel = "wingman"
 scrapValue = 0
@@ -19,31 +19,31 @@ imageSignature = 0.0
 radarSignature = 0.0
 
 [CraftClass]
-rangeScan = 600.0f
-periodScan = 0.0
-velocJam = 0.0f
+rangeScan = 1000.0f
+periodScan = 2.0f
+velocJam = 500.0f
 cloakAllowed = True
 
 [HoverCraftClass]
-setAltitude = 1.0
+setAltitude = 30.0
 accelDragStop = 10.0
 accelDragFull = 5.0
-alphaTrack = 20.0
+alphaTrack = 3.0
 alphaDamp = 5.0
-pitchPitch = 0.25
-pitchThrust = 0.1
-rollStrafe = 0.1
-rollSteer = 0.1
+pitchPitch = 0.75
+pitchThrust = 0
+rollStrafe = 0
+rollSteer = 0
 
-velocForward = 300.0
-velocReverse = 150.0
+velocForward = 400.0
+velocReverse = 300.0
 velocStrafe = 300.0
-accelThrust = 30.0
-accelBrake = 50.0
-omegaSpin = 3.5
-omegaTurn = 1.5
+accelThrust = 100.0
+accelBrake = 200.0
+omegaSpin = 5.0
+omegaTurn = 3.0
 alphaSteer = 5.0
-accelJump = 200.0
+accelJump = 100.0
 
 soundThrust = 
 soundTurbo = 
