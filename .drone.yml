@@ -32,7 +32,7 @@ steps:
     - mv /tmp/bzmoon/*.pvdf /tmp/files
     - mv /tmp/files /tmp/1196613614
     - cd /tmp
-    - zip -r /community/bzt-pack/build/bzt17-${DRONE_TAG}.zip ./1196613614
+    - zip -r /community/bzt-pack/build/bzt17_${DRONE_TAG}.zip ./1196613614
     - cp /community/bzt-pack/build/bzt17_${DRONE_TAG}.zip /community/bzt-pack/build/bzt17_latest.zip
 
 - name: upload
